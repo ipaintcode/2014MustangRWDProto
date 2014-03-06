@@ -1,4 +1,4 @@
-This was a prototype so the only link that works is cars > mustang, mustang > gallery or just use links below:
+This was a prototype so a few links works is, cars > mustang, mustang > gallery or just use links below:
 
 ####[2014MustangRWDProto](http://ipaintcode.github.io/2014MustangRWDProto/)
 
