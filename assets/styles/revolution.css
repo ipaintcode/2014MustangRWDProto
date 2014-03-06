@@ -1,0 +1,6694 @@
+@charset "UTF-8";
+/* line 2, ../scss/_tools.scss */
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 9, ../scss/_tools.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 13, ../scss/_tools.scss */
+.clearfix {
+  zoom: 1;
+  /* IE < 8 */
+}
+
+/* line 17, ../scss/_tools.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: ATS;
+  src: url("../fonts/FordAntennaWGL-Light.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AntennaRE;
+  src: url("../fonts/5cd8f1c2-1c5f-4606-82c5-09101d12b8f7-2.eot");
+  src: url("../fonts/5cd8f1c2-1c5f-4606-82c5-09101d12b8f7-2.eot?") format("embedded-opentype"), url("../fonts/5cd8f1c2-1c5f-4606-82c5-09101d12b8f7-3.woff") format("woff"), url("../fonts/5cd8f1c2-1c5f-4606-82c5-09101d12b8f7-1.ttf") format("truetype"), url("../fonts/5cd8f1c2-1c5f-4606-82c5-09101d12b8f7-4.svg#web") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AntennaRE;
+  src: url("../fonts/7e1290d3-4834-4cdc-9242-d41b96db6fd1-2.eot");
+  src: url("../fonts/7e1290d3-4834-4cdc-9242-d41b96db6fd1-2.eot?") format("embedded-opentype"), url("../fonts/7e1290d3-4834-4cdc-9242-d41b96db6fd1-3.woff") format("woff"), url("../fonts/7e1290d3-4834-4cdc-9242-d41b96db6fd1-1.ttf") format("truetype"), url("../fonts/7e1290d3-4834-4cdc-9242-d41b96db6fd1-4.svg#web") format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: AntennaRE;
+  src: url("../fonts/ef0f1254-fce5-4d1d-ae96-f4590cf7cfd1-2.eot");
+  src: url("../fonts/ef0f1254-fce5-4d1d-ae96-f4590cf7cfd1-2.eot?") format("embedded-opentype"), url("../fonts/ef0f1254-fce5-4d1d-ae96-f4590cf7cfd1-3.woff") format("woff"), url("../fonts/ef0f1254-fce5-4d1d-ae96-f4590cf7cfd1-1.ttf") format("truetype"), url("../fonts/ef0f1254-fce5-4d1d-ae96-f4590cf7cfd1-4.svg#web") format("svg");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AntennaRE;
+  src: url("../fonts/11286522-91e9-4b20-ae7a-ef3b40fa4e6c-2.eot");
+  src: url("../fonts/11286522-91e9-4b20-ae7a-ef3b40fa4e6c-2.eot?") format("embedded-opentype"), url("../fonts/11286522-91e9-4b20-ae7a-ef3b40fa4e6c-3.woff") format("woff"), url("../fonts/11286522-91e9-4b20-ae7a-ef3b40fa4e6c-1.ttf") format("truetype"), url("../fonts/11286522-91e9-4b20-ae7a-ef3b40fa4e6c-4.svg#web") format("svg");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Antenna;
+  src: url("../fonts/a249ec5c-51a0-4581-a866-722ded577e7d-2.eot");
+  src: url("../fonts/a249ec5c-51a0-4581-a866-722ded577e7d-2.eot?") format("embedded-opentype"), url("../fonts/a249ec5c-51a0-4581-a866-722ded577e7d-3.woff") format("woff"), url("../fonts/a249ec5c-51a0-4581-a866-722ded577e7d-1.ttf") format("truetype"), url("../fonts/a249ec5c-51a0-4581-a866-722ded577e7d-4.svg#web") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Antenna;
+  src: url("../fonts/85bf2123-24cb-4bfd-a720-efe63c68c84d-2.eot");
+  src: url("../fonts/85bf2123-24cb-4bfd-a720-efe63c68c84d-2.eot?") format("embedded-opentype"), url("../fonts/85bf2123-24cb-4bfd-a720-efe63c68c84d-3.woff") format("woff"), url("../fonts/85bf2123-24cb-4bfd-a720-efe63c68c84d-1.ttf") format("truetype"), url("../fonts/85bf2123-24cb-4bfd-a720-efe63c68c84d-4.svg#web") format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Antenna;
+  src: url("../fonts/824cfbd6-80a8-4be2-973a-8b80c749487f-2.eot");
+  src: url("../fonts/824cfbd6-80a8-4be2-973a-8b80c749487f-2.eot?") format("embedded-opentype"), url("../fonts/824cfbd6-80a8-4be2-973a-8b80c749487f-3.woff") format("woff"), url("../fonts/824cfbd6-80a8-4be2-973a-8b80c749487f-1.ttf") format("truetype"), url("../fonts/824cfbd6-80a8-4be2-973a-8b80c749487f-4.svg#web") format("svg");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Antenna;
+  src: url("../fonts/9ee4fc97-fb39-4152-89cc-a700956beedc-2.eot");
+  src: url("../fonts/9ee4fc97-fb39-4152-89cc-a700956beedc-2.eot?") format("embedded-opentype"), url("../fonts/9ee4fc97-fb39-4152-89cc-a700956beedc-3.woff") format("woff"), url("../fonts/9ee4fc97-fb39-4152-89cc-a700956beedc-1.ttf") format("truetype"), url("../fonts/9ee4fc97-fb39-4152-89cc-a700956beedc-4.svg#web") format("svg");
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+/* line 17, ../scss/_flexslider.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+/* line 20, ../scss/_flexslider.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 22, ../scss/_flexslider.scss */
+.flexslider .text {
+  position: absolute;
+}
+
+/* line 26, ../scss/_flexslider.scss */
+.flexslider .slides > li {
+  color: white;
+}
+
+/* line 30, ../scss/_flexslider.scss */
+.flexslider .text {
+  font-family: "FordMedium";
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  left: 230px;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 40, ../scss/_flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 41, ../scss/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 42, ../scss/_flexslider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 43, ../scss/_flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 46, ../scss/_flexslider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 47, ../scss/_flexslider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 48, ../scss/_flexslider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 53, ../scss/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 58, ../scss/_flexslider.scss */
+.flexslider {
+  margin: 0 0;
+  background: white url("../images/linen.jpg");
+  background-size: 150%;
+  position: relative;
+  zoom: 1;
+}
+
+/* line 59, ../scss/_flexslider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 60, ../scss/_flexslider.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 61, ../scss/_flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 63, ../scss/_flexslider.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* Direction Nav */
+/* line 67, ../scss/_flexslider.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/*background: url(images/bg_direction_nav.png) no-repeat 0 0;*/
+/* line 69, ../scss/_flexslider.scss */
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+}
+
+/* line 71, ../scss/_flexslider.scss */
+.flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: -36px;
+}
+
+/* line 72, ../scss/_flexslider.scss */
+.flex-direction-nav .flex-prev {
+  left: -36px;
+}
+
+/* line 73, ../scss/_flexslider.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.8;
+  right: 5px;
+}
+
+/* line 74, ../scss/_flexslider.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.8;
+  left: 5px;
+}
+
+/* line 75, ../scss/_flexslider.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 76, ../scss/_flexslider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: .3!important;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* Control Nav */
+/* line 79, ../scss/_flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  text-align: center;
+}
+
+/* line 80, ../scss/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 3px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 81, ../scss/_flexslider.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #2D96CD;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/* line 82, ../scss/_flexslider.scss */
+.flex-control-paging li a:hover {
+  background: #2D96CD;
+  background: rgba(45, 150, 205, 0.8);
+}
+
+/* line 83, ../scss/_flexslider.scss */
+.flex-control-paging li a.flex-active {
+  background: #2D96CD;
+  background: rgba(45, 150, 205, 0.8);
+  cursor: default;
+}
+
+/* line 85, ../scss/_flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 86, ../scss/_flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 87, ../scss/_flexslider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+}
+
+/* line 88, ../scss/_flexslider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+/* line 89, ../scss/_flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+@media screen and (max-width: 860px) {
+  /* line 92, ../scss/_flexslider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0;
+  }
+
+  /* line 93, ../scss/_flexslider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0;
+  }
+}
+/* ---------------------------------------------------------------------
+Original Author: Mark Spooner
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: All Sizes
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+/* line 25, ../scss/_screen.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* line 36, ../scss/_screen.scss */
+body {
+  line-height: 1;
+}
+
+/* line 40, ../scss/_screen.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 44, ../scss/_screen.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 49, ../scss/_screen.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 54, ../scss/_screen.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* line 59, ../scss/_screen.scss */
+:focus {
+  outline: 0;
+}
+
+/* Always show a vertical scrollbar, even when there is no scrolling */
+/* line 64, ../scss/_screen.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* Don't let iOS and WinMobile mobile-optimize text for you */
+/* Turn this rule on for mobile sites or sites using mediaqueries */
+/* line 71, ../scss/_screen.scss */
+html {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+/* ---------------------------------------------------------------------
+ HTML5 Block / Inline Block declarations
+------------------------------------------------------------------------ */
+/* line 81, ../scss/_screen.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 85, ../scss/_screen.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+/* line 95, ../scss/_screen.scss */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 99, ../scss/_screen.scss */
+input[type=search] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: none;
+}
+
+/* line 106, ../scss/_screen.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 112, ../scss/_screen.scss */
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* ---------------------------------------------------------------------
+Font-Face
+------------------------------------------------------------------------ */
+@font-face {
+  font-family: 'FordBlack';
+  src: url("../fonts/FordAntennaWGL-Black.ttf");
+}
+
+@font-face {
+  font-family: 'FordBlackItalic';
+  src: url("../fonts/FordAntennaWGL-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: 'FordBold';
+  src: url("../fonts/FordAntennaWGL-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'FordBoldItalic';
+  src: url("../fonts/FordAntennaWGL-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'FordExtraLight';
+  src: url("../fonts/FordAntennaWGL-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: 'FordExtraLightItalic';
+  src: url("../fonts/FordAntennaWGL-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: 'FordLight';
+  src: url("../fonts/FordAntennaWGL-Light.ttf");
+}
+
+@font-face {
+  font-family: 'FordLightItalic';
+  src: url("../fonts/FordAntennaWGL-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: 'FordMedium';
+  src: url("../fonts/FordAntennaWGL-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'FordMediumItalic';
+  src: url("../fonts/FordAntennaWGL-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: 'FordRegular';
+  src: url("../fonts/FordAntennaWGL-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'FordRegularItalic';
+  src: url("../fonts/FordAntennaWGL-RegularItalic.ttf");
+}
+
+@font-face {
+  font-family: 'FordSemibold';
+  src: url("../fonts/FordAntennaWGL-Semibold.ttf");
+}
+
+@font-face {
+  font-family: 'FordSemiboldItalic';
+  src: url("../fonts/FordAntennaWGL-SemiboldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'FordThin';
+  src: url("../fonts/FordAntennaWGL-Thin.ttf");
+}
+
+@font-face {
+  font-family: 'FordThinItalic';
+  src: url("../fonts/FordAntennaWGL-ThinItalic.ttf");
+}
+
+/* ---------------------------------------------------------------------
+Base Styles
+------------------------------------------------------------------------ */
+/* line 205, ../scss/_screen.scss */
+.wrapper,
+.site-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* line 211, ../scss/_screen.scss */
+.site-wrapper.js-menu {
+  padding-top: 72px;
+}
+
+/* line 215, ../scss/_screen.scss */
+.content {
+  width: 100%;
+}
+
+/* line 219, ../scss/_screen.scss */
+a {
+  color: #2d96cd;
+  text-decoration: none;
+}
+
+/* line 224, ../scss/_screen.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------
+ Grid Styles
+------------------------------------------------------------------------ */
+/* line 231, ../scss/_screen.scss */
+.grid-row {
+  overflow: hidden;
+}
+
+/* line 235, ../scss/_screen.scss */
+.grid-row-section {
+  margin-bottom: 30px;
+}
+
+/* line 239, ../scss/_screen.scss */
+.column {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  max-width: 1400px;
+}
+
+/* line 246, ../scss/_screen.scss */
+.column-alt {
+  position: relative;
+  float: left;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* line 253, ../scss/_screen.scss */
+.row-centered {
+  display: table;
+}
+
+/* line 257, ../scss/_screen.scss */
+.row-centered > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* ---------------------------------------------------------------------
+ Heading Styles
+------------------------------------------------------------------------ */
+/* line 270, ../scss/_screen.scss */
+.h1 {
+  font-family: FordLight, sans-serif;
+  font-size: 42px;
+  color: #2d96cd;
+}
+
+/* line 276, ../scss/_screen.scss */
+.h1-strong {
+  font-family: FordBold, sans-serif;
+}
+
+/* line 280, ../scss/_screen.scss */
+.h2 {
+  font-family: FordLight, sans-serif;
+  font-size: 42px;
+  color: #1a3549;
+}
+
+/* line 286, ../scss/_screen.scss */
+.h2-strong {
+  font-family: FordBold, sans-serif;
+}
+
+/* line 290, ../scss/_screen.scss */
+.h2-alt {
+  color: #ffffff;
+}
+
+/* line 294, ../scss/_screen.scss */
+.h2-alt2 {
+  color: #2d96cd;
+}
+
+/* line 298, ../scss/_screen.scss */
+.h3 {
+  font-size: 38px;
+  color: #425968;
+  text-transform: uppercase;
+  font-family: FordBold, sans-serif;
+  padding-left: 0 !important;
+}
+
+/* line 306, ../scss/_screen.scss */
+.h4 {
+  font-family: FordRegular, sans-serif;
+  color: #425968;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+/* line 313, ../scss/_screen.scss */
+.h4-strong {
+  font-family: FordBold,sans-serif;
+}
+
+/* line 317, ../scss/_screen.scss */
+.body-copy {
+  font-size: 14px;
+  font-family: "FordRegular", sans-serif;
+  color: #425968;
+  line-height: 1.5;
+}
+
+/* line 324, ../scss/_screen.scss */
+.body-copy-alt {
+  color: #ffffff;
+}
+
+/* ---------------------------------------------------------------------
+ Content-Block Styles
+------------------------------------------------------------------------ */
+/* line 336, ../scss/_screen.scss */
+.content-block {
+  padding: 0 6%;
+  margin-bottom: 5%;
+  margin-top: 4%;
+}
+
+/* line 346, ../scss/_screen.scss */
+.content-block-footer {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  text-indent: 0;
+}
+
+/* line 353, ../scss/_screen.scss */
+.content-feature-image {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 358, ../scss/_screen.scss */
+.content-feature-image > img {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ Menu Styles
+------------------------------------------------------------------------ */
+/* line 366, ../scss/_screen.scss */
+.navigation-wrapper {
+  z-index: 10;
+}
+
+/* line 370, ../scss/_screen.scss */
+.navigation-head {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 72px;
+  border-top: none;
+  background: #ffffff;
+}
+
+/* line 382, ../scss/_screen.scss */
+.navigation-logo {
+  display: block;
+  float: left;
+  margin: 18px 0 0 28px;
+  width: 182px;
+  height: 34px;
+}
+
+/* line 390, ../scss/_screen.scss */
+.navigation-menu-button {
+  float: right;
+  padding: 30px 23px 30px 23px;
+  background: #22a1e4;
+  background: -moz-linear-gradient(top, #22a1e4 0%, #1179b0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #22a1e4), color-stop(100%, #1179b0));
+  background: -webkit-linear-gradient(top, #22a1e4 0%, #1179b0 100%);
+  background: -o-linear-gradient(top, #22a1e4 0%, #1179b0 100%);
+  background: -ms-linear-gradient(top, #22a1e4 0%, #1179b0 100%);
+  background: linear-gradient(to bottom, #22a1e4 0%, #1179b0 100%);
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "FordBold", Arial, Helvetica, sans-serif;
+}
+
+/* line 407, ../scss/_screen.scss */
+.nav-model-tag {
+  margin: 26px 25px 0 0;
+  float: right;
+  color: #425968;
+  font-family: FordBlack, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* line 416, ../scss/_screen.scss */
+.navigation-logo > h2 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/navigation-logo-mobile.png") no-repeat 0 0;
+  text-indent: -9999px;
+}
+
+/* line 423, ../scss/_screen.scss */
+.navigation-list {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 250px;
+}
+
+/* line 430, ../scss/_screen.scss */
+.nav-show > li > a {
+  box-shadow: 30px 0 20px -30px rgba(0, 0, 0, 0.4) inset;
+}
+
+/* line 434, ../scss/_screen.scss */
+.nav-sub {
+  background: #18384d;
+}
+
+/* line 438, ../scss/_screen.scss */
+.nav-sub .nav-sub-header + li > a {
+  padding-top: 35px;
+  border-top: 1px solid #115272;
+}
+
+/* line 443, ../scss/_screen.scss */
+.nav-sub .nav-sub-active {
+  background: url("../images/icon-arrow-right.png") no-repeat 10px center;
+  color: #ffffff;
+}
+
+/* line 448, ../scss/_screen.scss */
+.nav-sub-header {
+  padding: 19px 0 17px 16px;
+  background: #21435e;
+  background: -moz-linear-gradient(top, #21435e 0%, #133146 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #21435e), color-stop(100%, #133146));
+  background: -webkit-linear-gradient(top, #21435e 0%, #133146 100%);
+  background: -o-linear-gradient(top, #21435e 0%, #133146 100%);
+  background: -ms-linear-gradient(top, #21435e 0%, #133146 100%);
+  background: linear-gradient(to bottom, #21435e 0%, #133146 100%);
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* line 461, ../scss/_screen.scss */
+.nav-sub-header .heading-model {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* line 466, ../scss/_screen.scss */
+.tag {
+  display: inline-block;
+  padding: 6px 8px;
+  margin: -6px 0 -6px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  vertical-align: middle;
+  font-family: FordBold, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #304c5f;
+}
+
+/* line 481, ../scss/_screen.scss */
+.nav-sub > li > .nav-button-build {
+  margin-top: 30px;
+  padding: 16px 0 16px 24px;
+  background: #35aeed;
+  background: -moz-linear-gradient(top, #35aeed 0%, #2d96cd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #35aeed), color-stop(100%, #2d96cd));
+  background: -webkit-linear-gradient(top, #35aeed 0%, #2d96cd 100%);
+  background: -o-linear-gradient(top, #35aeed 0%, #2d96cd 100%);
+  background: -ms-linear-gradient(top, #35aeed 0%, #2d96cd 100%);
+  background: linear-gradient(to bottom, #35aeed 0%, #2d96cd 100%);
+  color: #ffffff;
+  font-family: FordBold, sans-serif;
+  font-size: 16px;
+}
+
+/* line 496, ../scss/_screen.scss */
+.icon-build {
+  display: inline-block;
+  width: 26px;
+  height: 27px;
+  margin-right: 11px;
+  vertical-align: middle;
+  background: url("../images/icon-build-lg.png") no-repeat;
+}
+
+/* line 505, ../scss/_screen.scss */
+.footer {
+  background: #252525;
+  position: relative;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+/* line 512, ../scss/_screen.scss */
+.nav-sub.nav-sub-models > li > a {
+  background: url("../images/arrow-thin.png") no-repeat 91% 51% white;
+  border-top: 1px solid #cecece;
+  padding: 15px 0 15px 12px;
+  box-shadow: 30px 0 20px -30px rgba(0, 0, 0, 0.4) inset;
+}
+
+/* line 519, ../scss/_screen.scss */
+.nav-model-img {
+  width: 90px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 525, ../scss/_screen.scss */
+.nav-model-body {
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+/* line 530, ../scss/_screen.scss */
+.nav-model-name {
+  font-size: 12px;
+  font-family: FordBlack, sans-serif;
+  color: #2d96cd;
+  line-height: 1.5;
+}
+
+/* line 537, ../scss/_screen.scss */
+.nav-model-price {
+  font-size: 20px;
+  font-family: FordBold, sans-serif;
+  color: #425968;
+}
+
+/* line 543, ../scss/_screen.scss */
+.nav-model-note {
+  font-family: FordBold, sans-serif;
+  color: #425968;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------------------------------
+ Media Object Styles
+------------------------------------------------------------------------ */
+/* line 553, ../scss/_screen.scss */
+.media-object {
+  overflow: hidden;
+}
+
+/* line 557, ../scss/_screen.scss */
+.media-media {
+  float: none;
+  margin-right: 42px;
+}
+
+/* line 562, ../scss/_screen.scss */
+.media-content {
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------
+ List Styles
+------------------------------------------------------------------------ */
+/* line 570, ../scss/_screen.scss */
+.h-list > li {
+  float: left;
+}
+
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+/* line 578, ../scss/_screen.scss */
+.blocks {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+/* line 583, ../scss/_screen.scss */
+.blocks > * {
+  margin-bottom: 30px;
+}
+
+/* line 587, ../scss/_screen.scss */
+.block-stacked-img {
+  margin-bottom: 20px;
+}
+
+/* line 591, ../scss/_screen.scss */
+.block-stacked-img > img {
+  width: 100%;
+}
+
+/* line 595, ../scss/_screen.scss */
+.block-stacked-header {
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Article Browser
+------------------------------------------------------------------------ */
+/* line 603, ../scss/_screen.scss */
+.social {
+  background: #ffffff;
+  font-family: "FordLight", sans-serif;
+  color: #425968;
+  padding: 0 20px;
+}
+
+/* line 610, ../scss/_screen.scss */
+.container-social-stories {
+  background: #F1F1F1;
+  background: -moz-linear-gradient(top, #f1f1f1 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #f1f1f1 0%, white 100%);
+  background: -o-linear-gradient(top, #f1f1f1 0%, white 100%);
+  background: -ms-linear-gradient(top, #f1f1f1 0%, white 100%);
+  background: linear-gradient(to bottom, #f1f1f1 0%, #ffffff 100%);
+}
+
+/* line 620, ../scss/_screen.scss */
+.social-stories {
+  overflow: hidden;
+  width: 100%;
+  height: 401px;
+}
+
+/* line 626, ../scss/_screen.scss */
+.social-stories .story {
+  display: block;
+  overflow: hidden;
+}
+
+/* line 631, ../scss/_screen.scss */
+.story > .media-media {
+  position: relative;
+}
+
+/* line 635, ../scss/_screen.scss */
+.story .media-content {
+  margin: 0 2% 0 6%;
+}
+
+/* line 639, ../scss/_screen.scss */
+.story .h4 {
+  margin: 20px 0;
+}
+
+/* line 643, ../scss/_screen.scss */
+.date-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-family: FordRegular, sans-serif;
+  background: #2d96cd;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 654, ../scss/_screen.scss */
+.date-block-day {
+  font-family: FordBold, sans-serif;
+}
+
+/* line 658, ../scss/_screen.scss */
+.media-sharing {
+  margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------------
+ Carousel Styles
+------------------------------------------------------------------------ */
+/* line 665, ../scss/_screen.scss */
+.js-carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 670, ../scss/_screen.scss */
+.js-carousel > li {
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+
+/* line 676, ../scss/_screen.scss */
+.slide-lrg {
+  float: right;
+  overflow: hidden;
+}
+
+/* line 681, ../scss/_screen.scss */
+.slide-lrg > img {
+  left: -20%;
+  width: 150%;
+  position: relative;
+}
+
+/* line 687, ../scss/_screen.scss */
+.slide-inner {
+  position: relative;
+}
+
+/* line 691, ../scss/_screen.scss */
+.carousel-content {
+  position: absolute;
+  width: 94%;
+  top: 6%;
+  left: 3%;
+  right: 3%;
+  color: #ffffff;
+}
+
+/* line 700, ../scss/_screen.scss */
+.carousel-content-alt {
+  width: 100%;
+}
+
+/* line 704, ../scss/_screen.scss */
+.carousel-header {
+  font-size: 40px;
+  color: #ffffff;
+  font-family: FordBold, sans-serif;
+  text-align: left;
+}
+
+/* line 711, ../scss/_screen.scss */
+.carousel-header-alt {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* line 717, ../scss/_screen.scss */
+.carousel-header-pre {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: FordBold, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 724, ../scss/_screen.scss */
+.carousel-sub-header {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 26px;
+  color: #ffffff;
+  font-family: FordRegular, sans-serif;
+  text-align: left;
+}
+
+/* line 733, ../scss/_screen.scss */
+.carousel-sub-header span {
+  font-family: FordBold, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 738, ../scss/_screen.scss */
+.carousel-content-body {
+  margin: 15px 0;
+  font-family: FordRegular, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* line 745, ../scss/_screen.scss */
+.carousel-hide-content {
+  display: none;
+}
+
+/* line 749, ../scss/_screen.scss */
+.header-sub-content {
+  display: none;
+}
+
+/* line 753, ../scss/_screen.scss */
+.carousel-text-alt {
+  font-family: FordLight, sans-serif;
+}
+
+/* line 757, ../scss/_screen.scss */
+.slide-thumbs {
+  width: 100%;
+  position: absolute;
+  bottom: 8%;
+  text-align: center;
+}
+
+/* line 764, ../scss/_screen.scss */
+.slide-thumbs > li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 28%;
+  margin-right: 2%;
+  border: 5px solid white;
+}
+
+/* line 774, ../scss/_screen.scss */
+.slide-thumbs > li:first-child {
+  margin-left: 2%;
+}
+
+/* line 778, ../scss/_screen.scss */
+.slide-thumbs > li:hover {
+  border-color: #30a1db;
+}
+
+/* line 782, ../scss/_screen.scss */
+.slide-thumbs > li > img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+/* line 788, ../scss/_screen.scss */
+.slide-thumbs > li:hover > img {
+  outline: 1px solid white;
+}
+
+/* line 792, ../scss/_screen.scss */
+.transparent-pagination .pagination {
+  position: absolute;
+  overflow: hidden;
+  bottom: 6%;
+  left: 48%;
+}
+
+/* line 799, ../scss/_screen.scss */
+.solid-pagination .pagination {
+  margin-top: 4%;
+  margin-left: 48%;
+}
+
+/* line 804, ../scss/_screen.scss */
+.container-social-stories.solid-pagination .pagination {
+  margin-top: 4%;
+  margin-left: 38%;
+}
+
+/* line 809, ../scss/_screen.scss */
+.pagination-vehicle-info .pagination {
+  bottom: 22%;
+}
+
+/* line 813, ../scss/_screen.scss */
+.pagination > li {
+  float: left;
+}
+
+/* line 817, ../scss/_screen.scss */
+.pagination > li + li {
+  margin-left: 6px;
+}
+
+/* line 821, ../scss/_screen.scss */
+.pagination > li a {
+  display: block;
+  width: 11px;
+  height: 11px;
+  text-indent: -999999px;
+}
+
+/* line 828, ../scss/_screen.scss */
+.transparent-pagination .pagination > li a {
+  background: url("../images/icn-pagination.png") no-repeat 0 0;
+}
+
+/* line 832, ../scss/_screen.scss */
+.transparent-pagination .pagination > li a.active {
+  background: url("../images/icn-pagination.png") no-repeat 0 -13px;
+}
+
+/* line 836, ../scss/_screen.scss */
+.solid-pagination .pagination > li a {
+  background: url("../images/icn-solid-pagination.png") no-repeat 0 0;
+}
+
+/* line 840, ../scss/_screen.scss */
+.solid-pagination .pagination > li a.active {
+  background: url("../images/icn-solid-pagination.png") no-repeat 0 -13px;
+}
+
+/* line 844, ../scss/_screen.scss */
+.slide-vid {
+  position: relative;
+}
+
+/* line 848, ../scss/_screen.scss */
+.btn-cta {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  background: url("../images/cta-arrow.png") no-repeat;
+}
+
+/* line 856, ../scss/_screen.scss */
+.videos-title {
+  margin-bottom: 40px;
+}
+
+/* line 860, ../scss/_screen.scss */
+.column:hover .carousel-control {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 865, ../scss/_screen.scss */
+.column-alt:hover .carousel-control {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 870, ../scss/_screen.scss */
+.carousel-control {
+  visibility: hidden;
+  /* display block doenst work for transitions */
+  opacity: 0;
+  position: absolute;
+  width: 49px;
+  height: 103px;
+  text-indent: -999999px;
+  z-index: 99999;
+}
+
+/* line 880, ../scss/_screen.scss */
+.carousel-control.left {
+  background: url("../images/carousel-hover-arrow-prev.png") no-repeat;
+}
+
+/* line 884, ../scss/_screen.scss */
+.carousel-control.right {
+  right: 0;
+  background: url("../images/carousel-hover-arrow-next.png") no-repeat;
+}
+
+/* line 889, ../scss/_screen.scss */
+.column-alt .carousel-control {
+  top: 25%;
+}
+
+/* line 893, ../scss/_screen.scss */
+.column-alt .carousel-control.left {
+  left: 0;
+}
+
+/* line 897, ../scss/_screen.scss */
+.column-alt .carousel-control.right {
+  right: 0;
+}
+
+/* line 901, ../scss/_screen.scss */
+.column .carousel-control {
+  top: 35%;
+}
+
+/* line 905, ../scss/_screen.scss */
+.column .carousel-control.left {
+  left: 0;
+}
+
+/* line 909, ../scss/_screen.scss */
+.column .carousel-control.right {
+  right: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Billboard
+------------------------------------------------------------------------ */
+/* line 917, ../scss/_screen.scss */
+.vehicle-info {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin-top: -108px;
+  font-family: FordRegular, sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 928, ../scss/_screen.scss */
+.figure {
+  font-family: FordBold, sans-serif;
+}
+
+/* line 932, ../scss/_screen.scss */
+.vehicle-info-container {
+  display: inline-block;
+  margin: 16px 0 16px 2%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* line 939, ../scss/_screen.scss */
+.vehicle-info-container:first-child {
+  margin-left: 0;
+}
+
+/* line 947, ../scss/_screen.scss */
+.vehicle-info-major {
+  font-size: 26px;
+  padding-right: 3px;
+}
+
+/* line 952, ../scss/_screen.scss */
+.vehicle-info-minor {
+  display: block;
+  font-size: 16px;
+}
+
+/* line 957, ../scss/_screen.scss */
+.vehicle-info-detail {
+  font-size: 10px;
+}
+
+/* line 961, ../scss/_screen.scss */
+.vehicle-info-detail-compact {
+  width: 50px;
+  line-height: 1.4;
+}
+
+/* line 966, ../scss/_screen.scss */
+.button-info {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url("../images/button-info.png") no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  text-indent: -9999px;
+}
+
+/* line 977, ../scss/_screen.scss */
+.rating-stars-sub {
+  margin-top: 8px;
+  font-size: 12px;
+  font-family: FordBold, sans-serif;
+}
+
+/* ---------------------------------------------------------------------
+ Button Styles
+------------------------------------------------------------------------ */
+/* line 987, ../scss/_screen.scss */
+.btn-primary {
+  border-radius: 7px 7px 7px 7px;
+  color: #FFFFFF;
+  display: block;
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: center;
+  background: #35aeed;
+  box-shadow: 0 -95px 110px -150px black inset;
+  /*    -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -ms-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;*/
+}
+
+/* line 1003, ../scss/_screen.scss */
+.btn-primary > span {
+  font-family: FordBold,sans-serif;
+}
+
+/* line 1007, ../scss/_screen.scss */
+.btn-primary:hover {
+  text-decoration: none;
+  box-shadow: 0 -125px 110px -150px black inset;
+}
+
+/* line 1012, ../scss/_screen.scss */
+.background-secondary {
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(bottom, #21435d 0%, #173042 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom, #21435d 0%, #173042 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(bottom, #21435d 0%, #173042 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #21435d), color-stop(1, #173042));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, #21435d 0%, #173042 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to top, #21435d 0%, #173042 100%);
+}
+
+/* line 1032, ../scss/_screen.scss */
+.btn-video {
+  position: absolute;
+  top: 34%;
+  left: 39%;
+}
+
+/* line 1038, ../scss/_screen.scss */
+.btn-additional {
+  display: inline-block;
+  height: 45px;
+  width: 100%;
+  border-radius: 7px 7px 7px 7px;
+  line-height: 45px;
+  color: #b4b4b4;
+  background: #232323;
+  border: 1px solid #464646;
+  font-family: FordRegular, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  /*    -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -ms-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;*/
+}
+
+/* ---------------------------------------------------------------------
+ New Featured
+------------------------------------------------------------------------ */
+/* line 1061, ../scss/_screen.scss */
+.vid-carousel-window {
+  position: relative;
+}
+
+/* line 1065, ../scss/_screen.scss */
+.new-featured {
+  margin: 0px 0 15px 0;
+  padding: 53px 0 30px 0;
+}
+
+/* line 1070, ../scss/_screen.scss */
+.new-featured .carousel-control {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 35px;
+  text-indent: -999999px;
+  z-index: 100;
+}
+
+/* line 1079, ../scss/_screen.scss */
+.new-featured .column-alt .carousel-control.left {
+  top: 90px;
+  left: 0;
+  background: url("../images/media-arrow-left.png") no-repeat;
+}
+
+/* line 1085, ../scss/_screen.scss */
+.new-featured .column-alt .carousel-control.right {
+  top: 90px;
+  right: 0;
+  background: url("../images/media-arrow-right.png") no-repeat;
+}
+
+/* ---------------------------------------------------------------------
+ Gallery
+------------------------------------------------------------------------ */
+/* line 1095, ../scss/_screen.scss */
+.feature-gallery {
+  background: url("../images/Gallery/feature-gallery.jpg") no-repeat center center;
+  background-size: cover;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+/* line 1103, ../scss/_screen.scss */
+.blocks-gallery {
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+/* line 1108, ../scss/_screen.scss */
+.blocks-gallery > * {
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 1114, ../scss/_screen.scss */
+.gallery-link {
+  display: inline-block;
+  text-align: center;
+  max-width: 368px;
+  color: #ffffff;
+}
+
+/* line 1121, ../scss/_screen.scss */
+.gallery-link:hover {
+  text-decoration: none;
+}
+
+/* line 1125, ../scss/_screen.scss */
+.gallery-title {
+  font-size: 26px;
+  font-family: FordBold, sans-serif;
+}
+
+/* line 1130, ../scss/_screen.scss */
+.gallery-model {
+  font-family: FordLight, sans-serif;
+}
+
+/* line 1134, ../scss/_screen.scss */
+.gallery-link > img {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ List/single carousel
+------------------------------------------------------------------------ */
+/* line 1142, ../scss/_screen.scss */
+.view-by {
+  font-size: 14px;
+  font-family: FordRegular, sans-serif;
+  color: #91a4b1;
+  display: table;
+  float: right;
+  margin-right: 30px;
+}
+
+/* line 1151, ../scss/_screen.scss */
+.view-by > * {
+  display: table-cell;
+}
+
+/* line 1155, ../scss/_screen.scss */
+.view-by-label {
+  padding-right: 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1161, ../scss/_screen.scss */
+.view-by-icons {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1166, ../scss/_screen.scss */
+.view-icon {
+  text-indent: -9999px;
+  width: 23px;
+  height: 21px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* line 1174, ../scss/_screen.scss */
+.view-icon-single {
+  background: url("../images/view-by.png") no-repeat 0 -21px;
+}
+
+/* line 1175, ../scss/_screen.scss */
+.view-icon-single.active {
+  background: url("../images/view-by.png") no-repeat 0 0;
+}
+
+/* line 1176, ../scss/_screen.scss */
+.view-icon-multiple {
+  background: url("../images/view-by.png") no-repeat 0 -63px;
+}
+
+/* line 1177, ../scss/_screen.scss */
+.view-icon-multiple.active {
+  background: url("../images/view-by.png") no-repeat 0 -42px;
+}
+
+/* line 1179, ../scss/_screen.scss */
+.carousel-multi {
+  margin: 50px 0;
+  overflow: hidden;
+}
+
+/* line 1184, ../scss/_screen.scss */
+.vehicle-option {
+  font-size: 14px;
+  font-family: FordRegular, sans-serif;
+  color: #425968;
+  float: left;
+  width: 215px;
+  margin-left: 5%;
+  overflow: hidden;
+}
+
+/* line 1194, ../scss/_screen.scss */
+.option-img {
+  margin-bottom: 20px;
+}
+
+/* line 1198, ../scss/_screen.scss */
+.option-img > * {
+  width: 100%;
+  display: block;
+}
+
+/* line 1203, ../scss/_screen.scss */
+.option-img img {
+  width: 100%;
+  display: block;
+}
+
+/* line 1208, ../scss/_screen.scss */
+.option-header {
+  margin-bottom: 5px;
+  min-height: 55px;
+}
+
+/* line 1213, ../scss/_screen.scss */
+.option-header-heading {
+  font-family: FordBold, sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* line 1219, ../scss/_screen.scss */
+.option-body {
+  line-height: 1.5;
+  padding-top: 15px;
+  border-top: 1px solid #dddddd;
+}
+
+/* line 1225, ../scss/_screen.scss */
+.em {
+  font-family: FordBold, sans-serif;
+}
+
+/* line 1229, ../scss/_screen.scss */
+.vehicle-option-large {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* line 1234, ../scss/_screen.scss */
+.vehicle-option-large .option-header-heading {
+  font-size: 22px;
+}
+
+/* line 1238, ../scss/_screen.scss */
+.vehicle-option-large .option-img {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* line 1244, ../scss/_screen.scss */
+.vehicle-option-large .option-img > *,
+.vehicle-option-large .option-img img {
+  width: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* line 1250, ../scss/_screen.scss */
+.vehicle-option-large .option-header {
+  text-align: right;
+  margin-right: 1.5%;
+  width: 48.5%;
+  float: left;
+}
+
+/* line 1257, ../scss/_screen.scss */
+.vehicle-option-large > .option-body {
+  border: 0 none;
+  float: right;
+  width: 48.5%;
+  margin-left: 1.5%;
+  padding-top: 0;
+}
+
+/* ---------------------------------------------------------------------
+Carousel Tabs
+------------------------------------------------------------------------ */
+/* line 1269, ../scss/_screen.scss */
+.tabs-container {
+  height: 450px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 300px;
+}
+
+/* line 1276, ../scss/_screen.scss */
+.tabs-container > .tab-body {
+  height: 450px;
+}
+
+/* line 1280, ../scss/_screen.scss */
+.vehicle-option {
+  width: 156px;
+}
+
+/* line 1284, ../scss/_screen.scss */
+.vehicle-option img {
+  max-width: 100%;
+}
+
+/* line 1288, ../scss/_screen.scss */
+.vehicle-option.vehicle-option-large {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+Customize Section
+------------------------------------------------------------------------ */
+/* line 1296, ../scss/_screen.scss */
+.feature-customize {
+  height: 684px;
+  background: url("../images/nameplate/feature-lot.jpg") no-repeat center center;
+  color: #ffffff;
+  font-family: FordRegular, sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+/* line 1305, ../scss/_screen.scss */
+.customize-inner {
+  padding: 0 30px;
+}
+
+/* line 1309, ../scss/_screen.scss */
+.customize-header {
+  margin-top: 50px;
+}
+
+/* line 1313, ../scss/_screen.scss */
+.customize-tag {
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: FordLight, sans-serif;
+}
+
+/* line 1320, ../scss/_screen.scss */
+.customize-heading {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: FordBold, sans-serif;
+}
+
+/* line 1326, ../scss/_screen.scss */
+.customize-sample {
+  float: right;
+  margin-right: 5%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* line 1333, ../scss/_screen.scss */
+.customize-sample-img {
+  float: right;
+  width: 48px;
+  height: 48px;
+  background: url("../images/icon-audio-lg.png") no-repeat;
+}
+
+/* line 1340, ../scss/_screen.scss */
+.customize-sample-body {
+  float: right;
+  padding: 7px 10px;
+  text-align: right;
+}
+
+/* line 1346, ../scss/_screen.scss */
+.customize-sample-header {
+  font-family: FordBoldItalic, sans-serif;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+/* line 1352, ../scss/_screen.scss */
+.icon-download {
+  height: 13px;
+  width: 13px;
+  background: url("../images/icon-download.png") no-repeat;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+/* line 1360, ../scss/_screen.scss */
+.customize-sample-sub {
+  font-family: FordMedium, sans-serif;
+  font-size: 14px;
+}
+
+/* line 1365, ../scss/_screen.scss */
+.customize-footer {
+  height: 73px;
+  width: 100%;
+  background: url("../images/customize-footer.png") repeat-x;
+  position: absolute;
+  bottom: 25px;
+  text-align: center;
+}
+
+/* line 1374, ../scss/_screen.scss */
+.customize-footer > .column-alt {
+  padding-top: 10px;
+}
+
+/* line 1378, ../scss/_screen.scss */
+.btn-start-customizing {
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+Reviews and Ratings
+------------------------------------------------------------------------ */
+/* line 1386, ../scss/_screen.scss */
+.social-header {
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+/* line 1391, ../scss/_screen.scss */
+.heading-model {
+  font-family: FordBold, sans-serif;
+  font-size: 18px;
+  color: #425968;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+
+/* line 1400, ../scss/_screen.scss */
+.social-header-heading {
+  margin-bottom: 18px;
+}
+
+/* line 1404, ../scss/_screen.scss */
+.social-header-info {
+  margin-bottom: 40px;
+}
+
+/* line 1408, ../scss/_screen.scss */
+.overall-ratings {
+  font-family: FordBold, sans-serif;
+  font-size: 14px;
+  margin: 14px 0 0 0;
+  float: left;
+}
+
+/* line 1415, ../scss/_screen.scss */
+.ratings-container {
+  float: left;
+}
+
+/* line 1419, ../scss/_screen.scss */
+.rating-box {
+  display: none;
+}
+
+/* line 1423, ../scss/_screen.scss */
+.rating-rating {
+  font-size: 28px;
+  font-family: FordBold, sans-serif;
+  display: block;
+}
+
+/* line 1429, ../scss/_screen.scss */
+.rating-total {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: FordMedium, sans-serif;
+}
+
+/* line 1436, ../scss/_screen.scss */
+.rating-stars {
+  background: url("../images/stars-medium.png") no-repeat;
+  width: 144px;
+  height: 25px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* line 1444, ../scss/_screen.scss */
+.rating-stars.rating-0 {
+  background-position: 0 -125px;
+}
+
+/* line 1445, ../scss/_screen.scss */
+.rating-stars.rating-1 {
+  background-position: 0 -100px;
+}
+
+/* line 1446, ../scss/_screen.scss */
+.rating-stars.rating-2 {
+  background-position: 0 -75px;
+}
+
+/* line 1447, ../scss/_screen.scss */
+.rating-stars.rating-3 {
+  background-position: 0 -50px;
+}
+
+/* line 1448, ../scss/_screen.scss */
+.rating-stars.rating-4 {
+  background-position: 0 -25px;
+}
+
+/* line 1449, ../scss/_screen.scss */
+.rating-stars.rating-5 {
+  background-position: 0 0;
+}
+
+/* line 1451, ../scss/_screen.scss */
+.rating-stars-feature {
+  background-image: url("../images/stars-large.png");
+  width: 220px;
+  height: 36px;
+}
+
+/* line 1457, ../scss/_screen.scss */
+.rating-stars-feature.rating-0 {
+  background-position: 0 -180px;
+}
+
+/* line 1458, ../scss/_screen.scss */
+.rating-stars-feature.rating-1 {
+  background-position: 0 -144px;
+}
+
+/* line 1459, ../scss/_screen.scss */
+.rating-stars-feature.rating-2 {
+  background-position: 0 -108px;
+}
+
+/* line 1460, ../scss/_screen.scss */
+.rating-stars-feature.rating-3 {
+  background-position: 0 -72px;
+}
+
+/* line 1461, ../scss/_screen.scss */
+.rating-stars-feature.rating-4 {
+  background-position: 0 -36px;
+}
+
+/* line 1462, ../scss/_screen.scss */
+.rating-stars-feature.rating-5 {
+  background-position: 0 0;
+}
+
+/* line 1464, ../scss/_screen.scss */
+.rating-feature-container {
+  padding-left: 20px;
+}
+
+/* line 1468, ../scss/_screen.scss */
+.social-recommend {
+  line-height: 1.5;
+}
+
+/* line 1472, ../scss/_screen.scss */
+.social-recommend > .highlight {
+  color: #2d96cd;
+  font-family: FordBold, sans-serif;
+}
+
+/* line 1477, ../scss/_screen.scss */
+.social-divider {
+  border-top: 1px solid #cccccc;
+  margin: 50px 0 45px;
+  color: #999999;
+  font-family: FordBold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 1487, ../scss/_screen.scss */
+.social-divider > span {
+  display: inline-block;
+  padding: 0 15px;
+  margin-top: -8px;
+  background: #ffffff;
+  position: relative;
+  top: -8px;
+}
+
+/* line 1496, ../scss/_screen.scss */
+.review {
+  padding: 30px;
+  background: #f4f4f4;
+  overflow: hidden;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+/* line 1504, ../scss/_screen.scss */
+.review-hidden {
+  display: none;
+}
+
+/* line 1508, ../scss/_screen.scss */
+.review-img {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+/* line 1513, ../scss/_screen.scss */
+.review-header {
+  overflow: hidden;
+}
+
+/* line 1517, ../scss/_screen.scss */
+.heading-review {
+  font-size: 18px;
+  font-family: FordBold, sans-serif;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+/* line 1524, ../scss/_screen.scss */
+.review-byline {
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+/* line 1529, ../scss/_screen.scss */
+.review-rating {
+  color: #2d96cd;
+  font-size: 14px;
+}
+
+/* line 1534, ../scss/_screen.scss */
+.review-rating-text {
+  padding-left: 15px;
+}
+
+/* line 1538, ../scss/_screen.scss */
+.review-rating-text > .val {
+  font-family: FordBold, sans-serif;
+}
+
+/* line 1542, ../scss/_screen.scss */
+.review-body {
+  color: #44596a;
+  line-height: 1.5;
+  margin-top: 40px;
+}
+
+/* line 1548, ../scss/_screen.scss */
+.review-body > p {
+  margin-bottom: 10px;
+}
+
+/* line 1552, ../scss/_screen.scss */
+.review-footer {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #7d7d7d;
+}
+
+/* line 1558, ../scss/_screen.scss */
+.review-note {
+  margin-bottom: 8px;
+}
+
+/* line 1562, ../scss/_screen.scss */
+.review-question {
+  color: #000000;
+  font-family: FordBold, sans-serif;
+}
+
+/* line 1567, ../scss/_screen.scss */
+.social-review-footer {
+  text-align: center;
+  clear: both;
+  padding-left: 40px;
+  margin-bottom: 50px;
+}
+
+/* line 1574, ../scss/_screen.scss */
+.social-review-footer .btn-primary {
+  float: none;
+  display: inline-block;
+  font-family: FordBold, sans-serif;
+  padding: 15px 30px;
+}
+
+/* ---------------------------------------------------------------------
+Models Block
+------------------------------------------------------------------------ */
+/* line 1585, ../scss/_screen.scss */
+.models-find {
+  overflow: hidden;
+  font-family: FordRegular, sans-serif;
+  padding: 40px 2.5%;
+}
+
+/* line 1591, ../scss/_screen.scss */
+.models-compare-container {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* line 1596, ../scss/_screen.scss */
+.models-compare-media {
+  margin-bottom: 30px;
+}
+
+/* line 1600, ../scss/_screen.scss */
+.models-compare-heading {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+/* line 1606, ../scss/_screen.scss */
+.models-compare-heading > .model {
+  font-family: FordBold, sans-serif;
+}
+
+/* line 1610, ../scss/_screen.scss */
+.models-compare-img {
+  max-width: 100%;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+/* line 1616, ../scss/_screen.scss */
+.models-compare-img > img {
+  width: 100%;
+}
+
+/* line 1620, ../scss/_screen.scss */
+.models-actions-container {
+  overflow: hidden;
+  /*text-align: center;*/
+}
+
+/* line 1625, ../scss/_screen.scss */
+.models-actions-container img {
+  display: block;
+  margin: 0px auto 15px auto;
+}
+
+/* line 1630, ../scss/_screen.scss */
+.models-actions {
+  width: 33.3%;
+  float: left;
+  padding: 40px 8%;
+  text-align: center;
+  font-family: FordBold, sans-serif;
+  line-height: 1.25;
+}
+
+/* line 1639, ../scss/_screen.scss */
+.models-actions:nth-child(1) {
+  border-right: 1px solid #e6e6e6;
+}
+
+/* line 1643, ../scss/_screen.scss */
+.unit {
+  font-size: .65em;
+  vertical-align: top;
+}
+
+/* line 1648, ../scss/_screen.scss */
+.footnote {
+  font-size: .65em;
+  vertical-align: top;
+}
+
+/* line 1653, ../scss/_screen.scss */
+.models-compare-body {
+  color: #425968;
+  margin-bottom: 20px;
+}
+
+/* line 1658, ../scss/_screen.scss */
+.models-other {
+  overflow: hidden;
+}
+
+/* line 1662, ../scss/_screen.scss */
+.models-other-block {
+  margin-bottom: 30px;
+}
+
+/* line 1666, ../scss/_screen.scss */
+.models-other-header {
+  margin-bottom: 10px;
+}
+
+/* line 1670, ../scss/_screen.scss */
+.models-other-header > a {
+  display: block;
+}
+
+/* line 1674, ../scss/_screen.scss */
+.models-other-header > a > img {
+  width: 100%;
+}
+
+/* line 1678, ../scss/_screen.scss */
+.models-compare-link {
+  font-family: FordRegular, sans-serif;
+  font-size: 16px;
+  background: url("../images/icon-tri-right.png") no-repeat center right;
+  padding-right: 10px;
+}
+
+/* line 1685, ../scss/_screen.scss */
+.models-other-body {
+  font-size: 18px;
+  color: #666666;
+}
+
+/* line 1690, ../scss/_screen.scss */
+.models-other-model {
+  color: #2d96cd;
+  font-family: FordBold, sans-serif;
+  font-size: 24px;
+  margin: 5px 0 0;
+  display: inline-block;
+}
+
+/* line 1698, ../scss/_screen.scss */
+.model-year {
+  font-family: FordLight, sans-serif;
+}
+
+/* ---------------------------------------------------------------------
+Maps
+------------------------------------------------------------------------ */
+/* line 1706, ../scss/_screen.scss */
+.map-object {
+  font-family: FordRegular, sans-serif;
+}
+
+/* line 1710, ../scss/_screen.scss */
+.address-dealer-directions {
+  font-family: FordRegular, sans-serif;
+  font-size: 14px;
+  background: url("../images/icon-tri-right.png") no-repeat center right;
+  padding-right: 10px;
+}
+
+/* line 1717, ../scss/_screen.scss */
+.address-tag {
+  background: url("../images/map-tag.png") no-repeat 0 0;
+  height: 32px;
+  width: 33px;
+  color: #ffffff;
+  font-family: FordBold, sans-serif;
+  font-size: 13px;
+  padding: 10px 0 0 10px;
+  float: left;
+}
+
+/* line 1728, ../scss/_screen.scss */
+.address-tag-mobile-a {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  cursor: pointer;
+}
+
+/* line 1735, ../scss/_screen.scss */
+.address-tag-mobile-b {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  cursor: pointer;
+}
+
+/* line 1742, ../scss/_screen.scss */
+.mobile-address-popup {
+  display: none;
+  width: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  background: #FFFFFF;
+}
+
+/* line 1752, ../scss/_screen.scss */
+.map-count {
+  font-size: 77px;
+  font-family: FordBold, sans-serif;
+  float: left;
+  color: #1a3549;
+  line-height: .9;
+  margin-right: 20px;
+}
+
+/* line 1761, ../scss/_screen.scss */
+.map-header {
+  margin: 12px 0 66px 0;
+}
+
+/* line 1765, ../scss/_screen.scss */
+.map-find {
+  margin-top: 5px;
+}
+
+/* line 1769, ../scss/_screen.scss */
+.map-content {
+  position: relative;
+}
+
+/* line 1773, ../scss/_screen.scss */
+.map-content .btn-primary {
+  font-family: FordBold, sans-serif;
+  font-size: 16px;
+}
+
+/* line 1778, ../scss/_screen.scss */
+.icon-location {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../images/icon-location-white.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: -4px 5px 0 0;
+}
+
+/* line 1787, ../scss/_screen.scss */
+.map-content > img {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ Footer Styles
+------------------------------------------------------------------------ */
+/* line 1795, ../scss/_screen.scss */
+.tagline > a {
+  background: url("../images/footer-logo.png") no-repeat 0 0;
+  display: block;
+  text-indent: -9999px;
+  height: 30px;
+  width: 158px;
+}
+
+/* line 1804, ../scss/_screen.scss */
+.footer-info > li > a,
+.copyright {
+  font-family: FordRegular, sans-serif;
+  font-size: 11px;
+  color: #999999;
+}
+
+/* line 1810, ../scss/_screen.scss */
+.footer-share {
+  overflow: hidden;
+  margin: 22px 0 35px 5% !important;
+}
+
+/* line 1817, ../scss/_screen.scss */
+.footer-share > ul > li {
+  float: left;
+}
+
+/* line 1821, ../scss/_screen.scss */
+.footer-nav > li {
+  border-bottom: 1px solid #3e3e3e;
+}
+
+/* line 1825, ../scss/_screen.scss */
+.footer-nav > li > ul {
+  display: none;
+  margin-bottom: 20px;
+}
+
+/* line 1830, ../scss/_screen.scss */
+.footer-share a {
+  display: block;
+  text-indent: -999999px;
+}
+
+/* line 1835, ../scss/_screen.scss */
+.footer-share > ul > li + li {
+  margin-left: 12px;
+}
+
+/* line 1839, ../scss/_screen.scss */
+.footer-nav > li > a {
+  position: relative;
+}
+
+/* line 1843, ../scss/_screen.scss */
+.footer-share .facebook {
+  width: 12px;
+  height: 25px;
+  margin-top: 3px;
+  background: url("../images/sprite-footer-social.png") no-repeat 0 0;
+}
+
+/* line 1850, ../scss/_screen.scss */
+.footer-share .twitter {
+  width: 26px;
+  height: 22px;
+  margin-top: 6px;
+  background: url("../images/sprite-footer-social.png") no-repeat -31px -3px;
+}
+
+/* line 1857, ../scss/_screen.scss */
+.footer-share .youtube {
+  width: 24px;
+  height: 28px;
+  background: url("../images/sprite-footer-social.png") no-repeat -71px 0;
+}
+
+/* line 1863, ../scss/_screen.scss */
+.footer-additional {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/* line 1868, ../scss/_screen.scss */
+.footer-menu-arrow {
+  display: block;
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  right: 5%;
+  top: 45%;
+}
+
+/* line 1877, ../scss/_screen.scss */
+.arrow-down {
+  background: url("../images/footer-arrow-down.png") no-repeat;
+}
+
+/* line 1881, ../scss/_screen.scss */
+.arrow-up {
+  background: url("../images/footer-arrow-up.png") no-repeat;
+}
+
+/* line 1885, ../scss/_screen.scss */
+.gallery-nav {
+  margin: 50px 0 40px 0;
+}
+
+/* line 1889, ../scss/_screen.scss */
+.gallery-nav a {
+  font-size: 16px;
+  float: left;
+  display: inline-block;
+  margin-right: 65px;
+  position: relative;
+  font-family: Antenna !important;
+}
+
+/* line 1898, ../scss/_screen.scss */
+.gallery-nav li:last-child a {
+  margin-right: 0;
+}
+
+/* line 1902, ../scss/_screen.scss */
+.gallery-nav .active-item a {
+  color: #19344a;
+}
+
+/* line 1906, ../scss/_screen.scss */
+.gallery-nav .active-item a:after {
+  content: "";
+  background: url("../images/down-blue-arrow.png") no-repeat;
+  background-size: 50%;
+  width: 30px;
+  height: 14px;
+  position: absolute;
+  top: 4px;
+  right: -35px;
+}
+
+/* line 1917, ../scss/_screen.scss */
+img {
+  vertical-align: top;
+}
+
+/* line 1925, ../scss/_screen.scss */
+.read-more-btn {
+  display: none;
+}
+
+/* line 1929, ../scss/_screen.scss */
+.review-rating-text {
+  display: block !important;
+}
+
+/* line 1933, ../scss/_screen.scss */
+.address-dealer {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* line 1938, ../scss/_screen.scss */
+.customize-body {
+  display: block !important;
+}
+
+/* line 1942, ../scss/_screen.scss */
+.btn-primary-apple {
+  display: none !important;
+}
+
+/* line 1946, ../scss/_screen.scss */
+.btn-primary-google {
+  display: none !important;
+}
+
+@media screen and (min-width: 1382px) {
+  /* ---------------------------------------------------------------------
+  Original Author: Mark Spooner
+  Contributors: N/A
+  
+  Target Browsers: All
+  Media Type: Screen, Projection
+  Width: Min-Width 1382px
+  ------------------------------------------------------------------------ */
+  /* line 10, ../scss/_screen_huge.scss */
+  .social-review-container {
+    margin-left: -4%;
+  }
+
+  /* line 14, ../scss/_screen_huge.scss */
+  .review {
+    margin-left: 4%;
+    float: left;
+    width: 40%;
+    padding: 30px 3%;
+  }
+
+  /* line 21, ../scss/_screen_huge.scss */
+  .review-hidden {
+    display: block;
+  }
+
+  /* line 25, ../scss/_screen_huge.scss */
+  .review-rating-text {
+    padding-left: 4px;
+  }
+
+  /* ---------------------------------------------------------------------
+   Billboard
+  ------------------------------------------------------------------------ */
+  /* line 33, ../scss/_screen_huge.scss */
+  .vehicle-info-major {
+    font-size: 56px;
+  }
+
+  /* line 37, ../scss/_screen_huge.scss */
+  .vehicle-info-minor {
+    font-size: 44px;
+  }
+
+  /* line 43, ../scss/_screen_huge.scss */
+  #js-customize-control,
+  .customize-body {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* ---------------------------------------------------------------------
+  Original Author: Mark Spooner
+  Contributors: N/A
+  
+  Target Browsers: All
+  Media Type: Screen, Projection
+  Width: Min-Width 1024px
+  ------------------------------------------------------------------------ */
+  /* line 10, ../scss/_screen_large.scss */
+  .vehicle-info {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin-top: -108px !important;
+    font-family: FordRegular, sans-serif;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  /* ---------------------------------------------------------------------
+  Grid Styles
+  ------------------------------------------------------------------------ */
+  /* line 25, ../scss/_screen_large.scss */
+  .column-alt {
+    float: left;
+    padding-left: 20%;
+    width: 80%;
+  }
+
+  /* ---------------------------------------------------------------------
+  Fixed Menu Styles
+  ------------------------------------------------------------------------ */
+  /* line 35, ../scss/_screen_large.scss */
+  .navigation-wrapper {
+    position: fixed;
+    margin: 37px 0 0 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+
+  /* line 41, ../scss/_screen_large.scss */
+  .navigation-wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  /* line 49, ../scss/_screen_large.scss */
+  .navigation-menu-button {
+    display: none;
+  }
+
+  /* line 53, ../scss/_screen_large.scss */
+  .navigation-head {
+    position: relative;
+    right: 0;
+    display: block;
+    overflow: visible;
+    padding: 29px 0 25px 24px;
+    width: 157px;
+    height: 18px;
+    border-top: none;
+    background: #ffffff;
+  }
+
+  /* line 65, ../scss/_screen_large.scss */
+  .site-wrapper.js-menu {
+    position: static;
+    width: 100%;
+    padding-top: 0;
+    right: 0;
+  }
+
+  /* line 72, ../scss/_screen_large.scss */
+  .nav-model-tag {
+    display: none;
+  }
+
+  /* line 76, ../scss/_screen_large.scss */
+  .navigation-logo > h2 {
+    position: absolute;
+    top: -22px;
+    left: 30px;
+    display: block;
+    width: 114px;
+    height: 65px;
+    background: url("../images/navigation-logo.png") no-repeat 0 0;
+    text-indent: -9999px;
+  }
+
+  /* line 87, ../scss/_screen_large.scss */
+  .navigation-list {
+    position: static;
+    top: 109px;
+    display: block;
+    width: 181px;
+    right: inherit;
+    z-index: 1000;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    -webkit-transform-origin: none;
+    -moz-transform-origin: none;
+    -ms-transform-origin: none;
+    -o-transform-origin: none;
+    transform-origin: none;
+  }
+
+  /* line 111, ../scss/_screen_large.scss */
+  .navigation-list > li {
+    font-family: FordLight, sans-serif;
+  }
+
+  /* line 115, ../scss/_screen_large.scss */
+  .navigation-list > li > a {
+    display: block;
+    padding: 23px 0 23px 24px;
+    width: 157px;
+    background: white url("../images/navigation-arrow.png") no-repeat 91% 51%;
+    color: #2d96cd;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "FordBold", Arial, Helvetica, sans-serif;
+  }
+
+  /* line 126, ../scss/_screen_large.scss */
+  .nav-sub .nav-sub-header + li > a {
+    padding-top: 25px;
+  }
+
+  /* line 130, ../scss/_screen_large.scss */
+  .navigation-list .nav-sub > li {
+    font-size: 14px;
+  }
+
+  /* line 134, ../scss/_screen_large.scss */
+  .nav-sub > li > a {
+    display: block;
+    padding: 12px 0 10px 24px;
+    background: #18384d;
+    color: #8c9ca6;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: FordLight, sans-serif;
+  }
+
+  /* line 144, ../scss/_screen_large.scss */
+  .nav-sub-header {
+    padding: 17px 0 15px 16px;
+    font-size: 16px;
+  }
+
+  /* line 149, ../scss/_screen_large.scss */
+  .nav-sub-header .heading-model {
+    font-size: 14px;
+  }
+
+  /* line 153, ../scss/_screen_large.scss */
+  .navigation-list > li > ul {
+    display: none;
+  }
+
+  /* line 157, ../scss/_screen_large.scss */
+  .nav-sub > li > .nav-button-build {
+    margin-top: 20px;
+    padding: 12px 0 12px 13px;
+    font-size: 12px;
+  }
+
+  /* line 163, ../scss/_screen_large.scss */
+  .icon-build {
+    width: 21px;
+    height: 21px;
+    background: url("../images/icon-build.png") no-repeat;
+  }
+
+  /* line 169, ../scss/_screen_large.scss */
+  .tag {
+    vertical-align: top;
+  }
+
+  /* line 173, ../scss/_screen_large.scss */
+  .nav-sub.nav-sub-models > li > a {
+    box-shadow: none;
+    padding: 8px 0 8px 3px;
+    background-image: none;
+  }
+
+  /* line 179, ../scss/_screen_large.scss */
+  .nav-model-img {
+    width: 80px;
+    margin: 3px 0 0 0;
+  }
+
+  /* ---------------------------------------------------------------------
+  Footer Styles
+  ------------------------------------------------------------------------ */
+  /* line 188, ../scss/_screen_large.scss */
+  .footer {
+    padding: 0 40px;
+  }
+
+  /* line 192, ../scss/_screen_large.scss */
+  .footer-nav {
+    overflow: hidden;
+  }
+
+  /* line 196, ../scss/_screen_large.scss */
+  .footer-nav > li {
+    width: 16.66667% !important;
+    float: left;
+    margin: 0;
+    height: 100%;
+  }
+
+  /* line 203, ../scss/_screen_large.scss */
+  .footer-nav > li > a {
+    padding: 0 0 35px 0;
+    border-bottom: 1px solid #3e3e3e;
+    display: block;
+    margin: 35px 0 30px 0;
+    font-family: FordBold, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  /* line 213, ../scss/_screen_large.scss */
+  .footer-nav > li > ul > li {
+    margin-top: 20px;
+  }
+
+  /* line 217, ../scss/_screen_large.scss */
+  .footer-nav > li > ul > li > a {
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    color: #b4b4b4;
+  }
+
+  /* line 223, ../scss/_screen_large.scss */
+  .footer-share {
+    top: 50% !important;
+    left: 34%;
+  }
+
+  /* line 228, ../scss/_screen_large.scss */
+  .footer-share > ul > li {
+    float: left;
+  }
+
+  /* line 232, ../scss/_screen_large.scss */
+  .footer-additional {
+    margin-top: 80px;
+  }
+
+  /* line 236, ../scss/_screen_large.scss */
+  .footer-info-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0 10px;
+  }
+
+  /* line 242, ../scss/_screen_large.scss */
+  .footer-info {
+    float: left;
+    overflow: hidden;
+    padding-top: 6px;
+    width: 60%;
+  }
+
+  /* line 249, ../scss/_screen_large.scss */
+  .tagline {
+    float: right;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  /* line 255, ../scss/_screen_large.scss */
+  .footer-info > li {
+    float: left;
+    margin: 0 0 0 22px;
+  }
+
+  /* line 260, ../scss/_screen_large.scss */
+  .copyright {
+    padding: 8px 8px 0 0;
+    float: left;
+    position: static;
+  }
+
+  /* ---------------------------------------------------------------------
+  Carousel Styles
+  ------------------------------------------------------------------------ */
+  /* line 270, ../scss/_screen_large.scss */
+  .slide-lrg > img {
+    left: 0;
+    width: 100%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  /* line 280, ../scss/_screen_large.scss */
+  .slide-thumbs {
+    width: 80.29%;
+    padding-left: 19.71%;
+    bottom: 110px;
+  }
+
+  /* line 286, ../scss/_screen_large.scss */
+  .slide-thumbs > li {
+    width: 181px;
+    margin: 0;
+    border-width: 4px;
+  }
+
+  /* line 292, ../scss/_screen_large.scss */
+  .slide-thumbs > li + li {
+    margin-left: 13px;
+  }
+
+  /* line 296, ../scss/_screen_large.scss */
+  .vid-carousel-window {
+    overflow: hidden;
+    /*height: 275px;*/
+    padding-bottom: 80px;
+  }
+
+  /* line 302, ../scss/_screen_large.scss */
+  .column .carousel-control.left {
+    left: 215px;
+  }
+
+  /* line 306, ../scss/_screen_large.scss */
+  .column-alt .carousel-control.left {
+    left: 215px;
+  }
+
+  /* ---------------------------------------------------------------------
+  Content-Block Styles
+  ------------------------------------------------------------------------ */
+  /* line 315, ../scss/_screen_large.scss */
+  .content-block {
+    padding: 0;
+  }
+
+  /* line 319, ../scss/_screen_large.scss */
+  .content-block-body {
+    width: 83%;
+  }
+
+  /* ---------------------------------------------------------------------
+  Social Styles
+  ------------------------------------------------------------------------ */
+  /* line 327, ../scss/_screen_large.scss */
+  .social-stories {
+    margin: 0;
+  }
+
+  /*:not(:first-child)*/
+  /* line 332, ../scss/_screen_large.scss */
+  .social-stories > li .media-foot {
+    position: relative;
+    margin: -54px 0 45px;
+  }
+
+  /* line 337, ../scss/_screen_large.scss */
+  .social-stories > li:first-child .btn-primary {
+    letter-spacing: 1px;
+  }
+
+  /* line 342, ../scss/_screen_large.scss */
+  .social-stories > li:not(:first-child) .btn-primary {
+    font-family: FordRegular,sans-serif;
+    display: block;
+    padding: 0 10px 0 0;
+    border-radius: 0;
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    box-shadow: none;
+    color: #2d96cd;
+    text-decoration: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+  /* line 358, ../scss/_screen_large.scss */
+  .social {
+    padding: 0 40px 0 0;
+    background: #ffffff;
+  }
+
+  /* line 363, ../scss/_screen_large.scss */
+  .intro {
+    padding-top: 70px;
+  }
+
+  /* line 367, ../scss/_screen_large.scss */
+  .intro-head > h2 {
+    font-size: 60px;
+  }
+
+  /* line 371, ../scss/_screen_large.scss */
+  .intro-head > h2 > .intro-subhead {
+    font-size: 32px;
+  }
+
+  /* line 375, ../scss/_screen_large.scss */
+  .intro p {
+    width: 80%;
+  }
+
+  /* line 379, ../scss/_screen_large.scss */
+  .social-stories > * {
+    width: 50%;
+  }
+
+  /* line 383, ../scss/_screen_large.scss */
+  .story-media {
+    position: relative;
+    margin-right: 7%;
+    width: 45%;
+  }
+
+  /* line 389, ../scss/_screen_large.scss */
+  .date-block {
+    width: 50px;
+    height: 48px;
+  }
+
+  /* line 394, ../scss/_screen_large.scss */
+  .date-block-month {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  /* line 399, ../scss/_screen_large.scss */
+  .date-block-day {
+    font-size: 22px;
+  }
+
+  /* line 403, ../scss/_screen_large.scss */
+  .story > .media-content {
+    float: left;
+    width: 45%;
+  }
+
+  /* line 408, ../scss/_screen_large.scss */
+  .story-media > img {
+    width: 100%;
+  }
+
+  /* line 416, ../scss/_screen_large.scss */
+  .social-stories > :first-child {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 421, ../scss/_screen_large.scss */
+  .social-stories > :first-child .h3 {
+    font-size: 23px;
+  }
+
+  /* line 425, ../scss/_screen_large.scss */
+  .social-stories > :first-child .story {
+    width: 100%;
+  }
+
+  /* line 429, ../scss/_screen_large.scss */
+  .social-stories > :first-child .story-media {
+    position: relative;
+    margin-right: 4%;
+    width: 60%;
+  }
+
+  /* line 435, ../scss/_screen_large.scss */
+  .social-stories > :first-child .media-sharing {
+    margin: 55px 0 25px 0;
+  }
+
+  /* line 439, ../scss/_screen_large.scss */
+  .social-stories > :first-child .date-block {
+    width: 82px;
+    height: 77px;
+  }
+
+  /* line 444, ../scss/_screen_large.scss */
+  .social-stories > :first-child .date-block-month {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  /* line 449, ../scss/_screen_large.scss */
+  .social-stories > :first-child .date-block-day {
+    font-size: 36px;
+    font-family: FordBold, sans-serif;
+  }
+
+  /* line 455, ../scss/_screen_large.scss */
+  .social-stories > :first-child .media-content {
+    width: 35%;
+  }
+
+  /* ---------------------------------------------------------------------
+  Carousel Styles
+  ------------------------------------------------------------------------ */
+  /* line 463, ../scss/_screen_large.scss */
+  .carousel-content {
+    left: 19.71%;
+  }
+
+  /* line 467, ../scss/_screen_large.scss */
+  .carousel-content-alt {
+    right: 3%;
+    left: auto;
+  }
+
+  /* line 472, ../scss/_screen_large.scss */
+  .carousel-sub-header {
+    width: 315px;
+    font-size: 26px;
+    font-family: FordThin, sans-serif;
+  }
+
+  /* line 478, ../scss/_screen_large.scss */
+  .carousel-content-body > .btn-primary {
+    padding: 15px 30px;
+  }
+
+  /* ---------------------------------------------------------------------
+  Reviews and Ratings
+  ------------------------------------------------------------------------ */
+  /* line 487, ../scss/_screen_large.scss */
+  .overall-ratings {
+    font-family: FordBold, sans-serif;
+    margin: 0 0 8px;
+    float: none;
+  }
+
+  /* line 493, ../scss/_screen_large.scss */
+  .social-header-info {
+    float: left;
+    margin-bottom: 0;
+    width: 56.75%;
+  }
+
+  /* line 499, ../scss/_screen_large.scss */
+  .social-header-rating {
+    float: right;
+    width: 315px;
+  }
+
+  /* line 504, ../scss/_screen_large.scss */
+  .ratings-container {
+    float: none;
+  }
+
+  /* line 508, ../scss/_screen_large.scss */
+  .rating-box {
+    color: #ffffff;
+    background: #3c95d2;
+    border-radius: 5px;
+    padding: 10px 12px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* ---------------------------------------------------------------------
+  Media Object Styles
+  ------------------------------------------------------------------------ */
+  /* line 522, ../scss/_screen_large.scss */
+  .media-media {
+    float: left;
+  }
+
+  /* ---------------------------------------------------------------------
+  Button Styles
+  ------------------------------------------------------------------------ */
+  /* line 530, ../scss/_screen_large.scss */
+  .btn-primary {
+    padding: 20px 30px;
+    float: left;
+  }
+
+  /* ---------------------------------------------------------------------
+  Customize Section
+  ------------------------------------------------------------------------ */
+  /* line 539, ../scss/_screen_large.scss */
+  .customize-inner {
+    padding: 0;
+  }
+
+  /* line 543, ../scss/_screen_large.scss */
+  .customize-body {
+    width: 50%;
+  }
+
+  /* line 547, ../scss/_screen_large.scss */
+  .customize-sample {
+    margin-top: 0;
+  }
+
+  /* ---------------------------------------------------------------------
+  Map Styles
+  ------------------------------------------------------------------------ */
+  /* line 556, ../scss/_screen_large.scss */
+  .location-view,
+  .location-change {
+    display: none;
+  }
+
+  /* line 560, ../scss/_screen_large.scss */
+  .map-object {
+    overflow: hidden;
+  }
+
+  /* line 564, ../scss/_screen_large.scss */
+  .map-object-bottom {
+    margin-bottom: 104px;
+  }
+
+  /* line 568, ../scss/_screen_large.scss */
+  .map-content {
+    float: right;
+    width: 59%;
+  }
+
+  /* line 573, ../scss/_screen_large.scss */
+  .map-content > img {
+    width: 100%;
+  }
+
+  /* line 577, ../scss/_screen_large.scss */
+  .map-addresses {
+    float: left;
+    overflow: hidden;
+    display: block !important;
+    width: 30%;
+  }
+
+  /* line 585, ../scss/_screen_large.scss */
+  .map-addresses ul > * + * {
+    margin-top: 55px;
+  }
+
+  /* line 589, ../scss/_screen_large.scss */
+  .address-dealer {
+    overflow: hidden;
+  }
+
+  /* line 593, ../scss/_screen_large.scss */
+  .address-dealer-name {
+    font-family: FordRegular, sans-serif;
+    font-size: 18px;
+  }
+
+  /* line 598, ../scss/_screen_large.scss */
+  .map-find {
+    display: block;
+  }
+
+  /* line 602, ../scss/_screen_large.scss */
+  .mileage {
+    font-family: FordRegular, sans-serif;
+    font-size: 12px;
+    color: #91a4b1;
+  }
+
+  /* ---------------------------------------------------------------------
+  Models Block
+  ------------------------------------------------------------------------ */
+  /* line 612, ../scss/_screen_large.scss */
+  .models-find {
+    padding: 40px 4% 0 0;
+  }
+
+  /* line 616, ../scss/_screen_large.scss */
+  .models-compare-heading {
+    margin: 72px 0 5px 0;
+    float: left;
+  }
+
+  /* line 621, ../scss/_screen_large.scss */
+  .models-compare-media {
+    padding: 0 2% 0 0;
+    width: 58%;
+  }
+
+  /* line 626, ../scss/_screen_large.scss */
+  .models-compare-img {
+    float: right;
+    max-width: 75%;
+  }
+
+  /* line 632, ../scss/_screen_large.scss */
+  .models-compare-body {
+    float: left;
+    margin-bottom: 30px;
+  }
+
+  /* line 637, ../scss/_screen_large.scss */
+  .models-compare-footer {
+    float: left;
+  }
+
+  /* line 641, ../scss/_screen_large.scss */
+  .models-actions-container {
+    width: 38%;
+  }
+
+  /* line 645, ../scss/_screen_large.scss */
+  .models-actions {
+    padding: 60px 6%;
+    width: 37%;
+  }
+
+  /* line 650, ../scss/_screen_large.scss */
+  .models-other-body {
+    font-size: 24px;
+  }
+
+  /* ---------------------------------------------------------------------
+  Content Blocks
+  ------------------------------------------------------------------------ */
+  /* line 658, ../scss/_screen_large.scss */
+  .content-block-head {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* ---------------------------------------------------------------------
+  Original Author: Mark Spooner
+  Contributors: Shawn McBurnie
+  
+  Target Browsers: All
+  Media Type: Screen, Projection
+  Width: Min-Width 768px, Max-Width 1024px
+  ------------------------------------------------------------------------ */
+  /* line 10, ../scss/_screen_medium.scss */
+  body {
+    /*    -webkit-perspective: 1000px;
+        -moz-perspective: 1000px;
+        -ms-perspective: 1000px;
+        -o-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-perspective-origin: 100% 50%;
+        -moz-perspective-origin: 100% 50%;
+        -ms-perspective-origin: 100% 50%;
+        -o-perspective-origin: 100% 50%;
+        perspective-origin: 100% 50%;*/
+  }
+
+  /* line 23, ../scss/_screen_medium.scss */
+  .content-block-head {
+    margin-left: 30px;
+  }
+
+  /* ---------------------------------------------------------------------
+   Navigation
+  ------------------------------------------------------------------------ */
+  /* ---------------------------------------------------------------------
+   Heading-models
+  ------------------------------------------------------------------------ */
+  /* ---------------------------------------------------------------------
+   Article Browser
+  ------------------------------------------------------------------------ */
+  /* line 48, ../scss/_screen_medium.scss */
+  .intro {
+    padding: 35px 40px;
+  }
+
+  /* line 52, ../scss/_screen_medium.scss */
+  .intro-head {
+    margin-bottom: 40px;
+  }
+
+  /* line 56, ../scss/_screen_medium.scss */
+  .intro-head > h2 {
+    font-size: 50px;
+  }
+
+  /* line 64, ../scss/_screen_medium.scss */
+  .intro-head > h2 > .intro-subhead {
+    font-size: 30px;
+  }
+
+  /* line 68, ../scss/_screen_medium.scss */
+  .intro p {
+    font-size: 27px;
+  }
+
+  /* line 72, ../scss/_screen_medium.scss */
+  .social-stories > * {
+    width: 100%;
+  }
+
+  /*.social-stories > * {
+      display: block;
+      float: left;
+      overflow: visible;
+  }*/
+  /* line 82, ../scss/_screen_medium.scss */
+  .social-stories > * {
+    display: block;
+    float: left;
+    width: 50%;
+    overflow: visible;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin-bottom: 60px;
+  }
+
+  /* line 95, ../scss/_screen_medium.scss */
+  .media-media {
+    float: left;
+  }
+
+  /* ---------------------------------------------------------------------
+   Hero Slide Display
+  ------------------------------------------------------------------------ */
+  /* line 103, ../scss/_screen_medium.scss */
+  .slides-wrapper img {
+    max-width: 100%;
+  }
+
+  /* ---------------------------------------------------------------------
+  Content-Block Styles
+  ------------------------------------------------------------------------ */
+  /* line 111, ../scss/_screen_medium.scss */
+  .content-block-body {
+    width: 83%;
+    margin-bottom: 30px;
+  }
+
+  /* line 116, ../scss/_screen_medium.scss */
+  .content-feature-image {
+    height: 360px;
+  }
+
+  /* ---------------------------------------------------------------------
+  Blocks
+  ------------------------------------------------------------------------ */
+  /* line 124, ../scss/_screen_medium.scss */
+  .blocks {
+    margin-left: -4%;
+  }
+
+  /* line 128, ../scss/_screen_medium.scss */
+  .blocks > * {
+    margin-left: 4%;
+    width: 46%;
+    float: left;
+  }
+
+  /* line 134, ../scss/_screen_medium.scss */
+  .blocks-inline > * {
+    margin-left: 3.65%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* line 141, ../scss/_screen_medium.scss */
+  .block-stacked-img {
+    height: 206px;
+    overflow: hidden;
+  }
+
+  /* line 146, ../scss/_screen_medium.scss */
+  .block-stacked-img > img {
+    width: auto;
+    height: 100%;
+  }
+
+  /* ---------------------------------------------------------------------
+   Button Styles
+  ------------------------------------------------------------------------ */
+  /* line 155, ../scss/_screen_medium.scss */
+  .btn-primary {
+    padding: 20px 30px;
+    float: left;
+  }
+
+  /* ---------------------------------------------------------------------
+   Customize Section
+  ------------------------------------------------------------------------ */
+  /* line 164, ../scss/_screen_medium.scss */
+  .customize-heading {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  /* line 169, ../scss/_screen_medium.scss */
+  .customize-body {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  /* line 174, ../scss/_screen_medium.scss */
+  .customize-sample {
+    margin-top: -20px;
+  }
+
+  /* ---------------------------------------------------------------------
+   Billboard
+  ------------------------------------------------------------------------ */
+  /* line 182, ../scss/_screen_medium.scss */
+  .vehicle-info-container {
+    margin: 25px 0 25px 3%;
+  }
+
+  /* line 186, ../scss/_screen_medium.scss */
+  .vehicle-info-hide {
+    display: inline-block;
+  }
+
+  /* line 190, ../scss/_screen_medium.scss */
+  .vehicle-info-major {
+    font-size: 48px;
+  }
+
+  /* line 194, ../scss/_screen_medium.scss */
+  .vehicle-info-minor {
+    font-size: 32px;
+  }
+
+  /* line 198, ../scss/_screen_medium.scss */
+  .vehicle-info {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin-top: -98px;
+    font-family: FordRegular, sans-serif;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  /* ---------------------------------------------------------------------
+  Gallery Styles
+  ------------------------------------------------------------------------ */
+  /* line 213, ../scss/_screen_medium.scss */
+  .feature-gallery {
+    background: url("../images/Gallery/feature-gallery.jpg") no-repeat center center;
+    background-size: cover;
+    height: 920px;
+    margin-bottom: 50px;
+    padding-top: 120px;
+  }
+
+  /* line 221, ../scss/_screen_medium.scss */
+  .blocks-gallery {
+    margin-left: -5%;
+    padding: 0;
+  }
+
+  /* line 226, ../scss/_screen_medium.scss */
+  .blocks-gallery > * {
+    margin-left: 5%;
+    width: 45%;
+    margin-bottom: 50px;
+    float: left;
+    text-align: center;
+  }
+
+  /* ---------------------------------------------------------------------
+  Social Styles
+  ------------------------------------------------------------------------ */
+  /* line 238, ../scss/_screen_medium.scss */
+  .social-stories {
+    height: auto;
+  }
+
+  /* line 243, ../scss/_screen_medium.scss */
+  .social-stories > li:not(:first-child) .media-foot {
+    position: absolute;
+    margin: -54px 0 45px;
+  }
+
+  /* line 248, ../scss/_screen_medium.scss */
+  .social-stories > li:not(:first-child) .btn-primary {
+    font-family: FordRegular,sans-serif;
+    display: block;
+    padding: 0 10px 0 0;
+    border-radius: 0;
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    box-shadow: none;
+    color: #2d96cd;
+    text-decoration: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+  /* line 264, ../scss/_screen_medium.scss */
+  .social-stories > li:not(:first-child) .btn-primary:hover {
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    color: #2d96cd;
+    text-decoration: none;
+  }
+
+  /* line 270, ../scss/_screen_medium.scss */
+  .social {
+    padding: 0 40px;
+    background: #ffffff;
+  }
+
+  /* line 275, ../scss/_screen_medium.scss */
+  .intro {
+    padding-top: 70px;
+  }
+
+  /* line 279, ../scss/_screen_medium.scss */
+  .intro-head > h2 {
+    font-size: 60px;
+  }
+
+  /* line 283, ../scss/_screen_medium.scss */
+  .intro-head > h2 > .intro-subhead {
+    font-size: 32px;
+  }
+
+  /* line 287, ../scss/_screen_medium.scss */
+  .intro p {
+    width: 80%;
+  }
+
+  /* line 291, ../scss/_screen_medium.scss */
+  .social-stories > * {
+    display: block;
+    float: left;
+    width: 44%;
+    overflow: visible;
+    box-sizing: border-box;
+  }
+
+  /* line 299, ../scss/_screen_medium.scss */
+  .story-media {
+    position: relative;
+    margin-right: 7%;
+    width: 45%;
+  }
+
+  /* line 305, ../scss/_screen_medium.scss */
+  .story .media-content {
+    margin: auto;
+  }
+
+  /* line 309, ../scss/_screen_medium.scss */
+  .story .h4 {
+    margin: auto;
+  }
+
+  /* line 313, ../scss/_screen_medium.scss */
+  .date-block {
+    width: 50px;
+    height: 48px;
+  }
+
+  /* line 318, ../scss/_screen_medium.scss */
+  .date-block-month {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  /* line 323, ../scss/_screen_medium.scss */
+  .date-block-day {
+    font-size: 22px;
+  }
+
+  /* line 327, ../scss/_screen_medium.scss */
+  .story > .media-content {
+    float: left;
+    width: 45%;
+  }
+
+  /* line 332, ../scss/_screen_medium.scss */
+  .media-content > h3 {
+    font-family: FordBold, sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+  }
+
+  /* line 338, ../scss/_screen_medium.scss */
+  .story-media > img {
+    width: 100%;
+  }
+
+  /* line 342, ../scss/_screen_medium.scss */
+  .media-sharing {
+    margin: 37px 0 0;
+    opacity: 0;
+  }
+
+  /* line 347, ../scss/_screen_medium.scss */
+  .social-stories > :first-child {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 352, ../scss/_screen_medium.scss */
+  .social-stories > :first-child .story {
+    width: 100%;
+  }
+
+  /* line 356, ../scss/_screen_medium.scss */
+  .social-stories > :first-child .story-media {
+    position: relative;
+    margin-right: 4%;
+    width: 40%;
+  }
+
+  /* line 362, ../scss/_screen_medium.scss */
+  .social-stories > :first-child .date-block {
+    width: 82px;
+    height: 77px;
+  }
+
+  /* line 367, ../scss/_screen_medium.scss */
+  .social-stories > :first-child .date-block-month {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  /* line 372, ../scss/_screen_medium.scss */
+  .social-stories > :first-child .date-block-day {
+    font-size: 36px;
+    font-family: FordBold, sans-serif;
+  }
+
+  /* line 377, ../scss/_screen_medium.scss */
+  .social-stories > :first-child .date-block-day {
+    font-size: 40px;
+    font-family: FordBold, sans-serif;
+  }
+
+  /* line 382, ../scss/_screen_medium.scss */
+  .social-stories > :first-child .media-sharing {
+    margin: 0 auto;
+  }
+
+  /* line 386, ../scss/_screen_medium.scss */
+  .social-stories > :first-child .media-foot {
+    margin: 0;
+  }
+
+  /* ---------------------------------------------------------------------
+  Carousel Styles
+  ------------------------------------------------------------------------ */
+  /* line 394, ../scss/_screen_medium.scss */
+  .carousel-content {
+    left: 3%;
+    right: auto;
+    width: 72%;
+  }
+
+  /* line 400, ../scss/_screen_medium.scss */
+  .carousel-content-alt {
+    right: 3%;
+    left: auto;
+    width: 600px;
+    text-align: right;
+  }
+
+  /* line 407, ../scss/_screen_medium.scss */
+  .carousel-content-alt > * {
+    text-align: right;
+  }
+
+  /* line 411, ../scss/_screen_medium.scss */
+  .carousel-header {
+    font-size: 65px;
+  }
+
+  /* line 415, ../scss/_screen_medium.scss */
+  .carousel-header-alt {
+    font-size: 55px;
+  }
+
+  /* line 419, ../scss/_screen_medium.scss */
+  .carousel-sub-header {
+    width: 280px;
+    float: right;
+    font-size: 21px;
+    text-align: left;
+    font-family: FordRegular, sans-serif;
+  }
+
+  /* line 427, ../scss/_screen_medium.scss */
+  .carousel-content-body {
+    font-family: FordRegular, sans-serif;
+  }
+
+  /* line 431, ../scss/_screen_medium.scss */
+  .header-sub-content {
+    display: block;
+    font-size: 16px;
+    margin-top: 3px;
+  }
+
+  /* line 437, ../scss/_screen_medium.scss */
+  .carousel-content-body {
+    width: 75%;
+  }
+
+  /* line 441, ../scss/_screen_medium.scss */
+  .carousel-content-body > .btn-primary {
+    padding: 15px 30px;
+  }
+
+  /* line 445, ../scss/_screen_medium.scss */
+  .carousel-hide-content {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  /* line 450, ../scss/_screen_medium.scss */
+  .vid-carousel-window {
+    max-width: 982px;
+  }
+
+  /* line 454, ../scss/_screen_medium.scss */
+  .conversation-carousel > li > div {
+    margin-left: 40px;
+  }
+
+  /* line 458, ../scss/_screen_medium.scss */
+  .slide-vid {
+    float: left;
+  }
+
+  /* line 462, ../scss/_screen_medium.scss */
+  .tabs-container {
+    margin: 0 auto;
+    width: 760px;
+  }
+
+  /* line 467, ../scss/_screen_medium.scss */
+  .vehicle-option {
+    width: 190px;
+  }
+
+  /* line 471, ../scss/_screen_medium.scss */
+  .vehicle-option img {
+    max-width: 100%;
+  }
+
+  /* line 475, ../scss/_screen_medium.scss */
+  .carousel-multi-alt > li > div {
+    padding: 0 115px 0 0;
+  }
+
+  /* ---------------------------------------------------------------------
+   Carousel Images
+  ------------------------------------------------------------------------ */
+  /* line 483, ../scss/_screen_medium.scss */
+  .slide-lrg > img {
+    width: 120%;
+  }
+
+  /* ---------------------------------------------------------------------
+  Map Styles
+  ------------------------------------------------------------------------ */
+  /* line 491, ../scss/_screen_medium.scss */
+  .map-find {
+    display: none;
+  }
+
+  /* line 496, ../scss/_screen_medium.scss */
+  .location-view,
+  .location-change {
+    display: block;
+    position: absolute;
+    top: 30px;
+  }
+
+  /* line 502, ../scss/_screen_medium.scss */
+  .location-change {
+    right: 44.5%;
+  }
+
+  /* line 506, ../scss/_screen_medium.scss */
+  .location-view {
+    left: 57%;
+  }
+
+  /* line 510, ../scss/_screen_medium.scss */
+  .map-object {
+    overflow: hidden;
+    padding: 0 0;
+  }
+
+  /* line 515, ../scss/_screen_medium.scss */
+  .map-content {
+    position: relative;
+    width: 60%;
+    float: right;
+  }
+
+  /* line 521, ../scss/_screen_medium.scss */
+  .map-header {
+    margin-top: 0;
+  }
+
+  /* line 525, ../scss/_screen_medium.scss */
+  .map-count {
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-top: 12px;
+  }
+
+  /* line 532, ../scss/_screen_medium.scss */
+  .location-change a,
+  .map-content .btn-primary {
+    font-size: 12px !important;
+  }
+
+  /* line 536, ../scss/_screen_medium.scss */
+  .map-content > img {
+    width: 100%;
+  }
+
+  /* line 540, ../scss/_screen_medium.scss */
+  .map-addresses {
+    display: block;
+    width: 36%;
+    float: left;
+    padding-left: 15px;
+  }
+
+  /* line 548, ../scss/_screen_medium.scss */
+  .address-dealer {
+    overflow: hidden;
+  }
+
+  /* line 552, ../scss/_screen_medium.scss */
+  .address-dealer-name {
+    font-family: FordRegular, sans-serif;
+    font-size: 18px;
+  }
+
+  /* line 557, ../scss/_screen_medium.scss */
+  .address-dealer-directions {
+    display: block;
+    width: 190px;
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    padding-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* line 569, ../scss/_screen_medium.scss */
+  .address-tag {
+    background: url("../images/map-tag.png") no-repeat 0 0;
+    height: 32px;
+    width: 33px;
+    color: #ffffff;
+    font-family: FordBold, sans-serif;
+    font-size: 13px;
+    padding: 10px 0 0 10px;
+    float: left;
+  }
+
+  /* line 580, ../scss/_screen_medium.scss */
+  .mileage {
+    font-family: FordRegular, sans-serif;
+    font-size: 12px;
+    color: #91a4b1;
+  }
+
+  /* ---------------------------------------------------------------------
+  Models Block
+  ------------------------------------------------------------------------ */
+  /* line 590, ../scss/_screen_medium.scss */
+  .models-find {
+    overflow: hidden;
+    padding: 40px 4%;
+    font-family: FordRegular, sans-serif;
+  }
+
+  /* line 596, ../scss/_screen_medium.scss */
+  .models-compare-media {
+    width: 30%;
+    padding-right: 7%;
+    float: left;
+    margin-bottom: 0;
+  }
+
+  /* line 603, ../scss/_screen_medium.scss */
+  .models-compare-body {
+    color: #425968;
+    margin-bottom: 20px;
+    float: left;
+  }
+
+  /* line 609, ../scss/_screen_medium.scss */
+  .models-compare-footer {
+    float: left;
+  }
+
+  /* line 613, ../scss/_screen_medium.scss */
+  .models-msrp {
+    font-size: 14px;
+  }
+
+  /* line 617, ../scss/_screen_medium.scss */
+  .models-actions-container {
+    float: left;
+    width: 62%;
+  }
+
+  /* line 622, ../scss/_screen_medium.scss */
+  .models-actions {
+    width: 29%;
+    padding: 80px 10%;
+    border-left: 1px solid #e6e6e6;
+  }
+
+  /* line 628, ../scss/_screen_medium.scss */
+  .models-other {
+    margin-left: -4%;
+    padding: 0;
+  }
+
+  /* line 633, ../scss/_screen_medium.scss */
+  .models-other-block {
+    float: left;
+    margin-left: 4%;
+    width: 46%;
+  }
+
+  /* line 639, ../scss/_screen_medium.scss */
+  .models-other-body {
+    font-size: 18px;
+    color: #666666;
+  }
+
+  /* ---------------------------------------------------------------------
+  Footer Styles
+  ------------------------------------------------------------------------ */
+  /* line 648, ../scss/_screen_medium.scss */
+  .footer {
+    padding: 0 40px 20px 40px;
+  }
+
+  /* line 652, ../scss/_screen_medium.scss */
+  .footer-nav {
+    overflow: hidden;
+  }
+
+  /* line 656, ../scss/_screen_medium.scss */
+  .footer-additional {
+    padding: 0;
+  }
+
+  /* line 660, ../scss/_screen_medium.scss */
+  .footer-nav > li {
+    width: 20%;
+    float: left;
+    height: 480px;
+    border-bottom: none;
+  }
+
+  /* line 668, ../scss/_screen_medium.scss */
+  .footer-nav > li > a {
+    padding: 0 0 35px 0;
+    border-bottom: 1px solid #3e3e3e;
+    display: block;
+    margin: 35px 0 30px 0;
+    font-family: FordBold, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  /* line 678, ../scss/_screen_medium.scss */
+  .footer-nav > li > ul > li {
+    margin-top: 20px;
+  }
+
+  /* line 682, ../scss/_screen_medium.scss */
+  .footer-nav > li > ul > li > a {
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    color: #b4b4b4;
+  }
+
+  /* line 688, ../scss/_screen_medium.scss */
+  .footer-info-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  /* line 693, ../scss/_screen_medium.scss */
+  .footer-info {
+    float: left;
+    overflow: hidden;
+    padding-top: 6px;
+    width: 50%;
+    margin-left: -22px;
+  }
+
+  /* line 701, ../scss/_screen_medium.scss */
+  .tagline {
+    float: right;
+    margin: 0 0 0 0;
+  }
+
+  /* line 706, ../scss/_screen_medium.scss */
+  .footer-info > li {
+    float: left;
+    margin: 0 0 15px 22px;
+  }
+
+  /* line 711, ../scss/_screen_medium.scss */
+  .copyright {
+    padding: 0 0 0 0;
+    float: none;
+    position: absolute;
+    left: 40px;
+    bottom: 5px;
+  }
+
+  /* line 719, ../scss/_screen_medium.scss */
+  .footer-nav > li > ul {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  /* line 724, ../scss/_screen_medium.scss */
+  .footer-share {
+    position: absolute;
+    margin: 0;
+    top: 35%;
+    left: 45%;
+  }
+
+  /* line 731, ../scss/_screen_medium.scss */
+  .btn-additional {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  /* line 737, ../scss/_screen_medium.scss */
+  .arrow-down,
+  .arrow-up {
+    display: none;
+  }
+
+  /* line 741, ../scss/_screen_medium.scss */
+  .social-review-footer {
+    text-align: center;
+    clear: both;
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+
+  /* line 748, ../scss/_screen_medium.scss */
+  .view-by {
+    display: none !important;
+  }
+
+  /* line 752, ../scss/_screen_medium.scss */
+  .feature-customize {
+    height: 500px;
+  }
+
+  /* line 757, ../scss/_screen_medium.scss */
+  #js-customize-control,
+  .customize-body {
+    display: none;
+  }
+
+  /* line 761, ../scss/_screen_medium.scss */
+  .review-rating-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* ---------------------------------------------------------------------
+  Original Author:  Mark Spooner
+  Contributors: N/A
+  
+  Target Browsers: All
+  Media Type: Screen, Projection
+  Width: Min-Width 480px, Max-Width 768px; */
+  /* line 9, ../scss/_screen_small.scss */
+  body {
+    /*   -webkit-perspective: 1000px;
+       -moz-perspective: 1000px;
+       -ms-perspective: 1000px;
+       -o-perspective: 1000px;
+       perspective: 1000px;
+       -webkit-perspective-origin: 100% 50%;
+       -moz-perspective-origin: 100% 50%;
+       -ms-perspective-origin: 100% 50%;
+       -o-perspective-origin: 100% 50%;
+       perspective-origin: 100% 50%;*/
+  }
+
+  /* line 22, ../scss/_screen_small.scss */
+  .content-block-head {
+    margin-left: 30px;
+  }
+
+  /* line 27, ../scss/_screen_small.scss */
+  .social-review-footer {
+    text-align: center;
+    clear: both;
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+
+  /* line 34, ../scss/_screen_small.scss */
+  .social-review-footer .btn-primary {
+    padding: 15px 20px;
+  }
+
+  /* line 39, ../scss/_screen_small.scss */
+  .heading-model,
+  .heading-model-sub {
+    padding-left: 30px;
+  }
+
+  /* line 43, ../scss/_screen_small.scss */
+  .heading-model {
+    padding: 0 !important;
+  }
+
+  /* line 47, ../scss/_screen_small.scss */
+  .h3 {
+    padding-left: 30px;
+  }
+
+  /* ---------------------------------------------------------------------
+   Navigation
+  ------------------------------------------------------------------------ */
+  /* line 54, ../scss/_screen_small.scss */
+  .navigation-list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    /*    -webkit-transition: -webkit-transform 1s ease-in-out;
+        -moz-transition: -moz-transform 1s ease-in-out;
+        -ms-transition: -ms-transform 1s ease-in-out;
+        -o-transition: -o-transform 1s ease-in-out;
+        transition: transform 1s ease-in-out;
+        -webkit-transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);
+        -moz-transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);
+        -ms-transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);
+        -o-transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);
+        transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);*/
+    /*    -webkit-transform-origin: right 50%;
+        -moz-transform-origin: right 50%;
+        -ms-transform-origin: right 50%;
+        -o-transform-origin: right 50%;
+        transform-origin: right 50%;*/
+  }
+
+  /* line 76, ../scss/_screen_small.scss */
+  .navigation-list a {
+    display: block;
+    text-decoration: none;
+    font-family: "FordBold", Arial, Helvetica, sans-serif;
+    /*    -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;*/
+  }
+
+  /* line 88, ../scss/_screen_small.scss */
+  .navigation-list a:hover {
+    /*padding-left: 36px;*/
+    /*opacity: ;*/
+  }
+
+  /* line 93, ../scss/_screen_small.scss */
+  .navigation-list > li > a {
+    padding: 31px 0 28px 24px;
+    border-bottom: 1px solid #cccccc;
+    background: white url("../images/navigation-arrow-tblt.png") no-repeat 91% 51%;
+    color: #2d96cd;
+    font-size: 18px;
+  }
+
+  /* line 101, ../scss/_screen_small.scss */
+  .navigation-list > li > a.nav-search {
+    background: white url("../images/navigation-search-tblt.png") no-repeat 93% 51%;
+  }
+
+  /* line 104, ../scss/_screen_small.scss */
+  .nav-sub > li > a {
+    padding: 21px 0 19px 24px;
+    background: #18384d;
+    color: #8c9ca6;
+    font-size: 16px;
+  }
+
+  /* line 111, ../scss/_screen_small.scss */
+  .nav-sub > li:first-child > a {
+    border-bottom: 1px solid #072436;
+    color: #ffffff;
+  }
+
+  /* line 116, ../scss/_screen_small.scss */
+  .nav-sub > li:nth-child(2) > a {
+    padding-top: 37px;
+    border-top: 1px solid #115272;
+  }
+
+  /* line 121, ../scss/_screen_small.scss */
+  .site-wrapper {
+    width: 100%;
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+    transform-origin: left 50%;
+  }
+
+  /* Move content over to make room */
+  /* line 132, ../scss/_screen_small.scss */
+  .nav-shift {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: -30px 0 30px 20px black;
+    -webkit-transform: translate3d(-250px, 0, 0);
+    -moz-transform: translate3d(-250px, 0, 0);
+    -ms-transform: translate3d(-250px, 0, 0);
+    -o-transform: translate3d(-250px, 0, 0);
+    transform: translate3d(-250px, 0, 0);
+  }
+
+  /* line 144, ../scss/_screen_small.scss */
+  .nav-show {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    z-index: 0;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 156, ../scss/_screen_small.scss */
+  .vehicle-info {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin-top: -64px;
+    font-family: FordRegular, sans-serif;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  /* ---------------------------------------------------------------------
+   Article Browser
+  ------------------------------------------------------------------------ */
+  /* line 173, ../scss/_screen_small.scss */
+  .intro {
+    padding: 35px 40px;
+  }
+
+  /* line 177, ../scss/_screen_small.scss */
+  .intro-head {
+    margin-bottom: 20px;
+  }
+
+  /* line 181, ../scss/_screen_small.scss */
+  .intro-head > h2 {
+    font-size: 25px;
+  }
+
+  /* line 185, ../scss/_screen_small.scss */
+  .intro-head > h2 > .intro-subhead {
+    font-size: 15px;
+  }
+
+  /* line 189, ../scss/_screen_small.scss */
+  .social-stories .story {
+    width: 100%;
+  }
+
+  /* line 193, ../scss/_screen_small.scss */
+  .date-block {
+    width: 60px;
+    height: 57px;
+  }
+
+  /* line 198, ../scss/_screen_small.scss */
+  .date-block-month {
+    padding-top: 8px;
+    font-size: 14px;
+  }
+
+  /* line 203, ../scss/_screen_small.scss */
+  .date-block-day {
+    font-size: 27px;
+  }
+
+  /* line 207, ../scss/_screen_small.scss */
+  .story-media {
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  /* line 213, ../scss/_screen_small.scss */
+  .story-media > img {
+    margin-left: -20%;
+    width: 120%;
+  }
+
+  /* line 218, ../scss/_screen_small.scss */
+  .story > .media-content {
+    clear: left;
+  }
+
+  /* line 222, ../scss/_screen_small.scss */
+  .story .media-sharing {
+    display: none;
+  }
+
+  /* ---------------------------------------------------------------------
+   Hero Slide Display
+  ------------------------------------------------------------------------ */
+  /* line 231, ../scss/_screen_small.scss */
+  .slides-wrapper img {
+    max-width: 100%;
+  }
+
+  /* line 235, ../scss/_screen_small.scss */
+  .h1 {
+    font-size: 25px;
+  }
+
+  /* line 239, ../scss/_screen_small.scss */
+  .h2 {
+    font-size: 23px;
+  }
+
+  /* line 243, ../scss/_screen_small.scss */
+  .h3 {
+    font-size: 28px;
+  }
+
+  /* ---------------------------------------------------------------------
+  Carousel Styles
+  ------------------------------------------------------------------------ */
+  /* line 251, ../scss/_screen_small.scss */
+  .conversation-carousel > li > div {
+    margin-left: 5px;
+  }
+
+  /* ---------------------------------------------------------------------
+   Carousel
+  ------------------------------------------------------------------------ */
+  /* line 259, ../scss/_screen_small.scss */
+  .slide-lrg > img {
+    width: 150%;
+  }
+
+  /* ---------------------------------------------------------------------
+  Map Styles
+  ------------------------------------------------------------------------ */
+  /* line 266, ../scss/_screen_small.scss */
+  .map-find {
+    display: none;
+  }
+
+  /* line 270, ../scss/_screen_small.scss */
+  .map-addresses {
+    display: none;
+  }
+
+  /* line 274, ../scss/_screen_small.scss */
+  .location-view {
+    display: none;
+  }
+
+  /* line 278, ../scss/_screen_small.scss */
+  .map-content {
+    position: relative;
+    width: 100%;
+  }
+
+  /* line 283, ../scss/_screen_small.scss */
+  .location-change {
+    display: block;
+    width: 90%;
+    padding: 0 5%;
+    position: absolute;
+    top: 5%;
+  }
+
+  /* line 292, ../scss/_screen_small.scss */
+  .map-count {
+    font-size: 77px;
+    font-family: FordBold, sans-serif;
+    float: left;
+    color: #1a3549;
+    line-height: .9;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  /* line 302, ../scss/_screen_small.scss */
+  .map-header {
+    margin-bottom: 20px;
+  }
+
+  /* ---------------------------------------------------------------------
+  Feature Styles
+  ------------------------------------------------------------------------ */
+  /* line 310, ../scss/_screen_small.scss */
+  .feature-customize {
+    height: 550px;
+    background-position: -280px -120px;
+    position: relative;
+  }
+
+  /* line 318, ../scss/_screen_small.scss */
+  #js-customize-control,
+  .customize-body {
+    display: none;
+  }
+
+  /* line 322, ../scss/_screen_small.scss */
+  .review-rating-text {
+    display: none;
+  }
+
+  /* ---------------------------------------------------------------------
+  Footer Styles
+  ------------------------------------------------------------------------ */
+  /* line 331, ../scss/_screen_small.scss */
+  .footer-nav > li > a {
+    font-family: FordBold, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    padding: 20px 5% 20px 5%;
+  }
+
+  /* line 340, ../scss/_screen_small.scss */
+  .footer-nav > li > ul {
+    padding: 0 0 0 7%;
+    border-top: 1px solid #3e3e3e;
+  }
+
+  /* line 345, ../scss/_screen_small.scss */
+  .footer-nav > li > ul > li > a {
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    padding: 30px 0 0 0;
+    color: #b4b4b4;
+    display: block;
+  }
+
+  /* line 353, ../scss/_screen_small.scss */
+  .tagline {
+    position: absolute;
+    bottom: 202px;
+    right: 0;
+  }
+
+  /* line 359, ../scss/_screen_small.scss */
+  .tagline > a {
+    -o-background-size: 80%;
+    -webkit-background-size: 80%;
+    background-size: 80%;
+  }
+
+  /* line 365, ../scss/_screen_small.scss */
+  .footer-info-wrapper {
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+
+  /* line 370, ../scss/_screen_small.scss */
+  .copyright {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+  }
+
+  /* line 376, ../scss/_screen_small.scss */
+  .footer-info > li {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+
+  /* line 382, ../scss/_screen_small.scss */
+  .story .media-content {
+    margin: 0 18px 50px 15px;
+    font-size: 93%;
+  }
+
+  /* line 387, ../scss/_screen_small.scss */
+  .h2-alt {
+    padding: 0 20px;
+  }
+
+  /* line 391, ../scss/_screen_small.scss */
+  .story .h4 {
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  /* line 396, ../scss/_screen_small.scss */
+  .js-carousel > li {
+    float: none;
+  }
+
+  /* line 400, ../scss/_screen_small.scss */
+  .read-more-copy {
+    display: none;
+  }
+
+  /* line 404, ../scss/_screen_small.scss */
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  /* line 409, ../scss/_screen_small.scss */
+  .slider {
+    margin-top: 0 !important;
+  }
+
+  /* line 413, ../scss/_screen_small.scss */
+  .content-block {
+    margin-top: 23px;
+  }
+
+  /* line 417, ../scss/_screen_small.scss */
+  .block-stacked:last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 421, ../scss/_screen_small.scss */
+  .heading-model {
+    padding-left: 30px;
+  }
+
+  /* line 426, ../scss/_screen_small.scss */
+  .social-header-heading.h3 {
+    font-size: 23px;
+  }
+
+  /* line 430, ../scss/_screen_small.scss */
+  .social-header {
+    margin-top: 0;
+  }
+
+  /* line 434, ../scss/_screen_small.scss */
+  .overall-ratings {
+    font-family: FordBold, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    float: left;
+    display: inline-block;
+  }
+
+  /* line 442, ../scss/_screen_small.scss */
+  .rating-stars-feature {
+    background-image: url("../images/stars-large.png");
+    width: 125px;
+    height: 20px;
+    background-size: 100%;
+    margin-top: -5px;
+  }
+
+  /* line 450, ../scss/_screen_small.scss */
+  .rating-stars-feature.rating-4 {
+    background-position: 0 -20px;
+  }
+
+  /* line 454, ../scss/_screen_small.scss */
+  .social-divider {
+    margin: 46px 0 15px;
+  }
+
+  /* line 458, ../scss/_screen_small.scss */
+  .review {
+    margin-bottom: 30px;
+  }
+
+  /* line 462, ../scss/_screen_small.scss */
+  .social-review-footer {
+    margin-bottom: 0;
+  }
+
+  /* line 466, ../scss/_screen_small.scss */
+  .map-count {
+    display: none;
+  }
+
+  /* line 470, ../scss/_screen_small.scss */
+  .view-by {
+    display: none !important;
+  }
+
+  /* line 474, ../scss/_screen_small.scss */
+  .models-actions-container {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  /* line 479, ../scss/_screen_small.scss */
+  .h3 {
+    padding-left: 0;
+  }
+
+  /* line 483, ../scss/_screen_small.scss */
+  .models-other-block:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  /* line 508, ../scss/_screen_small.scss */
+  .btn-primary-customize {
+    position: relative;
+    bottom: -350px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+
+  /* line 517, ../scss/_screen_small.scss */
+  .rating-feature-container > .rating-stars {
+    margin-top: -7px !important;
+  }
+}
+@media screen and (max-width: 570px) {
+  /* line 21, ../scss/revolution.scss */
+  .rating-feature-container {
+    display: none !important;
+  }
+
+  /* line 24, ../scss/revolution.scss */
+  .vehicle-info-container.vehicle-info-hide {
+    display: none;
+  }
+}
+/*
+ * jquery.rs.carousel.css v0.8.5
+ *
+ * Copyright (c) 2011 Richard Scarrott
+ * http://www.richardscarrott.co.uk
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ * Depends:
+ *  a basic reset + items must have width & height
+ */
+/* line 15, ../scss/_jquery.rs.carousel.scss */
+.rs-carousel {
+  font-family: Antenna;
+}
+
+/* line 19, ../scss/_jquery.rs.carousel.scss */
+.rs-carousel .rs-carousel-mask {
+  overflow: hidden;
+}
+
+/* line 23, ../scss/_jquery.rs.carousel.scss */
+.rs-carousel .rs-carousel-runner {
+  position: relative;
+}
+
+/* line 27, ../scss/_jquery.rs.carousel.scss */
+.rs-carousel.rs-carousel-horizontal .rs-carousel-item {
+  float: left;
+}
+
+/*
+ * jquery.rs.carousel-touch.css v0.8.5
+ *
+ * Copyright (c) 2011 Richard Scarrott
+ * http://www.richardscarrott.co.uk
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ * Depends:
+ *  jquery.rs.carousel.css v0.8.5+
+ */
+/* line 15, ../scss/_jquery.rs.carousel-touch.scss */
+.rs-carousel .rs-carousel-mask {
+  position: relative;
+}
+
+/* line 19, ../scss/_jquery.rs.carousel-touch.scss */
+.rs-carousel .rs-carousel-runner.rs-carousel-runner-transition {
+  -moz-transition: -moz-transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -o-transition: -o-transform 0.4s ease;
+  -ms-transition: -ms-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
+/* line 27, ../scss/_jquery.rs.carousel-touch.scss */
+.rs-carousel .rs-carousel-runner {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/*
+ *
+ *  Copyright (c) David Bushell | http://dbushell.com/
+ *
+ */
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../scss/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, ../scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, ../scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 74, ../scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, ../scss/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, ../scss/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, ../scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, ../scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 126, ../scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, ../scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, ../scss/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, ../scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 164, ../scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, ../scss/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, ../scss/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, ../scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 198, ../scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 205, ../scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 209, ../scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, ../scss/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, ../scss/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, ../scss/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, ../scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 278, ../scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 290, ../scss/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 302, ../scss/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 317, ../scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 327, ../scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 337, ../scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, ../scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 361, ../scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 370, ../scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, ../scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 37, ../scss/_base-nav.scss */
+.show-list, .show-car-list {
+  display: block !important;
+}
+
+/* line 41, ../scss/_base-nav.scss */
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 46, ../scss/_base-nav.scss */
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+}
+
+/* line 50, ../scss/_base-nav.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 54, ../scss/_base-nav.scss */
+body {
+  color: #333;
+  position: relative;
+  width: 100%;
+  min-width: 20em;
+  background: white;
+  font-family: "Antenna";
+  font-smoothing: antialiased;
+}
+
+/* line 64, ../scss/_base-nav.scss */
+#top {
+  -webkit-transform: translateZ(0);
+}
+
+/* line 68, ../scss/_base-nav.scss */
+.block {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 73, ../scss/_base-nav.scss */
+.close-btn {
+  display: none;
+  width: 2.625em;
+  height: 2.25em;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: white url("../images/close-btn.svg") left center no-repeat;
+  background-size: 1.875em 1.875em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 88, ../scss/_base-nav.scss */
+.no-svg .close-btn {
+  background-image: url("../images/close-btn.png");
+}
+/* line 93, ../scss/_base-nav.scss */
+.close-btn:focus, .close-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 98, ../scss/_base-nav.scss */
+.nav-btn {
+  display: block;
+  height: 71px;
+  width: 71px;
+  border: 0;
+  outline: none;
+  color: white;
+  background: #2d96cd;
+  font-size: 31px;
+  background-size: 1.875em 1.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 113, ../scss/_base-nav.scss */
+.no-svg .nav-btn {
+  background-image: url("../images/nav-icon.png");
+}
+/* line 117, ../scss/_base-nav.scss */
+.nav-btn:before {
+  content: "☰";
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: center;
+  color: white;
+  z-index: 100;
+  top: 18px;
+  left: 20px;
+  position: absolute;
+}
+/* line 131, ../scss/_base-nav.scss */
+.nav-btn:hover, .nav-btn:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 136, ../scss/_base-nav.scss */
+#outer-wrap {
+  overflow: hidden;
+}
+
+/* line 144, ../scss/_base-nav.scss */
+#nav {
+  width: 166px;
+  z-index: 1000;
+  position: fixed;
+  z-index: 1000;
+}
+/* line 150, ../scss/_base-nav.scss */
+#nav .logo {
+  position: relative;
+  padding-bottom: 48px;
+  color: white;
+  background: white;
+}
+/* line 156, ../scss/_base-nav.scss */
+#nav .logo:before {
+  position: absolute;
+  top: -20px;
+  left: 16%;
+  width: 115px;
+  height: 100px;
+  background: url("../images/navigation-logo.svg") no-repeat;
+  background-size: 100%;
+  content: "";
+}
+/* line 168, ../scss/_base-nav.scss */
+#nav .close-btn {
+  display: none;
+}
+/* line 176, ../scss/_base-nav.scss */
+#nav .block {
+  position: relative;
+  background: white;
+}
+/* line 181, ../scss/_base-nav.scss */
+#nav ul {
+  *zoom: 1;
+}
+/* line 9, ../scss/_base-nav.scss */
+#nav ul:before, #nav ul:after {
+  content: "";
+  display: table;
+}
+/* line 13, ../scss/_base-nav.scss */
+#nav ul:after {
+  clear: both;
+}
+/* line 186, ../scss/_base-nav.scss */
+#nav .nav > li {
+  position: relative;
+}
+/* line 190, ../scss/_base-nav.scss */
+#nav .nav > li.not-active:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 17px;
+  width: 15px;
+  height: 21px;
+  background: url("../images/large_blue_arrow.png") no-repeat;
+  background-size: 15px 21px;
+}
+/* line 202, ../scss/_base-nav.scss */
+#nav .nav > li.not-active:hover:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 17px;
+  width: 15px;
+  height: 21px;
+  background: url("../images/large_white_arrow.png") no-repeat;
+  background-size: 15px 21px;
+}
+/* line 213, ../scss/_base-nav.scss */
+#nav .nav > li.is-active:after {
+  content: "";
+  position: absolute;
+  top: 29px;
+  right: 15px;
+  width: 21px;
+  height: 15px;
+  background: url("../images/large_blue_arrow_down.png") no-repeat;
+  background-size: 21px 15px;
+}
+/* line 224, ../scss/_base-nav.scss */
+#nav .nav > li.is-active:hover:after {
+  content: "";
+  position: absolute;
+  top: 29px;
+  right: 15px;
+  width: 21px;
+  height: 15px;
+  background: url("../images/large_white_arrow_down.png") no-repeat;
+  background-size: 21px 15px;
+}
+/* line 235, ../scss/_base-nav.scss */
+#nav .nav > li.nav-search:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  width: 21px;
+  height: 22px;
+  background: url("../images/navigation-search-tblt.png") no-repeat;
+  background-size: 21px 22px;
+}
+/* line 246, ../scss/_base-nav.scss */
+#nav li {
+  display: block;
+}
+/* line 249, ../scss/_base-nav.scss */
+#nav li a {
+  display: block;
+  color: #2d96cd;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  padding: 28px 10px 28px 20px;
+  border-top: 1px solid #dfdfdf;
+  font-family: Antenna;
+}
+/* line 261, ../scss/_base-nav.scss */
+#nav li:focus > a, #nav li:hover > a {
+  color: white;
+  background: #18384d;
+}
+/* line 266, ../scss/_base-nav.scss */
+#nav li ul {
+  display: none;
+  font-family: Antenna;
+}
+
+/* line 274, ../scss/_base-nav.scss */
+#top {
+  z-index: 100;
+  position: relative;
+  color: #fff;
+  height: 71px;
+  background: -webkit-linear-gradient(top, white 0%, #f0f0f0 100%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 283, ../scss/_base-nav.scss */
+#top .block-title {
+  margin: 0;
+  font-size: 1.875em;
+  line-height: 1.2em;
+  text-align: center;
+  white-space: nowrap;
+  text-indent: -9999px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background: url("../images/fordoval_header_slate.svg") no-repeat left 16px;
+  background-size: 190px;
+}
+/* line 296, ../scss/_base-nav.scss */
+#top .nav-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 303, ../scss/_base-nav.scss */
+#main {
+  background: #fff;
+}
+/* line 306, ../scss/_base-nav.scss */
+#main .block {
+  padding: 2.625em 1.875em;
+}
+
+/* line 311, ../scss/_base-nav.scss */
+footer[role="contentinfo"] {
+  background: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 26, ../scss/_step1.scss */
+  #top .block-title {
+    margin: 0;
+    font-size: 1.875em;
+    line-height: 1.2em;
+    text-align: center;
+    white-space: nowrap;
+    text-indent: -9999px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background: url("../images/fordoval_header_slate.svg") no-repeat 95px center;
+    background-size: 190px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 41, ../scss/_step1.scss */
+  #top .block-title {
+    margin: 0;
+    font-size: 1.875em;
+    line-height: 1.2em;
+    text-align: center;
+    white-space: nowrap;
+    text-indent: -9999px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background: url("../images/fordoval_header_slate.svg") no-repeat 95px center;
+    background-size: 190px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 1, ../scss/_min_width_720.scss */
+  #top {
+    display: none;
+  }
+
+  /* line 14, ../scss/_min_width_720.scss */
+  #inner-wrap {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1400px;
+  }
+
+  /* line 20, ../scss/_min_width_720.scss */
+  #nav {
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+    left: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+  /* line 30, ../scss/_min_width_720.scss */
+  #nav .close-btn {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  /* line 38, ../scss/_min_width_720.scss */
+  #nav ul {
+    background: white;
+  }
+  /* line 44, ../scss/_min_width_720.scss */
+  #nav .nav > li.not-active:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 14px;
+    width: 9px;
+    height: 13px;
+    background: url("../images/large_blue_arrow.png") no-repeat;
+    background-size: 9px 13px;
+  }
+  /* line 55, ../scss/_min_width_720.scss */
+  #nav .nav > li.not-active:hover:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 14px;
+    width: 9px;
+    height: 13px;
+    background: url("../images/large_white_arrow.png") no-repeat;
+    background-size: 9px 13px;
+  }
+  /* line 66, ../scss/_min_width_720.scss */
+  #nav .nav > li.nav-search:after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 12px;
+    width: 16px;
+    height: 17px;
+    background: url("../images/navigation-search-tblt.png") no-repeat;
+    background-size: 16px 17px;
+  }
+  /* line 77, ../scss/_min_width_720.scss */
+  #nav .nav > li.nav-search:hover:after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 12px;
+    width: 16px;
+    height: 17px;
+    background: url("../images/navigation-search-tblt-white.png") no-repeat;
+    background-size: 16px 17px;
+  }
+  /* line 88, ../scss/_min_width_720.scss */
+  #nav li {
+    display: block;
+  }
+  /* line 92, ../scss/_min_width_720.scss */
+  #nav li:last-child {
+    border-right: none;
+  }
+  /* line 96, ../scss/_min_width_720.scss */
+  #nav li a {
+    font-size: 13px;
+    padding: 20px 10px 20px 18px;
+  }
+  /* line 102, ../scss/_min_width_720.scss */
+  #nav li:hover .nav-vehicles {
+    display: block;
+  }
+  /* line 108, ../scss/_min_width_720.scss */
+  #nav li:focus > a, #nav li:hover > a {
+    color: white;
+  }
+  /* line 113, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles {
+    top: -118px;
+    display: none;
+    left: 166px;
+    position: absolute;
+    z-index: -100;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+  /* line 121, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles li:hover > a {
+    color: #1e384e;
+    background-color: white;
+  }
+  /* line 126, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a {
+    padding: 21px 20px 21px 90px;
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  /* line 133, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a.cars {
+    background: #f2f2f2 url("../images/subnav/cars.jpg") no-repeat;
+    background-position: 7px center;
+    border-right: none;
+  }
+  /* line 139, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a.xovers {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #f2f2f2 url("../images/subnav/xover.jpg") no-repeat;
+    background-position: 7px center;
+  }
+  /* line 145, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a.trucks {
+    background: #f2f2f2 url("../images/subnav/truck.jpg") no-repeat;
+    background-position: 7px center;
+  }
+  /* line 149, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a.hybrids {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #f2f2f2 url("../images/subnav/hybrid.jpg") no-repeat;
+    background-position: 7px center;
+  }
+  /* line 155, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a.commercial {
+    background: #f2f2f2 url("../images/subnav/commercial.jpg") no-repeat;
+    background-position: 7px center;
+  }
+  /* line 159, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a.all {
+    background: #f2f2f2 url("../images/subnav/all.jpg") no-repeat;
+    background-position: 7px center;
+  }
+  /* line 163, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a.future {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #f2f2f2 url("../images/subnav/future.jpg") no-repeat;
+    background-position: 7px center;
+  }
+  /* line 169, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles a:hover {
+    background-color: white;
+  }
+  /* line 174, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars a {
+    padding-left: 0 !important;
+    border: none !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  /* line 180, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    width: 690px;
+    left: 213px !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-top: 1px solid #dfdfdf;
+    background: white;
+    padding: 3px;
+  }
+  /* line 192, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars > li {
+    display: inline-block;
+    float: left;
+    color: #a8a8a8;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    padding: 10px 15px 10px 20px;
+  }
+  /* line 201, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars > li > h3 {
+    color: #0f7bc6;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  /* line 209, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars > li ul {
+    border-top: 1px solid #e3e3e3;
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  /* line 214, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars > li ul li {
+    margin-top: 6px;
+  }
+  /* line 218, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars > li ul span {
+    float: right;
+  }
+  /* line 226, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles li:hover ul.nav-vehicles-cars {
+    display: block;
+  }
+  /* line 232, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles li ul.nav-vehicles-cars {
+    width: 943px;
+    display: none;
+    padding: 3px;
+  }
+  /* line 240, ../scss/_min_width_720.scss */
+  #nav li .nav-vehicles:hover ul {
+    display: block;
+  }
+  /* line 247, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation:after {
+    background: none;
+  }
+  /* line 251, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation a {
+    color: white;
+    background: #18384d;
+    font-weight: normal;
+    font-size: 13px;
+    background-image: none;
+    border-bottom: 1px solid #062436;
+  }
+  /* line 260, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation > a {
+    padding-bottom: 14px;
+    text-transform: uppercase;
+  }
+  /* line 266, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul {
+    display: block;
+  }
+  /* line 269, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul .sub-active a {
+    color: white;
+  }
+  /* line 273, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul a {
+    color: #82959f;
+    border: none;
+    padding: 10px 10px 10px 23px;
+    font-weight: normal;
+  }
+  /* line 280, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul a:hover {
+    color: white;
+  }
+  /* line 284, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul li:first-child {
+    border-top: 1px solid #115172;
+  }
+  /* line 288, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul li:first-child a {
+    padding-top: 20px;
+  }
+  /* line 294, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul li.micro-tab a span {
+    background: #304b5d;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+  }
+  /* line 305, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul li:last-child a {
+    padding-bottom: 20px;
+  }
+  /* line 309, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul li:nth-last-child(2) a {
+    padding-bottom: 20px;
+  }
+  /* line 313, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul li:last-child a {
+    color: white;
+    background: #2d9bd4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 48px;
+    position: relative;
+    color: #f7f7f9;
+    font-size: 12px;
+  }
+  /* line 324, ../scss/_min_width_720.scss */
+  #nav #mustang-navigation ul li:last-child a:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: url("../images/gear.png") no-repeat;
+    background-size: 100%;
+    width: 21px;
+    height: 21px;
+    top: 11px;
+    left: 14px;
+  }
+
+  /* line 58, ../scss/_step1.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars > li {
+    padding: 10px 12px 10px 17px;
+  }
+
+  /* line 62, ../scss/_step1.scss */
+  #nav li .nav-vehicles li ul.nav-vehicles-cars {
+    width: 465px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 7, ../scss/_max_width_720.scss */
+  #inner-wrap {
+    z-index: 100;
+  }
+
+  /* line 10, ../scss/_max_width_720.scss */
+  #top {
+    top: 0 !important;
+    display: block;
+  }
+
+  /* line 15, ../scss/_max_width_720.scss */
+  .social-stories {
+    margin: 0 6%;
+  }
+
+  /* line 25, ../scss/_max_width_720.scss */
+  #nav:before {
+    content: "";
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.15)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
+    background: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
+    top: 0;
+    right: -1px;
+    width: 8px;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+  }
+
+  /* line 36, ../scss/_max_width_720.scss */
+  #nav {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    /* padding-top: pem(84); */
+  }
+  /* line 44, ../scss/_max_width_720.scss */
+  #nav:not(:target) {
+    /* z-index: 1; */
+    height: 0;
+  }
+  /* line 50, ../scss/_max_width_720.scss */
+  #nav:target .close-btn {
+    display: block;
+  }
+  /* line 55, ../scss/_max_width_720.scss */
+  #nav .close-btn {
+    position: absolute;
+    top: -3.75em;
+    left: 1.875em;
+  }
+  /* line 61, ../scss/_max_width_720.scss */
+  #nav .block {
+    position: relative;
+    padding: 0;
+  }
+  /* line 66, ../scss/_max_width_720.scss */
+  #nav .block-title {
+    display: none;
+  }
+  /* line 70, ../scss/_max_width_720.scss */
+  #nav ul {
+    position: relative;
+    display: block;
+  }
+  /* line 75, ../scss/_max_width_720.scss */
+  #nav .nav > li.not-active:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    width: 15px;
+    height: 21px;
+    background: url("../images/large_blue_arrow.png") no-repeat;
+    background-size: 15px 21px;
+  }
+  /* line 86, ../scss/_max_width_720.scss */
+  #nav .nav > li.not-active:hover:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    width: 15px;
+    height: 21px;
+    background: url("../images/large_white_arrow.png") no-repeat;
+    background-size: 15px 21px;
+  }
+  /* line 97, ../scss/_max_width_720.scss */
+  #nav .nav > li.is-active:after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 15px;
+    width: 21px;
+    height: 15px;
+    background: url("../images/large_white_arrow_down.png") no-repeat;
+    background-size: 21px 15px;
+  }
+  /* line 108, ../scss/_max_width_720.scss */
+  #nav .nav > li.is-active > a {
+    color: white;
+    background-color: #16374e;
+  }
+  /* line 113, ../scss/_max_width_720.scss */
+  #nav .nav > li.is-active:hover:after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 15px;
+    width: 21px;
+    height: 15px;
+    background: url("../images/large_white_arrow_down.png") no-repeat;
+    background-size: 21px 15px;
+  }
+  /* line 132, ../scss/_max_width_720.scss */
+  #nav .nav-vehicles > li {
+    background-color: #f2f2f2;
+  }
+  /* line 136, ../scss/_max_width_720.scss */
+  #nav .nav-vehicles > li.not-active:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    width: 15px;
+    height: 21px;
+    background: url("../images/large_blue_arrow.png") no-repeat;
+    background-size: 15px 21px;
+  }
+  /* line 147, ../scss/_max_width_720.scss */
+  #nav .nav-vehicles > li.not-active:hover:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    width: 15px;
+    height: 21px;
+    background: url("../images/large_white_arrow.png") no-repeat;
+    background-size: 15px 21px;
+  }
+  /* line 158, ../scss/_max_width_720.scss */
+  #nav .nav-vehicles > li.is-active:after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 15px;
+    width: 21px;
+    height: 15px;
+    background: url("../images/large_white_arrow_down.png") no-repeat;
+    background-size: 21px 15px;
+  }
+  /* line 169, ../scss/_max_width_720.scss */
+  #nav .nav-vehicles > li.is-active a {
+    background-color: #2495cf;
+    color: white;
+  }
+  /* line 174, ../scss/_max_width_720.scss */
+  #nav .nav-vehicles > li.is-active:hover:after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 15px;
+    width: 21px;
+    height: 15px;
+    background: url("../images/large_white_arrow_down.png") no-repeat;
+    background-size: 21px 15px;
+  }
+  /* line 185, ../scss/_max_width_720.scss */
+  #nav li {
+    position: relative;
+    background-color: white;
+    /* border-top: 1px solid rgba(255,255,255, 0.1); */
+  }
+  /* line 191, ../scss/_max_width_720.scss */
+  #nav li a {
+    /* padding: pem(12, 14) pem(30, 14); */
+    border-top: none;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  /* line 197, ../scss/_max_width_720.scss */
+  #nav li ul {
+    position: relative;
+  }
+  /* line 201, ../scss/_max_width_720.scss */
+  #nav li ul a {
+    border-top: none;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  /* line 206, ../scss/_max_width_720.scss */
+  #nav li ul a:hover {
+    background: #2d96cd;
+  }
+  /* line 210, ../scss/_max_width_720.scss */
+  #nav li ul ul h3 {
+    position: absolute;
+    top: 14px;
+    left: 135px;
+    color: #2d96cd;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  /* line 233, ../scss/_max_width_720.scss */
+  #nav li ul .car-info {
+    position: relative;
+    display: block;
+    border: none;
+    color: #435966;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  /* line 242, ../scss/_max_width_720.scss */
+  #nav li ul .car-info li:nth-child(2),
+  #nav li ul .car-info li:nth-child(3) {
+    display: none;
+  }
+  /* line 246, ../scss/_max_width_720.scss */
+  #nav li ul .car-info li:nth-child(1) {
+    position: absolute;
+    top: -25px;
+    left: 140px;
+    font-size: 10px;
+  }
+  /* line 253, ../scss/_max_width_720.scss */
+  #nav li ul .car-info li:nth-child(1) span {
+    position: absolute;
+    top: -27px;
+    left: -5px;
+    font-size: 24px;
+  }
+  /* line 260, ../scss/_max_width_720.scss */
+  #nav li ul .car-info em {
+    font-weight: normal;
+  }
+  /* line 264, ../scss/_max_width_720.scss */
+  #nav li ul .car-info sup {
+    font-size: 60%;
+  }
+  /* line 268, ../scss/_max_width_720.scss */
+  #nav li ul .car-info li {
+    border: none;
+  }
+  /* line 273, ../scss/_max_width_720.scss */
+  #nav li ul ul li {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  /* line 277, ../scss/_max_width_720.scss */
+  #nav li ul ul img {
+    margin: 8px 0 8px -15px;
+    width: 145px;
+  }
+  /* line 284, ../scss/_max_width_720.scss */
+  #nav #vehicles a:target #vehicles ul {
+    display: block;
+  }
+  /* line 288, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation {
+    position: relative;
+    z-index: 1;
+  }
+  /* line 293, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation:after {
+    background: none;
+  }
+  /* line 297, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation a {
+    z-index: -100;
+    border-bottom: 1px solid #062436;
+    background: #18384d;
+    background-image: none;
+    color: white;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  /* line 307, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation > a {
+    padding-top: 19px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+  }
+  /* line 314, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul {
+    z-index: -100;
+    display: block;
+  }
+  /* line 318, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul a {
+    padding: 10px 10px 10px 23px;
+    border: none;
+    color: #82959f;
+    font-weight: normal;
+  }
+  /* line 325, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul .sub-active a {
+    color: white;
+  }
+  /* line 329, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul a {
+    padding: 10px 10px 10px 23px;
+    border: none;
+    color: #82959f;
+    font-weight: normal;
+  }
+  /* line 336, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul a:hover {
+    color: white;
+  }
+  /* line 340, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul li:first-child {
+    border-top: 1px solid #115172;
+  }
+  /* line 344, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul li:first-child a {
+    padding-top: 20px;
+  }
+  /* line 350, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul li.micro-tab a span {
+    margin-left: 10px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: #304b5d;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  /* line 361, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul li:last-child {
+    background: none;
+  }
+  /* line 365, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul li:nth-last-child(2) a {
+    padding-bottom: 20px;
+  }
+  /* line 369, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul li:last-child a {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 48px;
+    background: #2d9bd4;
+    color: white;
+    font-size: 12px;
+  }
+  /* line 379, ../scss/_max_width_720.scss */
+  #nav #mustang-navigation ul li:last-child a:before {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url("../images/gear.png") no-repeat;
+    background-size: 100%;
+    content: "";
+  }
+
+  /* line 401, ../scss/_max_width_720.scss */
+  .js-ready #nav {
+    width: 265px;
+    height: 100%;
+    background: white;
+  }
+  /* line 407, ../scss/_max_width_720.scss */
+  .js-ready #nav .block {
+    background: transparent;
+  }
+  /* line 411, ../scss/_max_width_720.scss */
+  .js-ready #nav .close-btn {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    display: block;
+  }
+  /* line 416, ../scss/_max_width_720.scss */
+  .js-ready #nav .close-btn:focus, .js-ready #nav .close-btn:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  /* line 426, ../scss/_max_width_720.scss */
+  .map-header {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  /* line 434, ../scss/_max_width_720.scss */
+  .map-header .h2-strong {
+    display: block;
+  }
+
+  /* line 454, ../scss/_max_width_720.scss */
+  .new-featured {
+    margin-bottom: 5px;
+  }
+
+  /* line 458, ../scss/_max_width_720.scss */
+  .videos-title .h2-alt {
+    margin-left: 10%;
+  }
+
+  /* line 466, ../scss/_max_width_720.scss */
+  .js-ready #nav {
+    left: -265px;
+  }
+  /* line 470, ../scss/_max_width_720.scss */
+  .js-ready #inner-wrap {
+    left: 0;
+  }
+
+  /* line 477, ../scss/_max_width_720.scss */
+  .js-nav #inner-wrap {
+    left: 165px;
+  }
+
+  /* line 488, ../scss/_max_width_720.scss */
+  .csstransforms3d.csstransitions.js-ready #nav {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    left: 0;
+  }
+  /* line 494, ../scss/_max_width_720.scss */
+  .csstransforms3d.csstransitions.js-ready #inner-wrap {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    left: 0 !important;
+  }
+
+  /* line 504, ../scss/_max_width_720.scss */
+  .csstransforms3d.csstransitions.js-nav #inner-wrap {
+    -webkit-transform: translate3d(265px, 0, 0) scale3d(1, 1, 1);
+    -moz-transform: translate3d(265px, 0, 0) scale3d(1, 1, 1);
+    -ms-transform: translate3d(265px, 0, 0) scale3d(1, 1, 1);
+    -o-transform: translate3d(265px, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(265px, 0, 0) scale3d(1, 1, 1);
+  }
+
+  /* line 518, ../scss/_max_width_720.scss */
+  .csstransforms3d.csstransitions.js-ready #nav .block {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+    opacity: 0.1;
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -o-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -webkit-transform-origin: -100% 0%;
+    -moz-transform-origin: -100% 0%;
+    -ms-transform-origin: -100% 0%;
+    -o-transform-origin: -100% 0%;
+    transform-origin: -100% 0%;
+    -webkit-transition: opacity 300ms 100ms;
+    -webkit-transition-delay: ease;
+    -moz-transition: opacity 300ms 100ms ease;
+    -o-transition: opacity 300ms 100ms ease;
+    transition: opacity 300ms 100ms ease;
+  }
+
+  /* line 531, ../scss/_max_width_720.scss */
+  .csstransforms3d.csstransitions.js-nav #nav .block {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* line 72, ../scss/_step1.scss */
+  .gallery-nav {
+    text-align: center;
+  }
+
+  /* line 76, ../scss/_step1.scss */
+  .gallery-nav {
+    margin: 29px 20px;
+  }
+
+  /* line 80, ../scss/_step1.scss */
+  .gallery-nav li a {
+    margin-right: 40px;
+    font-size: 98%;
+  }
+}
+@media screen and (max-width: 1025px) and (max-width: 768px) {
+  /* line 20, ../scss/_max_width_720.scss */
+  .social-stories {
+    margin: 0%;
+  }
+}
+@media screen and (max-width: 1025px) and (min-width: 480px) {
+  /* line 440, ../scss/_max_width_720.scss */
+  .map-header {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  /* line 448, ../scss/_max_width_720.scss */
+  .map-header .h2-strong {
+    display: inline-block;
+  }
+}
+/* line 97, ../scss/_step1.scss */
+.nav-vehicles-fillers {
+  display: none !important;
+  height: 190px;
+}
+
+@media screen and (min-width: 1350px) {
+  /* line 103, ../scss/_step1.scss */
+  #nav li .nav-vehicles li ul.nav-vehicles-cars {
+    width: 923px !important;
+  }
+
+  /* line 107, ../scss/_step1.scss */
+  .nav-vehicles-fillers {
+    display: block !important;
+    height: 190px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  /* line 115, ../scss/_step1.scss */
+  #nav li .nav-vehicles .nav-vehicles-cars > li {
+    padding: 10px 15px 10px 15px;
+  }
+
+  /* line 119, ../scss/_step1.scss */
+  #nav li .nav-vehicles li ul.nav-vehicles-cars {
+    width: 690px;
+  }
+
+  /* line 122, ../scss/_step1.scss */
+  li.nav-vehicles-fillers {
+    display: block;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 135, ../scss/_step1.scss */
+  .social-stories .story {
+    border-top: 1px solid #cccccc;
+    margin: 0;
+    height: 100%;
+  }
+
+  /* line 141, ../scss/_step1.scss */
+  .social-stories li:last-child .story {
+    border-bottom: 1px solid #cccccc;
+  }
+
+  /* line 145, ../scss/_step1.scss */
+  .social-stories {
+    height: 100%;
+  }
+
+  /* line 149, ../scss/_step1.scss */
+  .social-stories .story .story-media {
+    width: 35%;
+    float: left;
+    display: inline-block;
+  }
+
+  /* line 155, ../scss/_step1.scss */
+  .social-stories .story .story-media img {
+    vertical-align: top;
+  }
+
+  /* line 159, ../scss/_step1.scss */
+  .social-stories .story .media-content {
+    width: 55%;
+    display: inline-block;
+    margin: 0;
+    padding-left: 10px;
+    vertical-align: center;
+  }
+
+  /* line 167, ../scss/_step1.scss */
+  .social-stories .story .media-content .media-foot {
+    display: none;
+  }
+
+  /* line 171, ../scss/_step1.scss */
+  .background-secondary.new-featured {
+    margin-top: 0;
+  }
+
+  /* line 175, ../scss/_step1.scss */
+  .gallery-nav {
+    margin-top: 40px 0 30px 20px;
+  }
+
+  /* line 179, ../scss/_step1.scss */
+  .gallery-nav li a {
+    margin-right: 30px;
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 188, ../scss/_step1.scss */
+  .h4.h4-strong {
+    font-size: 95%;
+  }
+
+  /* line 192, ../scss/_step1.scss */
+  .date-block {
+    height: auto;
+    padding-bottom: 3px;
+    width: 30%;
+    font-size: 70%;
+  }
+
+  /* line 202, ../scss/_step1.scss */
+  .date-block-month,
+  .date-block-day {
+    font-size: 90%;
+    padding-bottom: 2px;
+  }
+
+  /* line 210, ../scss/_step1.scss */
+  .date-block-day {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 218, ../scss/_step1.scss */
+  .h4.h4-strong {
+    font-size: 95%;
+  }
+
+  /* line 222, ../scss/_step1.scss */
+  .date-block {
+    width: 55%;
+    height: auto;
+    font-size: 80%;
+    padding: 2px;
+  }
+
+  /* line 230, ../scss/_step1.scss */
+  .date-block-month,
+  .date-block-day {
+    display: inline-block;
+    float: left;
+    padding: 3px;
+  }
+
+  /* line 236, ../scss/_step1.scss */
+  .date-block-day {
+    font-size: 14px;
+  }
+}
+/* line 32, ../scss/revolution.scss */
+.grid-row {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: transform3d(0, 0, 0);
+}
+
+/* line 37, ../scss/revolution.scss */
+.car-info em {
+  font-weight: bold;
+}
+
+/* line 41, ../scss/revolution.scss */
+#mustang-link {
+  cursor: pointer;
+}

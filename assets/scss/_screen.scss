@@ -1,0 +1,1948 @@
+/* ---------------------------------------------------------------------
+Original Author: Mark Spooner
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: All Sizes
+------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Always show a vertical scrollbar, even when there is no scrolling */
+html {
+    overflow-y: scroll;
+}
+
+/* Don't let iOS and WinMobile mobile-optimize text for you */
+/* Turn this rule on for mobile sites or sites using mediaqueries */
+
+html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+
+/* ---------------------------------------------------------------------
+ HTML5 Block / Inline Block declarations
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+}
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+input[type=search] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* ---------------------------------------------------------------------
+Font-Face
+------------------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'FordBlack';
+    src: url('../fonts/FordAntennaWGL-Black.ttf');
+}
+
+@font-face {
+    font-family: 'FordBlackItalic';
+    src: url('../fonts/FordAntennaWGL-BlackItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FordBold';
+    src: url('../fonts/FordAntennaWGL-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'FordBoldItalic';
+    src: url('../fonts/FordAntennaWGL-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FordExtraLight';
+    src: url('../fonts/FordAntennaWGL-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'FordExtraLightItalic';
+    src: url('../fonts/FordAntennaWGL-ExtraLightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FordLight';
+    src: url('../fonts/FordAntennaWGL-Light.ttf');
+}
+
+@font-face {
+    font-family: 'FordLightItalic';
+    src: url('../fonts/FordAntennaWGL-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FordMedium';
+    src: url('../fonts/FordAntennaWGL-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'FordMediumItalic';
+    src: url('../fonts/FordAntennaWGL-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FordRegular';
+    src: url('../fonts/FordAntennaWGL-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'FordRegularItalic';
+    src: url('../fonts/FordAntennaWGL-RegularItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FordSemibold';
+    src: url('../fonts/FordAntennaWGL-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'FordSemiboldItalic';
+    src: url('../fonts/FordAntennaWGL-SemiboldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FordThin';
+    src: url('../fonts/FordAntennaWGL-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'FordThinItalic';
+    src: url('../fonts/FordAntennaWGL-ThinItalic.ttf');
+}
+
+/* ---------------------------------------------------------------------
+Base Styles
+------------------------------------------------------------------------ */
+.wrapper,
+.site-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.site-wrapper.js-menu {
+    padding-top: 72px;
+}
+
+.content {
+    width: 100%;
+}
+
+a {
+    color: #2d96cd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------
+ Grid Styles
+------------------------------------------------------------------------ */
+.grid-row {
+    overflow: hidden;
+}
+
+.grid-row-section {
+    margin-bottom: 30px;
+}
+
+.column {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1400px;
+}
+
+.column-alt {
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.row-centered {
+    display: table;
+}
+
+.row-centered > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* ---------------------------------------------------------------------
+ Heading Styles
+------------------------------------------------------------------------ */
+
+.heading {
+
+}
+
+.h1 {
+    font-family: FordLight, sans-serif;
+    font-size: 42px;
+    color: #2d96cd;
+}
+
+.h1-strong {
+    font-family: FordBold, sans-serif;
+}
+
+.h2 {
+    font-family: FordLight, sans-serif;
+    font-size: 42px;
+    color: #1a3549;
+}
+
+.h2-strong {
+    font-family: FordBold, sans-serif;
+}
+
+.h2-alt {
+    color: #ffffff;
+}
+
+.h2-alt2 {
+    color: #2d96cd;
+}
+
+.h3 {
+    font-size: 38px;
+    color: #425968;
+    text-transform: uppercase;
+    font-family: FordBold, sans-serif;
+    padding-left: 0 !important;
+}
+
+.h4 {
+    font-family: FordRegular, sans-serif;
+    color: #425968;
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+.h4-strong {
+    font-family: FordBold,sans-serif;
+}
+
+.body-copy {
+    font-size: 14px;
+    font-family: 'FordRegular', sans-serif;
+    color: #425968;
+    line-height: 1.5;
+}
+
+.body-copy-alt {
+    color: #ffffff;
+}
+
+.callout-copy {
+
+}
+
+/* ---------------------------------------------------------------------
+ Content-Block Styles
+------------------------------------------------------------------------ */
+
+.content-block {
+    padding: 0 6%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
+
+.content-block-head {
+
+}
+
+.content-block-footer {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    // margin-left: 12px;
+    text-indent: 0;
+}
+
+.content-feature-image {
+    overflow: hidden;
+    width: 100%;
+}
+
+.content-feature-image > img {
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ Menu Styles
+------------------------------------------------------------------------ */
+
+.navigation-wrapper {
+    z-index: 10;
+}
+
+.navigation-head {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 72px;
+    border-top: none;
+    background: #ffffff;
+}
+
+.navigation-logo {
+    display: block;
+    float: left;
+    margin: 18px 0 0 28px;
+    width: 182px;
+    height: 34px;
+}
+
+.navigation-menu-button {
+    float: right;
+    padding: 30px 23px 30px 23px;
+    background: #22a1e4;
+    background: -moz-linear-gradient(top, #22a1e4 0%, #1179b0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#22a1e4), color-stop(100%,#1179b0));
+    background: -webkit-linear-gradient(top, #22a1e4 0%,#1179b0 100%);
+    background: -o-linear-gradient(top, #22a1e4 0%,#1179b0 100%);
+    background: -ms-linear-gradient(top, #22a1e4 0%,#1179b0 100%);
+    background: linear-gradient(to bottom, #22a1e4 0%,#1179b0 100%);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'FordBold', Arial, Helvetica, sans-serif;
+}
+
+.nav-model-tag {
+    margin: 26px 25px 0 0;
+    float: right;
+    color: #425968;
+    font-family: FordBlack, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navigation-logo > h2 {
+    width: 100%;
+    height: 100%;
+    background: url("../images/navigation-logo-mobile.png") no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+.navigation-list {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 250px;
+}
+
+.nav-show > li > a {
+    box-shadow: 30px 0 20px -30px rgba(0, 0, 0, 0.4) inset;
+}
+
+.nav-sub {
+    background: #18384d;
+}
+
+.nav-sub .nav-sub-header + li > a {
+    padding-top: 35px;
+    border-top: 1px solid #115272;
+}
+
+.nav-sub .nav-sub-active {
+    background: url("../images/icon-arrow-right.png") no-repeat 10px center;
+    color: #ffffff;
+}
+
+.nav-sub-header {
+    padding: 19px 0 17px 16px;
+    background: #21435e;
+    background: -moz-linear-gradient(top, #21435e 0%, #133146 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#21435e), color-stop(100%,#133146));
+    background: -webkit-linear-gradient(top, #21435e 0%,#133146 100%);
+    background: -o-linear-gradient(top, #21435e 0%,#133146 100%);
+    background: -ms-linear-gradient(top, #21435e 0%,#133146 100%);
+    background: linear-gradient(to bottom, #21435e 0%,#133146 100%);
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav-sub-header .heading-model {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 8px;
+    margin: -6px 0 -6px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: middle;
+    font-family: FordBold, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #304c5f;
+}
+
+.nav-sub > li > .nav-button-build {
+    margin-top: 30px;
+    padding: 16px 0 16px 24px;
+    background: #35aeed;
+    background: -moz-linear-gradient(top, #35aeed 0%, #2d96cd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35aeed), color-stop(100%,#2d96cd));
+    background: -webkit-linear-gradient(top, #35aeed 0%,#2d96cd 100%);
+    background: -o-linear-gradient(top, #35aeed 0%,#2d96cd 100%);
+    background: -ms-linear-gradient(top, #35aeed 0%,#2d96cd 100%);
+    background: linear-gradient(to bottom, #35aeed 0%,#2d96cd 100%);
+    color: #ffffff;
+    font-family: FordBold, sans-serif;
+    font-size: 16px;
+}
+
+.icon-build {
+    display: inline-block;
+    width: 26px;
+    height: 27px;
+    margin-right: 11px;
+    vertical-align: middle;
+    background: url("../images/icon-build-lg.png") no-repeat;
+}
+
+.footer {
+    background: #252525;
+    position: relative;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.nav-sub.nav-sub-models > li > a {
+    background: url("../images/arrow-thin.png") no-repeat 91% 51% #ffffff;
+    border-top: 1px solid #cecece;
+    padding: 15px 0 15px 12px;
+    box-shadow: 30px 0 20px -30px rgba(0, 0, 0, 0.4) inset;
+}
+
+.nav-model-img {
+    width: 90px;
+    float: left;
+    margin-right: 10px;
+}
+
+.nav-model-body {
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.nav-model-name {
+    font-size: 12px;
+    font-family: FordBlack, sans-serif;
+    color: #2d96cd;
+    line-height: 1.5;
+}
+
+.nav-model-price {
+    font-size: 20px;
+    font-family: FordBold, sans-serif;
+    color: #425968;
+}
+
+.nav-model-note {
+    font-family: FordBold, sans-serif;
+    color: #425968;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* ---------------------------------------------------------------------
+ Media Object Styles
+------------------------------------------------------------------------ */
+.media-object {
+    overflow: hidden;
+}
+
+.media-media {
+    float: none;
+    margin-right: 42px;
+}
+
+.media-content {
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------
+ List Styles
+------------------------------------------------------------------------ */
+
+.h-list > li{
+    float: left;
+}
+
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+
+.blocks {
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.blocks > * {
+    margin-bottom: 30px;
+}
+
+.block-stacked-img {
+    margin-bottom: 20px;
+}
+
+.block-stacked-img > img {
+    width: 100%;
+}
+
+.block-stacked-header {
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Article Browser
+------------------------------------------------------------------------ */
+
+.social {
+    background: #ffffff;
+    font-family: 'FordLight', sans-serif;
+    color: #425968;
+    padding: 0 20px;
+}
+
+.container-social-stories {
+    background: #F1F1F1;
+    background: -moz-linear-gradient(top, #F1F1F1 0%, #FFFFFF 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F1F1F1), color-stop(100%,#FFFFFF));
+    background: -webkit-linear-gradient(top, #F1F1F1 0%,#FFFFFF 100%);
+    background: -o-linear-gradient(top, #F1F1F1 0%,#FFFFFF 100%);
+    background: -ms-linear-gradient(top, #F1F1F1 0%,#FFFFFF 100%);
+    background: linear-gradient(to bottom, #F1F1F1 0%,#FFFFFF 100%);
+}
+
+.social-stories {
+    overflow: hidden;
+    width: 100%;
+    height: 401px;
+}
+
+.social-stories .story {
+    display: block;
+    overflow: hidden;
+}
+
+.story > .media-media {
+    position: relative;
+}
+
+.story .media-content {
+    margin: 0 2% 0 6%;
+}
+
+.story .h4 {
+    margin: 20px 0;
+}
+
+.date-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    font-family: FordRegular, sans-serif;
+    background: #2d96cd;
+    color: #ffffff;
+    text-align: center;
+}
+
+.date-block-day {
+    font-family: FordBold, sans-serif;
+}
+
+.media-sharing {
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------------
+ Carousel Styles
+------------------------------------------------------------------------ */
+.js-carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.js-carousel > li {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.slide-lrg {
+    float: right;
+    overflow: hidden;
+}
+
+.slide-lrg > img {
+    left: -20%;
+    width: 150%;
+    position: relative;
+}
+
+.slide-inner {
+    position: relative;
+}
+
+.carousel-content {
+    position: absolute;
+    width: 94%;
+    top: 6%;
+    left: 3%;
+    right: 3%;
+    color: #ffffff;
+}
+
+.carousel-content-alt {
+    width: 100%;
+}
+
+.carousel-header {
+    font-size: 40px;
+    color: #ffffff;
+    font-family: FordBold, sans-serif;
+    text-align: left;
+}
+
+.carousel-header-alt {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.carousel-header-pre {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: FordBold, sans-serif;
+    text-transform: uppercase;
+}
+
+.carousel-sub-header {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 26px;
+    color: #ffffff;
+    font-family: FordRegular, sans-serif;
+    text-align: left;
+}
+
+.carousel-sub-header span {
+    font-family: FordBold, sans-serif;
+    text-transform: uppercase;
+}
+
+.carousel-content-body {
+    margin: 15px 0;
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.carousel-hide-content {
+    display: none;
+}
+
+.header-sub-content {
+    display: none;
+}
+
+.carousel-text-alt {
+    font-family: FordLight, sans-serif;
+}
+
+.slide-thumbs {
+    width: 100%;
+    position: absolute;
+    bottom: 8%;
+    text-align: center;
+}
+
+.slide-thumbs > li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 28%;
+    margin-right: 2%;
+    border: 5px solid #ffffff;
+}
+
+.slide-thumbs > li:first-child {
+    margin-left: 2%;
+}
+
+.slide-thumbs > li:hover {
+    border-color: #30a1db;
+}
+
+.slide-thumbs > li > img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.slide-thumbs > li:hover > img {
+    outline: 1px solid #ffffff;
+}
+
+.transparent-pagination .pagination {
+    position: absolute;
+    overflow: hidden;
+    bottom: 6%;
+    left: 48%;
+}
+
+.solid-pagination .pagination {
+    margin-top: 4%;
+    margin-left: 48%;
+}
+
+.container-social-stories.solid-pagination .pagination {
+    margin-top: 4%;
+    margin-left: 38%;
+}
+
+.pagination-vehicle-info .pagination {
+    bottom: 22%;
+}
+
+.pagination > li {
+    float: left;
+}
+
+.pagination > li + li {
+    margin-left: 6px;
+}
+
+.pagination > li a {
+    display: block;
+    width: 11px;
+    height: 11px;
+    text-indent: -999999px;
+}
+
+.transparent-pagination .pagination > li a {
+    background: url('../images/icn-pagination.png') no-repeat 0 0;
+}
+
+.transparent-pagination .pagination > li a.active {
+    background: url('../images/icn-pagination.png') no-repeat 0 -13px;
+}
+
+.solid-pagination .pagination > li a {
+    background: url('../images/icn-solid-pagination.png') no-repeat 0 0;
+}
+
+.solid-pagination .pagination > li a.active {
+    background: url('../images/icn-solid-pagination.png') no-repeat 0 -13px;
+}
+
+.slide-vid {
+    position: relative;
+}
+
+.btn-cta {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+    background: url('../images/cta-arrow.png') no-repeat;
+}
+
+.videos-title {
+    margin-bottom: 40px;
+}
+
+.column:hover .carousel-control {
+    visibility: visible;
+    opacity: 1;
+}
+
+.column-alt:hover .carousel-control {
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel-control {
+    visibility: hidden; /* display block doenst work for transitions */
+    opacity: 0;
+    position: absolute;
+    width: 49px;
+    height: 103px;
+    text-indent: -999999px;
+    z-index: 99999;
+}
+
+.carousel-control.left {
+    background: url('../images/carousel-hover-arrow-prev.png') no-repeat;
+}
+
+.carousel-control.right {
+    right: 0;
+    background: url('../images/carousel-hover-arrow-next.png') no-repeat;
+}
+
+.column-alt .carousel-control {
+    top: 25%;
+}
+
+.column-alt .carousel-control.left {
+    left: 0;
+}
+
+.column-alt .carousel-control.right {
+    right: 0;
+}
+
+.column .carousel-control {
+    top: 35%;
+}
+
+.column .carousel-control.left {
+    left: 0;
+}
+
+.column .carousel-control.right {
+    right: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Billboard
+------------------------------------------------------------------------ */
+
+.vehicle-info {
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    // bottom: 0;
+    margin-top: -108px;
+    font-family: FordRegular, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.figure {
+    font-family: FordBold, sans-serif;
+}
+
+.vehicle-info-container {
+    display: inline-block;
+    margin: 16px 0 16px 2%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.vehicle-info-container:first-child {
+    margin-left: 0;
+}
+
+.vehicle-info-hide {
+    // display: none;
+}
+
+.vehicle-info-major {
+    font-size: 26px;
+    padding-right: 3px;
+}
+
+.vehicle-info-minor {
+    display: block;
+    font-size: 16px;
+}
+
+.vehicle-info-detail {
+    font-size: 10px;
+}
+
+.vehicle-info-detail-compact {
+    width: 50px;
+    line-height: 1.4;
+}
+
+.button-info {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url("../images/button-info.png") no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    text-indent: -9999px;
+}
+
+.rating-stars-sub {
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: FordBold, sans-serif;
+}
+
+/* ---------------------------------------------------------------------
+ Button Styles
+------------------------------------------------------------------------ */
+
+.btn-primary {
+    border-radius: 7px 7px 7px 7px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    padding: 20px 0;
+    text-align: center;
+    background: #35aeed;
+    box-shadow: 0 -95px 110px -150px #000000 inset;
+/*    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;*/
+}
+
+.btn-primary > span {
+    font-family: FordBold,sans-serif;
+}
+
+.btn-primary:hover {
+    text-decoration: none;
+    box-shadow: 0 -125px 110px -150px #000000 inset;
+}
+
+.background-secondary {
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(bottom, #21435D 0%, #173042 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #21435D 0%, #173042 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, #21435D 0%, #173042 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #21435D), color-stop(1, #173042));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #21435D 0%, #173042 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, #21435D 0%, #173042 100%);
+}
+
+.btn-video {
+    position: absolute;
+    top: 34%;
+    left: 39%;
+}
+
+.btn-additional {
+    display: inline-block;
+    height: 45px;
+    width: 100%;
+    border-radius: 7px 7px 7px 7px;
+    line-height: 45px;
+    color: #b4b4b4;
+    background: #232323;
+    border: 1px solid #464646;
+    font-family: FordRegular, sans-serif;
+    font-size: 12px;
+    text-align: center;
+/*    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;*/
+}
+
+/* ---------------------------------------------------------------------
+ New Featured
+------------------------------------------------------------------------ */
+
+.vid-carousel-window {
+    position: relative;
+}
+
+.new-featured {
+    margin: 0px 0 15px 0;
+    padding: 53px 0 30px 0;
+}
+
+.new-featured .carousel-control {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    text-indent: -999999px;
+	z-index: 100;
+}
+
+.new-featured .column-alt .carousel-control.left {
+    top: 90px;
+    left: 0;
+    background: url('../images/media-arrow-left.png') no-repeat;
+}
+
+.new-featured .column-alt .carousel-control.right {
+    top: 90px;
+    right: 0;
+    background: url('../images/media-arrow-right.png') no-repeat;
+}
+
+/* ---------------------------------------------------------------------
+ Gallery
+------------------------------------------------------------------------ */
+
+.feature-gallery {
+    background: url("../images/Gallery/feature-gallery.jpg") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.blocks-gallery {
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.blocks-gallery > * {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-link {
+    display: inline-block;
+    text-align: center;
+    max-width: 368px;
+    color: #ffffff;
+}
+
+.gallery-link:hover {
+    text-decoration: none;
+}
+
+.gallery-title {
+    font-size: 26px;
+    font-family: FordBold, sans-serif;
+}
+
+.gallery-model {
+    font-family: FordLight, sans-serif;
+}
+
+.gallery-link > img {
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ List/single carousel
+------------------------------------------------------------------------ */
+
+.view-by {
+    font-size: 14px;
+    font-family: FordRegular, sans-serif;
+    color: #91a4b1;
+    display: table;
+    float: right;
+    margin-right: 30px;
+}
+
+.view-by > * {
+    display: table-cell;
+}
+
+.view-by-label {
+    padding-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.view-by-icons {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.view-icon {
+    text-indent: -9999px;
+    width: 23px;
+    height: 21px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.view-icon-single { background: url("../images/view-by.png") no-repeat 0 -21px; }
+.view-icon-single.active { background: url("../images/view-by.png") no-repeat 0 0; }
+.view-icon-multiple { background: url("../images/view-by.png") no-repeat 0 -63px; }
+.view-icon-multiple.active { background: url("../images/view-by.png") no-repeat 0 -42px; }
+
+.carousel-multi {
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+.vehicle-option {
+    font-size: 14px;
+    font-family: FordRegular, sans-serif;
+    color: #425968;
+    float: left;
+    width: 215px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+.option-img {
+    margin-bottom: 20px;
+}
+
+.option-img > * {
+    width: 100%;
+    display: block;
+}
+
+.option-img img {
+    width: 100%;
+    display: block;
+}
+
+.option-header {
+    margin-bottom: 5px;
+    min-height: 55px;
+}
+
+.option-header-heading {
+    font-family: FordBold, sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.option-body {
+    line-height: 1.5;
+    padding-top: 15px;
+    border-top: 1px solid #dddddd;
+}
+
+.em {
+    font-family: FordBold, sans-serif;
+}
+
+.vehicle-option-large {
+    width: 100%;
+    margin-left: 0;
+}
+
+.vehicle-option-large .option-header-heading {
+    font-size: 22px;
+}
+
+.vehicle-option-large .option-img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.vehicle-option-large .option-img > *,
+.vehicle-option-large .option-img img {
+    width: auto;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.vehicle-option-large .option-header {
+    text-align: right;
+    margin-right: 1.5%;
+    width: 48.5%;
+    float: left;
+}
+
+.vehicle-option-large > .option-body {
+    border: 0 none;
+    float: right;
+    width: 48.5%;
+    margin-left: 1.5%;
+    padding-top: 0;
+}
+
+/* ---------------------------------------------------------------------
+Carousel Tabs
+------------------------------------------------------------------------ */
+
+.tabs-container {
+	height: 450px;
+	overflow: hidden;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.tabs-container > .tab-body {
+	height: 450px;
+}
+
+.vehicle-option {
+    width: 156px;
+}
+
+.vehicle-option img {
+    max-width: 100%;
+}
+
+.vehicle-option.vehicle-option-large {
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+Customize Section
+------------------------------------------------------------------------ */
+
+.feature-customize {
+    height: 684px;
+    background: url("../images/nameplate/feature-lot.jpg") no-repeat center center;
+    color: #ffffff;
+    font-family: FordRegular, sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+.customize-inner {
+    padding: 0 30px;
+}
+
+.customize-header {
+    margin-top: 50px;
+}
+
+.customize-tag {
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: FordLight, sans-serif;
+}
+
+.customize-heading {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: FordBold, sans-serif;
+}
+
+.customize-sample {
+    float: right;
+    margin-right: 5%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.customize-sample-img {
+    float: right;
+    width: 48px;
+    height: 48px;
+    background: url("../images/icon-audio-lg.png") no-repeat;
+}
+
+.customize-sample-body {
+    float: right;
+    padding: 7px 10px;
+    text-align: right;
+}
+
+.customize-sample-header {
+    font-family: FordBoldItalic, sans-serif;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.icon-download {
+    height: 13px;
+    width: 13px;
+    background: url("../images/icon-download.png") no-repeat;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.customize-sample-sub {
+    font-family: FordMedium, sans-serif;
+    font-size: 14px;
+}
+
+.customize-footer {
+    height: 73px;
+    width: 100%;
+    background: url("../images/customize-footer.png") repeat-x;
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+}
+
+.customize-footer > .column-alt {
+    padding-top: 10px;
+}
+
+.btn-start-customizing {
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+Reviews and Ratings
+------------------------------------------------------------------------ */
+
+.social-header {
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.heading-model {
+    font-family: FordBold, sans-serif;
+    font-size: 18px;
+    color: #425968;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.social-header-heading {
+    margin-bottom: 18px;
+}
+
+.social-header-info {
+    margin-bottom: 40px;
+}
+
+.overall-ratings {
+    font-family: FordBold, sans-serif;
+    font-size: 14px;
+    margin: 14px 0 0 0;
+    float: left;
+}
+
+.ratings-container {
+    float: left;
+}
+
+.rating-box {
+    display: none;
+}
+
+.rating-rating {
+    font-size: 28px;
+    font-family: FordBold, sans-serif;
+    display: block;
+}
+
+.rating-total {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: FordMedium, sans-serif;
+}
+
+.rating-stars {
+    background: url("../images/stars-medium.png") no-repeat;
+    width: 144px;
+    height: 25px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.rating-stars.rating-0 { background-position: 0 -125px; }
+.rating-stars.rating-1 { background-position: 0 -100px; }
+.rating-stars.rating-2 { background-position: 0 -75px; }
+.rating-stars.rating-3 { background-position: 0 -50px; }
+.rating-stars.rating-4 { background-position: 0 -25px; }
+.rating-stars.rating-5 { background-position: 0 0; }
+
+.rating-stars-feature {
+    background-image: url("../images/stars-large.png");
+    width: 220px;
+    height: 36px;
+}
+
+.rating-stars-feature.rating-0 { background-position: 0 -180px; }
+.rating-stars-feature.rating-1 { background-position: 0 -144px; }
+.rating-stars-feature.rating-2 { background-position: 0 -108px; }
+.rating-stars-feature.rating-3 { background-position: 0 -72px; }
+.rating-stars-feature.rating-4 { background-position: 0 -36px; }
+.rating-stars-feature.rating-5 { background-position: 0 0; }
+
+.rating-feature-container {
+    padding-left: 20px;
+}
+
+.social-recommend {
+    line-height: 1.5;
+}
+
+.social-recommend > .highlight {
+    color: #2d96cd;
+    font-family: FordBold, sans-serif;
+}
+
+.social-divider {
+    border-top: 1px solid #cccccc;
+    margin: 50px 0 45px;
+    color: #999999;
+    font-family: FordBold, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.social-divider > span {
+    display: inline-block;
+    padding: 0 15px;
+    margin-top: -8px;
+    background: #ffffff;
+    position: relative;
+    top: -8px;
+}
+
+.review {
+    padding: 30px;
+    background: #f4f4f4;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.review-hidden {
+    display: none;
+}
+
+.review-img {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.review-header {
+    overflow: hidden;
+}
+
+.heading-review {
+    font-size: 18px;
+    font-family: FordBold, sans-serif;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.review-byline {
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.review-rating {
+    color: #2d96cd;
+    font-size: 14px;
+}
+
+.review-rating-text {
+    padding-left: 15px;
+}
+
+.review-rating-text > .val {
+    font-family: FordBold, sans-serif;
+}
+
+.review-body {
+    color: #44596a;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.review-body > p {
+    margin-bottom: 10px;
+}
+
+.review-footer {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #7d7d7d;
+}
+
+.review-note {
+    margin-bottom: 8px;
+}
+
+.review-question {
+    color: #000000;
+    font-family: FordBold, sans-serif;
+}
+
+.social-review-footer {
+    text-align: center;
+    clear: both;
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+
+.social-review-footer .btn-primary {
+    float: none;
+    display: inline-block;
+    font-family: FordBold, sans-serif;
+    padding: 15px 30px;
+}
+
+/* ---------------------------------------------------------------------
+Models Block
+------------------------------------------------------------------------ */
+
+.models-find {
+    overflow: hidden;
+    font-family: FordRegular, sans-serif;
+    padding: 40px 2.5%;
+}
+
+.models-compare-container {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.models-compare-media {
+    margin-bottom: 30px;
+}
+
+.models-compare-heading {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.models-compare-heading > .model {
+    font-family: FordBold, sans-serif;
+}
+
+.models-compare-img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.models-compare-img > img {
+    width: 100%;
+}
+
+.models-actions-container {
+    overflow: hidden;
+    /*text-align: center;*/
+}
+
+.models-actions-container img {
+    display: block;
+    margin: 0px auto 15px auto;
+}
+
+.models-actions {
+    width: 33.3%;
+    float: left;
+    padding: 40px 8%;
+    text-align: center;
+    font-family: FordBold, sans-serif;
+    line-height: 1.25;
+}
+
+.models-actions:nth-child(1) {
+    border-right: 1px solid #e6e6e6;
+}
+
+.unit {
+    font-size: .65em;
+    vertical-align: top;
+}
+
+.footnote {
+    font-size: .65em;
+    vertical-align: top;
+}
+
+.models-compare-body {
+    color: #425968;
+    margin-bottom: 20px;
+}
+
+.models-other {
+    overflow: hidden;
+}
+
+.models-other-block {
+    margin-bottom: 30px;
+}
+
+.models-other-header {
+    margin-bottom: 10px;
+}
+
+.models-other-header > a {
+    display: block;
+}
+
+.models-other-header > a > img {
+    width: 100%;
+}
+
+.models-compare-link {
+    font-family: FordRegular, sans-serif;
+    font-size: 16px;
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    padding-right: 10px;
+}
+
+.models-other-body {
+    font-size: 18px;
+    color: #666666;
+}
+
+.models-other-model {
+    color: #2d96cd;
+    font-family: FordBold, sans-serif;
+    font-size: 24px;
+    margin: 5px 0 0;
+    display: inline-block;
+}
+
+.model-year {
+    font-family: FordLight, sans-serif;
+}
+
+/* ---------------------------------------------------------------------
+Maps
+------------------------------------------------------------------------ */
+
+.map-object {
+    font-family: FordRegular, sans-serif;
+}
+
+.address-dealer-directions {
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    padding-right: 10px;
+}
+
+.address-tag {
+    background: url("../images/map-tag.png") no-repeat 0 0;
+    height: 32px;
+    width: 33px;
+    color: #ffffff;
+    font-family: FordBold, sans-serif;
+    font-size: 13px;
+    padding: 10px 0 0 10px;
+    float: left;
+}
+
+.address-tag-mobile-a {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.address-tag-mobile-b {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    cursor: pointer;
+}
+
+.mobile-address-popup {
+    display: none;
+    width: 50%;
+    padding: 20px;
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    background: #FFFFFF;
+}
+
+.map-count {
+    font-size: 77px;
+    font-family: FordBold, sans-serif;
+    float: left;
+    color: #1a3549;
+    line-height: .9;
+    margin-right: 20px;
+}
+
+.map-header {
+    margin: 12px 0 66px 0;
+}
+
+.map-find {
+    margin-top: 5px;
+}
+
+.map-content {
+    position: relative;
+}
+
+.map-content .btn-primary {
+    font-family: FordBold, sans-serif;
+    font-size: 16px;
+}
+
+.icon-location {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/icon-location-white.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: -4px 5px 0 0;
+}
+
+.map-content > img {
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ Footer Styles
+------------------------------------------------------------------------ */
+
+.tagline > a {
+    background: url("../images/footer-logo.png") no-repeat 0 0 ;
+    display: block;
+    text-indent: -9999px;
+    height: 30px;
+    width: 158px;
+}
+
+.footer-info > li > a,
+.copyright {
+    font-family: FordRegular, sans-serif;
+    font-size: 11px;
+    color: #999999;
+}
+
+.footer-share {
+    overflow: hidden;
+    margin: 22px 0 35px 5% !important;
+}
+
+
+
+.footer-share > ul > li {
+    float: left;
+}
+
+.footer-nav > li {
+    border-bottom: 1px solid #3e3e3e;
+}
+
+.footer-nav > li > ul {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.footer-share a {
+    display: block;
+    text-indent: -999999px;
+}
+
+.footer-share > ul > li + li {
+    margin-left: 12px;
+}
+
+.footer-nav > li > a {
+    position: relative;
+}
+
+.footer-share .facebook {
+    width: 12px;
+    height: 25px;
+    margin-top: 3px;
+    background: url('../images/sprite-footer-social.png') no-repeat 0 0;
+}
+
+.footer-share .twitter {
+    width: 26px;
+    height: 22px;
+    margin-top: 6px;
+    background: url('../images/sprite-footer-social.png') no-repeat -31px -3px;
+}
+
+.footer-share .youtube {
+    width: 24px;
+    height: 28px;
+    background: url('../images/sprite-footer-social.png') no-repeat -71px 0;
+}
+
+.footer-additional {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.footer-menu-arrow {
+    display: block;
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    right: 5%;
+    top: 45%;
+}
+
+.arrow-down {
+    background: url('../images/footer-arrow-down.png') no-repeat;
+}
+
+.arrow-up {
+    background: url('../images/footer-arrow-up.png') no-repeat;
+}
+
+.gallery-nav {
+    margin: 50px 0 40px 0;
+}
+
+.gallery-nav a {
+    font-size: 16px;
+    float: left;
+    display: inline-block;
+    margin-right: 65px;
+    position: relative;
+    font-family: Antenna !important;
+}
+
+.gallery-nav li:last-child a {
+    margin-right: 0;
+}
+
+.gallery-nav .active-item a {
+    color: #19344a;
+}
+
+.gallery-nav .active-item a:after {
+    content: "";
+    background: url("../images/down-blue-arrow.png") no-repeat;
+    background-size: 50%;
+    width: 30px;
+    height: 14px;
+    position: absolute;
+    top: 4px;
+    right: -35px;
+}
+
+img {
+    vertical-align: top;
+}
+
+.read-more-copy {
+
+}
+
+.read-more-btn {
+    display: none;
+}
+
+.review-rating-text {
+    display: block !important;
+}
+
+.address-dealer {
+   padding-right: 0;
+   margin-right: 0;
+}
+
+.customize-body {
+    display: block !important;
+}
+
+.btn-primary-apple {
+    display: none !important;
+}
+
+.btn-primary-google {
+    display: none !important;
+}

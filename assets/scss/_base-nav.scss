@@ -1,0 +1,313 @@
+$background-color: white;
+
+@function pem($px, $base: 16) {
+    @return ($px / $base) + em;
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    *zoom: 1;
+}
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+@mixin hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+@mixin visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.show-list, .show-car-list {
+    display: block !important;
+}
+
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: #333;
+    position: relative;
+    width: 100%;
+    min-width: pem(320);
+    background: white;
+    font-family: "Antenna";
+    font-smoothing: antialiased;
+}
+
+#top {
+    -webkit-transform: translateZ(0);
+}
+
+.block {
+    position: relative;
+    margin: 0 auto;
+}
+
+.close-btn {
+    display: none;
+    width: pem(42);
+    height: pem(36);
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: $background-color url("../images/close-btn.svg") left center no-repeat;
+    background-size: pem(30) pem(30);
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    @include opacity(1);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    .no-svg & {
+        background-image: url("../images/close-btn.png");
+    }
+
+    &:focus,
+    &:hover {
+        @include opacity(1);
+    }
+}
+
+.nav-btn {
+    display: block;
+    height: 71px;
+    width: 71px;
+    border: 0;
+    outline: none;
+    color: white;
+    background: $cta_blue;
+    font-size: 31px;
+    background-size: pem(30) pem(24);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    .no-svg & {
+        background-image: url("../images/nav-icon.png");
+    }
+
+    &:before {
+        content: "☰";
+        width: 100%;
+        height: 100%;
+        display: table-cell;
+        vertical-align: center;
+        color: white;
+        z-index: 100;
+        top: 18px;
+        left: 20px;
+        position: absolute;
+    }
+
+    &:hover,
+    &:focus {
+        @include opacity(1);
+    }
+}
+
+#outer-wrap {
+    overflow: hidden;
+}
+
+#inner-wrap {
+
+}
+
+#nav {
+    width: 166px;
+    z-index: 1000;
+    position: fixed;
+    z-index: 1000;
+
+    .logo {
+        position: relative;
+        padding-bottom: 48px;
+        color: white;
+        background: white;
+    }
+    .logo:before {
+        position: absolute;
+        top: -20px;
+        left: 16%;
+        width: 115px;
+        height: 100px;
+        background: url("../images/navigation-logo.svg") no-repeat;
+        background-size: 100%;
+        content: "";
+
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .block-title {
+        // @include visuallyhidden;
+    }
+
+    .block {
+        position: relative;
+        background: white;
+    }
+
+    ul {
+        @include clearfix;
+        // display: block;
+    }
+
+    .nav > li {
+        position: relative;
+    }
+
+    .nav > li.not-active:after {
+        content: "";
+        position: absolute;
+        // top: 25px;
+        top: 18px;
+        right: 17px;
+        width: 15px;
+        height: 21px;
+        background: url("../images/large_blue_arrow.png") no-repeat;
+        background-size: 15px 21px;
+    }
+
+    .nav > li.not-active:hover:after {
+        content: "";
+        position: absolute;
+        top: 18px;
+        right: 17px;
+        width: 15px;
+        height: 21px;
+        background: url("../images/large_white_arrow.png") no-repeat;
+        background-size: 15px 21px;
+    }
+
+    .nav > li.is-active:after {
+        content: "";
+        position: absolute;
+        top: 29px;
+        right: 15px;
+        width: 21px;
+        height: 15px;
+        background: url("../images/large_blue_arrow_down.png") no-repeat;
+        background-size: 21px 15px;
+    }
+
+    .nav > li.is-active:hover:after {
+        content: "";
+        position: absolute;
+        top: 29px;
+        right: 15px;
+        width: 21px;
+        height: 15px;
+        background: url("../images/large_white_arrow_down.png") no-repeat;
+        background-size: 21px 15px;
+    }
+
+    .nav > li.nav-search:after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        right: 14px;
+        width: 21px;
+        height: 22px;
+        background: url("../images/navigation-search-tblt.png") no-repeat;
+        background-size: 21px 22px;
+    }
+
+    li {
+        display: block;
+
+        a {
+            display: block;
+            color: $cta_blue;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+            padding: 28px 10px 28px 20px;
+            border-top: 1px solid #dfdfdf;
+            font-family: Antenna;
+        }
+
+        &:focus > a,
+        &:hover > a {
+            color: white;
+            background: #18384d;
+        }
+
+       ul {
+            display: none;
+            font-family: Antenna;
+        }
+    }
+}
+
+// header[role="banner"] {
+#top {
+    z-index: 100;
+    position: relative;
+    color: #fff;
+    height: 71px;
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f0f0f0 100%);
+
+    @include transition(all .3s ease);
+
+    .block-title {
+        margin: 0;
+        font-size: pem(30);
+        line-height: pem(36, 30);
+        text-align: center;
+        white-space: nowrap;
+        text-indent: -9999px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        background: url('../images/fordoval_header_slate.svg') no-repeat left 16px;
+        background-size: 190px;
+    }
+
+    .nav-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+#main {
+    background: #fff;
+
+    .block {
+        padding: pem(42) pem(30);
+    }
+}
+
+footer[role="contentinfo"] {
+    background: #ddd;
+}

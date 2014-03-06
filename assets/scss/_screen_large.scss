@@ -1,0 +1,660 @@
+/* ---------------------------------------------------------------------
+Original Author: Mark Spooner
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: Min-Width 1024px
+------------------------------------------------------------------------ */
+
+.vehicle-info {
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    // bottom: 0;
+    margin-top: -108px !important;
+    font-family: FordRegular, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+Grid Styles
+------------------------------------------------------------------------ */
+
+.column-alt {
+    float: left;
+    padding-left: 20%;
+    width: 80%;
+}
+
+/* ---------------------------------------------------------------------
+Fixed Menu Styles
+------------------------------------------------------------------------ */
+
+.navigation-wrapper {
+    position: fixed;
+    margin: 37px 0 0 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+}
+
+.navigation-wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.navigation-menu-button {
+    display: none;
+}
+
+.navigation-head {
+    position: relative;
+    right: 0;
+    display: block;
+    overflow: visible;
+    padding: 29px 0 25px 24px;
+    width: 157px;
+    height: 18px;
+    border-top: none;
+    background: #ffffff;
+}
+
+.site-wrapper.js-menu {
+    position: static;
+    width: 100%;
+    padding-top: 0;
+    right: 0;
+}
+
+.nav-model-tag {
+    display: none;
+}
+
+.navigation-logo > h2 {
+    position: absolute;
+    top: -22px;
+    left: 30px;
+    display: block;
+    width: 114px;
+    height: 65px;
+    background: url("../images/navigation-logo.png") no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+.navigation-list {
+    position: static;
+    top: 109px;
+    display: block;
+    width: 181px;
+    right: inherit;
+    z-index: 1000;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    -webkit-transform-origin: none;
+    -moz-transform-origin: none;
+    -ms-transform-origin: none;
+    -o-transform-origin: none;
+    transform-origin: none;
+}
+
+.navigation-list > li {
+    font-family: FordLight, sans-serif;
+}
+
+.navigation-list > li > a {
+    display: block;
+    padding: 23px 0 23px 24px;
+    width: 157px;
+    background: #ffffff url("../images/navigation-arrow.png") no-repeat 91% 51%;
+    color: #2d96cd;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'FordBold', Arial, Helvetica, sans-serif;
+}
+
+.nav-sub .nav-sub-header + li > a {
+    padding-top: 25px;
+}
+
+.navigation-list .nav-sub > li {
+    font-size: 14px;
+}
+
+.nav-sub > li > a {
+    display: block;
+    padding: 12px 0 10px 24px;
+    background: #18384d;
+    color: #8c9ca6;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: FordLight, sans-serif;
+}
+
+.nav-sub-header {
+    padding: 17px 0 15px 16px;
+    font-size: 16px;
+}
+
+.nav-sub-header .heading-model {
+    font-size: 14px;
+}
+
+.navigation-list > li > ul {
+    display: none;
+}
+
+.nav-sub > li > .nav-button-build {
+    margin-top: 20px;
+    padding: 12px 0 12px 13px;
+    font-size: 12px;
+}
+
+.icon-build {
+    width: 21px;
+    height: 21px;
+    background: url("../images/icon-build.png") no-repeat;
+}
+
+.tag {
+    vertical-align: top;
+}
+
+.nav-sub.nav-sub-models > li > a {
+    box-shadow: none;
+    padding: 8px 0 8px 3px;
+    background-image: none;
+}
+
+.nav-model-img {
+    width: 80px;
+    margin: 3px 0 0 0;
+}
+
+/* ---------------------------------------------------------------------
+Footer Styles
+------------------------------------------------------------------------ */
+
+.footer {
+    padding: 0 40px;
+}
+
+.footer-nav {
+    overflow: hidden;
+}
+
+.footer-nav > li {
+    width: 16.66666667% !important;
+    float: left;
+    margin: 0;
+    height: 100%;
+}
+
+.footer-nav > li > a {
+    padding: 0 0 35px 0;
+    border-bottom: 1px solid #3e3e3e;
+    display: block;
+    margin: 35px 0 30px 0;
+    font-family: FordBold, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-nav > li > ul > li {
+    margin-top: 20px;
+}
+
+.footer-nav > li > ul > li > a {
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+.footer-share {
+    top: 50% !important;
+    left: 34%;
+}
+
+.footer-share > ul > li {
+    float: left;
+}
+
+.footer-additional {
+    margin-top: 80px;
+}
+
+.footer-info-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0 10px;
+}
+
+.footer-info {
+    float: left;
+    overflow: hidden;
+    padding-top: 6px;
+    width: 60%;
+}
+
+.tagline {
+    float: right;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.footer-info > li {
+    float: left;
+    margin: 0 0 0 22px;
+}
+
+.copyright {
+    padding: 8px 8px 0 0;
+    float: left;
+    position: static;
+}
+
+/* ---------------------------------------------------------------------
+Carousel Styles
+------------------------------------------------------------------------ */
+
+.slide-lrg > img {
+    left: 0;
+    width: 100%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.slide-thumbs {
+    width: 80.29%;
+    padding-left: 19.71%;
+    bottom: 110px;
+}
+
+.slide-thumbs > li {
+    width: 181px;
+    margin: 0;
+    border-width: 4px;
+}
+
+.slide-thumbs > li + li {
+    margin-left: 13px;
+}
+
+.vid-carousel-window {
+    overflow: hidden;
+	/*height: 275px;*/
+	padding-bottom: 80px;
+}
+
+.column .carousel-control.left {
+    left: 215px;
+}
+
+.column-alt .carousel-control.left {
+    left: 215px;
+}
+
+
+/* ---------------------------------------------------------------------
+Content-Block Styles
+------------------------------------------------------------------------ */
+
+.content-block {
+    padding: 0;
+}
+
+.content-block-body {
+    width: 83%;
+}
+
+/* ---------------------------------------------------------------------
+Social Styles
+------------------------------------------------------------------------ */
+
+.social-stories {
+    margin: 0;
+}
+
+/*:not(:first-child)*/
+.social-stories > li .media-foot {
+    position: relative;
+    margin: -54px 0  45px;
+}
+
+.social-stories > li:first-child .btn-primary {
+    // font-family: FordThin;
+    letter-spacing: 1px;
+}
+
+.social-stories > li:not(:first-child) .btn-primary {
+    font-family: FordRegular,sans-serif;
+    display: block;
+    padding: 0 10px 0 0;
+    border-radius: 0;
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    box-shadow: none;
+    color: #2d96cd;
+    text-decoration: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.social {
+    padding: 0 40px 0 0;
+    background: #ffffff;
+}
+
+.intro {
+    padding-top: 70px;
+}
+
+.intro-head > h2 {
+    font-size: 60px;
+}
+
+.intro-head > h2 > .intro-subhead {
+    font-size: 32px;
+}
+
+.intro p {
+    width: 80%;
+}
+
+.social-stories > * {
+    width: 50%;
+}
+
+.story-media {
+    position: relative;
+    margin-right: 7%;
+    width: 45%;
+}
+
+.date-block {
+    width: 50px;
+    height: 48px;
+}
+
+.date-block-month {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.date-block-day {
+    font-size: 22px;
+}
+
+.story > .media-content {
+    float: left;
+    width: 45%;
+}
+
+.story-media > img {
+    width: 100%;
+}
+
+.media-sharing {
+    // margin: 37px 0 0;
+}
+
+.social-stories > :first-child {
+    float: none;
+    width: 100%;
+}
+
+.social-stories > :first-child .h3 {
+    font-size: 23px;
+}
+
+.social-stories > :first-child .story {
+    width: 100%;
+}
+
+.social-stories > :first-child .story-media {
+    position: relative;
+    margin-right: 4%;
+    width: 60%;
+}
+
+.social-stories > :first-child .media-sharing {
+    margin: 55px 0 25px 0;
+}
+
+.social-stories > :first-child .date-block {
+    width: 82px;
+    height: 77px;
+}
+
+.social-stories > :first-child .date-block-month {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.social-stories > :first-child .date-block-day {
+    font-size: 36px;
+    font-family: FordBold, sans-serif;
+}
+
+
+.social-stories > :first-child .media-content {
+    width: 35%;
+}
+
+/* ---------------------------------------------------------------------
+Carousel Styles
+------------------------------------------------------------------------ */
+
+.carousel-content {
+    left: 19.71%;
+}
+
+.carousel-content-alt {
+    right: 3%;
+    left: auto;
+}
+
+.carousel-sub-header {
+    width: 315px;
+    font-size: 26px;
+    font-family: FordThin, sans-serif;
+}
+
+.carousel-content-body > .btn-primary {
+    padding: 15px 30px;
+}
+
+
+/* ---------------------------------------------------------------------
+Reviews and Ratings
+------------------------------------------------------------------------ */
+
+.overall-ratings {
+    font-family: FordBold, sans-serif;
+    margin: 0 0 8px;
+    float: none;
+}
+
+.social-header-info {
+    float: left;
+    margin-bottom: 0;
+    width: 56.75%;
+}
+
+.social-header-rating {
+    float: right;
+    width: 315px;
+}
+
+.ratings-container {
+    float: none;
+}
+
+.rating-box {
+    color: #ffffff;
+    background: #3c95d2;
+    border-radius: 5px;
+    padding: 10px 12px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+Media Object Styles
+------------------------------------------------------------------------ */
+
+
+.media-media {
+    float: left;
+}
+
+/* ---------------------------------------------------------------------
+Button Styles
+------------------------------------------------------------------------ */
+
+.btn-primary {
+    padding: 20px 30px;
+    float: left;
+}
+
+/* ---------------------------------------------------------------------
+Customize Section
+------------------------------------------------------------------------ */
+
+.customize-inner {
+    padding: 0;
+}
+
+.customize-body {
+    width: 50%;
+}
+
+.customize-sample {
+    margin-top: 0;
+}
+
+/* ---------------------------------------------------------------------
+Map Styles
+------------------------------------------------------------------------ */
+
+.location-view,
+.location-change {
+    display: none;
+}
+
+.map-object {
+    overflow: hidden;
+}
+
+.map-object-bottom {
+    margin-bottom: 104px;
+}
+
+.map-content {
+    float: right;
+    width: 59%;
+}
+
+.map-content > img {
+    width: 100%;
+}
+
+.map-addresses {
+    float: left;
+    overflow: hidden;
+    // margin-right: 5%;
+    display: block !important;
+    width: 30%;
+}
+
+.map-addresses ul > * + * {
+    margin-top: 55px;
+}
+
+.address-dealer {
+    overflow: hidden;
+}
+
+.address-dealer-name {
+    font-family: FordRegular, sans-serif;
+    font-size: 18px;
+}
+
+.map-find {
+    display: block;
+}
+
+.mileage {
+    font-family: FordRegular, sans-serif;
+    font-size: 12px;
+    color: #91a4b1;
+}
+
+/* ---------------------------------------------------------------------
+Models Block
+------------------------------------------------------------------------ */
+
+.models-find {
+    padding: 40px 4% 0 0;
+}
+
+.models-compare-heading {
+    margin: 72px 0 5px 0;
+    float: left;
+}
+
+.models-compare-media {
+    padding: 0 2% 0 0;
+    width: 58%;
+}
+
+.models-compare-img {
+    float: right;
+    // margin-top: 40px;
+    max-width: 75%;
+}
+
+.models-compare-body {
+    float: left;
+    margin-bottom: 30px;
+}
+
+.models-compare-footer {
+    float: left;
+}
+
+.models-actions-container {
+    width: 38%;
+}
+
+.models-actions {
+    padding: 60px 6%;
+    width: 37%;
+}
+
+.models-other-body {
+    font-size: 24px;
+}
+
+/* ---------------------------------------------------------------------
+Content Blocks
+------------------------------------------------------------------------ */
+
+.content-block-head {
+    margin-left: 0;
+}
