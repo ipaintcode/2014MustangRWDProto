@@ -1,0 +1,764 @@
+/* ---------------------------------------------------------------------
+Original Author: Mark Spooner
+Contributors: Shawn McBurnie
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: Min-Width 768px, Max-Width 1024px
+------------------------------------------------------------------------ */
+
+body {
+/*    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-perspective-origin: 100% 50%;
+    -moz-perspective-origin: 100% 50%;
+    -ms-perspective-origin: 100% 50%;
+    -o-perspective-origin: 100% 50%;
+    perspective-origin: 100% 50%;*/
+}
+
+.content-block-head {
+    margin-left: 30px;
+}
+
+/* ---------------------------------------------------------------------
+ Navigation
+------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+ Heading-models
+------------------------------------------------------------------------ */
+.heading-model,
+.heading-model-sub {
+    // padding-left: 20px;
+}
+
+.h3 {
+    // padding-left: 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Article Browser
+------------------------------------------------------------------------ */
+
+
+.intro {
+    padding: 35px 40px;
+}
+
+.intro-head {
+    margin-bottom: 40px;
+}
+
+.intro-head > h2 {
+    font-size: 50px;
+}
+
+.intro-head > h2 > strong {
+
+}
+
+.intro-head > h2 > .intro-subhead {
+    font-size: 30px;
+}
+
+.intro p {
+    font-size: 27px;
+}
+
+.social-stories > * {
+    width: 100%;
+}
+
+/*.social-stories > * {
+    display: block;
+    float: left;
+    overflow: visible;
+}*/
+
+.social-stories > * {
+    display: block;
+    float: left;
+    width: 50%;
+    overflow: visible;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+.media-media {
+    float: left;
+}
+
+/* ---------------------------------------------------------------------
+ Hero Slide Display
+------------------------------------------------------------------------ */
+
+.slides-wrapper img {
+    max-width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+Content-Block Styles
+------------------------------------------------------------------------ */
+
+.content-block-body {
+    width: 83%;
+    margin-bottom: 30px;
+}
+
+.content-feature-image {
+    height: 360px;
+}
+
+/* ---------------------------------------------------------------------
+Blocks
+------------------------------------------------------------------------ */
+
+.blocks {
+    margin-left: -4%;
+}
+
+.blocks > * {
+    margin-left: 4%;
+    width: 46%;
+    float: left;
+}
+
+.blocks-inline > * {
+    margin-left: 3.65%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.block-stacked-img {
+    height: 206px;
+    overflow: hidden;
+}
+
+.block-stacked-img > img {
+    width: auto;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ Button Styles
+------------------------------------------------------------------------ */
+
+.btn-primary {
+    padding: 20px 30px;
+    float: left;
+}
+
+/* ---------------------------------------------------------------------
+ Customize Section
+------------------------------------------------------------------------ */
+
+.customize-heading {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.customize-body {
+    width: 70%;
+    font-size: 15px;
+}
+
+.customize-sample {
+    margin-top: -20px;
+}
+
+/* ---------------------------------------------------------------------
+ Billboard
+------------------------------------------------------------------------ */
+
+.vehicle-info-container {
+    margin: 25px 0 25px 3%;
+}
+
+.vehicle-info-hide {
+    display: inline-block;
+}
+
+.vehicle-info-major {
+    font-size: 48px;
+}
+
+.vehicle-info-minor {
+    font-size: 32px;
+}
+
+.vehicle-info {
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    // bottom: 0;
+    margin-top: -98px;
+    font-family: FordRegular, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+Gallery Styles
+------------------------------------------------------------------------ */
+
+.feature-gallery {
+    background: url("../images/Gallery/feature-gallery.jpg") no-repeat center center;
+    background-size: cover;
+    height: 920px;
+    margin-bottom: 50px;
+    padding-top: 120px;
+}
+
+.blocks-gallery {
+    margin-left: -5%;
+    padding: 0;
+}
+
+.blocks-gallery > * {
+    margin-left: 5%;
+    width: 45%;
+    margin-bottom: 50px;
+    float: left;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+Social Styles
+------------------------------------------------------------------------ */
+
+.social-stories {
+    height: auto;
+    // margin: 0%;
+}
+
+.social-stories > li:not(:first-child) .media-foot {
+    position: absolute;
+    margin: -54px 0 45px;
+}
+
+.social-stories > li:not(:first-child) .btn-primary {
+    font-family: FordRegular,sans-serif;
+    display: block;
+    padding: 0 10px 0 0;
+    border-radius: 0;
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    box-shadow: none;
+    color: #2d96cd;
+    text-decoration: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.social-stories > li:not(:first-child) .btn-primary:hover {
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    color: #2d96cd;
+    text-decoration: none;
+}
+
+.social {
+    padding: 0 40px;
+    background: #ffffff;
+}
+
+.intro {
+    padding-top: 70px;
+}
+
+.intro-head > h2 {
+    font-size: 60px;
+}
+
+.intro-head > h2 > .intro-subhead {
+    font-size: 32px;
+}
+
+.intro p {
+    width: 80%;
+}
+
+.social-stories > * {
+    display: block;
+    float: left;
+    width: 44%;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.story-media {
+    position: relative;
+    margin-right: 7%;
+    width: 45%;
+}
+
+.story .media-content {
+    margin: auto;
+}
+
+.story .h4 {
+    margin: auto;
+}
+
+.date-block {
+    width: 50px;
+    height: 48px;
+}
+
+.date-block-month {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.date-block-day {
+    font-size: 22px;
+}
+
+.story > .media-content {
+    float: left;
+    width: 45%;
+}
+
+.media-content > h3 {
+    font-family: FordBold, sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.story-media > img {
+    width: 100%;
+}
+
+.media-sharing {
+    margin: 37px 0 0;
+    opacity: 0;
+}
+
+.social-stories > :first-child {
+    float: none;
+    width: 100%;
+}
+
+.social-stories > :first-child .story {
+    width: 100%;
+}
+
+.social-stories > :first-child .story-media {
+    position: relative;
+    margin-right: 4%;
+    width: 40%;
+}
+
+.social-stories > :first-child .date-block {
+    width: 82px;
+    height: 77px;
+}
+
+.social-stories > :first-child .date-block-month {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.social-stories > :first-child .date-block-day {
+    font-size: 36px;
+    font-family: FordBold, sans-serif;
+}
+
+.social-stories > :first-child .date-block-day {
+    font-size: 40px;
+    font-family: FordBold, sans-serif;
+}
+
+.social-stories > :first-child .media-sharing {
+    margin: 0 auto;
+}
+
+.social-stories > :first-child .media-foot {
+    margin: 0;
+}
+
+/* ---------------------------------------------------------------------
+Carousel Styles
+------------------------------------------------------------------------ */
+
+.carousel-content {
+    left: 3%;
+    right: auto;
+    width: 72%;
+}
+
+.carousel-content-alt {
+    right: 3%;
+    left: auto;
+    width: 600px;
+    text-align: right;
+}
+
+.carousel-content-alt > * {
+    text-align: right;
+}
+
+.carousel-header {
+    font-size: 65px;
+}
+
+.carousel-header-alt {
+    font-size: 55px;
+}
+
+.carousel-sub-header {
+    width: 280px;
+    float: right;
+    font-size: 21px;
+    text-align: left;
+    font-family: FordRegular, sans-serif;
+}
+
+.carousel-content-body {
+    font-family: FordRegular, sans-serif;
+}
+
+.header-sub-content {
+    display: block;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.carousel-content-body {
+    width: 75%;
+}
+
+.carousel-content-body > .btn-primary {
+    padding: 15px 30px;
+}
+
+.carousel-hide-content {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.vid-carousel-window {
+    max-width: 982px;
+}
+
+.conversation-carousel > li > div{
+    margin-left: 40px;
+}
+
+.slide-vid {
+    float: left;
+}
+
+.tabs-container {
+    margin: 0 auto;
+    width: 760px;
+}
+
+.vehicle-option {
+    width: 190px;
+}
+
+.vehicle-option img {
+    max-width: 100%;
+}
+
+.carousel-multi-alt > li > div {
+    padding: 0 115px 0 0;
+}
+
+/* ---------------------------------------------------------------------
+ Carousel Images
+------------------------------------------------------------------------ */
+
+.slide-lrg > img {
+    width: 120%;
+}
+
+/* ---------------------------------------------------------------------
+Map Styles
+------------------------------------------------------------------------ */
+
+.map-find {
+    display: none;
+}
+
+.location-view,
+.location-change {
+    display: block;
+    position: absolute;
+    top: 30px;
+}
+
+.location-change {
+    right: 44.5%;
+}
+
+.location-view {
+    left: 57%;
+}
+
+.map-object {
+    overflow: hidden;
+    padding: 0 0;
+}
+
+.map-content {
+    position: relative;
+    width: 60%;
+	float: right;
+}
+
+.map-header {
+    margin-top: 0;
+}
+
+.map-count {
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-top: 12px;
+}
+
+.location-change a,
+.map-content .btn-primary {
+	font-size: 12px !important;
+}
+
+.map-content > img {
+    width: 100%;
+}
+
+.map-addresses {
+    display: block;
+    width: 36%;
+    float: left;
+    padding-left: 15px;
+
+}
+
+.address-dealer {
+    overflow: hidden;
+}
+
+.address-dealer-name {
+    font-family: FordRegular, sans-serif;
+    font-size: 18px;
+}
+
+.address-dealer-directions {
+    display: block;
+    width: 190px;
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    background: url("../images/icon-tri-right.png") no-repeat center right;
+    padding-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.address-tag {
+    background: url("../images/map-tag.png") no-repeat 0 0;
+    height: 32px;
+    width: 33px;
+    color: #ffffff;
+    font-family: FordBold, sans-serif;
+    font-size: 13px;
+    padding: 10px 0 0 10px;
+    float: left;
+}
+
+.mileage {
+    font-family: FordRegular, sans-serif;
+    font-size: 12px;
+    color: #91a4b1;
+}
+
+/* ---------------------------------------------------------------------
+Models Block
+------------------------------------------------------------------------ */
+
+.models-find {
+    overflow: hidden;
+    padding: 40px 4%;
+    font-family: FordRegular, sans-serif;
+}
+
+.models-compare-media {
+    width: 30%;
+    padding-right: 7%;
+    float: left;
+    margin-bottom: 0;
+}
+
+.models-compare-body {
+    color: #425968;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.models-compare-footer {
+    float: left;
+}
+
+.models-msrp {
+    font-size: 14px;
+}
+
+.models-actions-container {
+    float: left;
+    width: 62%;
+}
+
+.models-actions {
+    width: 29%;
+    padding: 80px 10%;
+    border-left: 1px solid #e6e6e6;
+}
+
+.models-other {
+    margin-left: -4%;
+    padding: 0;
+}
+
+.models-other-block {
+    float: left;
+    margin-left: 4%;
+    width: 46%
+}
+
+.models-other-body {
+    font-size: 18px;
+    color: #666666;
+}
+
+/* ---------------------------------------------------------------------
+Footer Styles
+------------------------------------------------------------------------ */
+
+.footer {
+    padding: 0 40px 20px 40px;
+}
+
+.footer-nav {
+    overflow: hidden;
+}
+
+.footer-additional {
+    padding: 0;
+}
+
+.footer-nav > li {
+    width: 20%;
+    float: left;
+    height: 480px;
+    // margin-right: 5%;
+    border-bottom: none;
+}
+
+.footer-nav > li > a {
+    padding: 0 0 35px 0;
+    border-bottom: 1px solid #3e3e3e;
+    display: block;
+    margin: 35px 0 30px 0;
+    font-family: FordBold, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-nav > li > ul > li {
+    margin-top: 20px;
+}
+
+.footer-nav > li > ul > li > a {
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+.footer-info-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer-info {
+    float: left;
+    overflow: hidden;
+    padding-top: 6px;
+    width: 50%;
+    margin-left: -22px;
+}
+
+.tagline {
+    float: right;
+    margin: 0 0 0 0;
+}
+
+.footer-info > li {
+    float: left;
+    margin: 0 0 15px 22px;
+}
+
+.copyright {
+    padding: 0 0 0 0;
+    float: none;
+    position: absolute;
+    left: 40px;
+    bottom: 5px;
+}
+
+.footer-nav > li > ul {
+    display: block;
+    margin-bottom: 0;
+}
+
+.footer-share {
+    position: absolute;
+    margin: 0;
+    top: 35%;
+    left: 45%;
+}
+
+.btn-additional {
+    width: auto;
+    padding: 0 30px;
+}
+
+.arrow-down,
+.arrow-up {
+    display: none;
+}
+
+.social-review-footer {
+    text-align: center;
+    clear: both;
+    padding-left: 0;
+    margin-bottom: 50px;
+}
+
+.view-by {
+    display: none !important;
+}
+
+.feature-customize {
+    height: 500px;
+}
+
+#js-customize-control,
+.customize-body {
+    display: none;
+}
+
+.review-rating-text {
+    display: none;
+}
+

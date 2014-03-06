@@ -1,0 +1,46 @@
+/* ---------------------------------------------------------------------
+Original Author: Mark Spooner
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: Min-Width 1382px
+------------------------------------------------------------------------ */
+
+.social-review-container {
+    margin-left: -4%;
+}
+
+.review {
+    margin-left: 4%;
+    float: left;
+    width: 40%;
+    padding: 30px 3%;
+}
+
+.review-hidden {
+    display: block;
+}
+
+.review-rating-text {
+    padding-left: 4px;
+}
+
+/* ---------------------------------------------------------------------
+ Billboard
+------------------------------------------------------------------------ */
+
+.vehicle-info-major {
+   font-size: 56px;
+}
+
+.vehicle-info-minor {
+    font-size: 44px;
+}
+
+
+#js-customize-control,
+.customize-body {
+    display: block;
+}
+

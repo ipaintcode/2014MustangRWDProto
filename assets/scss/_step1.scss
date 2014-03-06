@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+/*!
+ *
+ *  Copyright (c) David Bushell | http://dbushell.com/
+ *
+ */
+
+$step: 1 !default;
+
+@import "compass/css3";
+
+@import "normalize";
+
+@import "base-nav";
+
+@media screen and (max-width: 768px) {
+    #top .block-title  {
+    	margin: 0;
+        font-size: pem(30);
+        line-height: pem(36, 30);
+        text-align: center;
+        white-space: nowrap;
+        text-indent: -9999px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        background: url('../images/fordoval_header_slate.svg') no-repeat 95px center;
+        background-size: 190px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #top .block-title  {
+        margin: 0;
+        font-size: pem(30);
+        line-height: pem(36, 30);
+        text-align: center;
+        white-space: nowrap;
+        text-indent: -9999px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        background: url('../images/fordoval_header_slate.svg') no-repeat 95px center;
+        background-size: 190px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    @import "min_width_720";
+
+    #nav li .nav-vehicles .nav-vehicles-cars > li {
+		padding: 10px 12px 10px 17px;
+	}
+
+	#nav li .nav-vehicles li ul.nav-vehicles-cars {
+		width: 465px;
+	}
+
+
+}
+
+@media screen and (max-width: 1025px) {
+    @import "max_width_720";
+
+    .gallery-nav {
+        text-align: center;
+    }
+
+    .gallery-nav {
+        margin: 29px 20px;
+    }
+
+    .gallery-nav li a {
+        margin-right: 40px;
+        font-size: 98%;
+    }
+}
+
+
+// @media screen and (min-width: 1400px) {
+// 	#inner-wrap {
+// 		width: 1400px;
+// 	}
+
+// 	#nav {
+// 		left: 0;
+// 	}
+// }
+
+.nav-vehicles-fillers {
+    display: none !important;
+    height: 190px;
+}
+
+@media screen and (min-width: 1350px) {
+	#nav li .nav-vehicles li ul.nav-vehicles-cars {
+		width: 923px !important;
+	}
+
+    .nav-vehicles-fillers {
+        display: block !important;
+        height: 190px;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+	#nav li .nav-vehicles .nav-vehicles-cars > li {
+		padding: 10px 15px 10px 15px;
+	}
+
+	#nav li .nav-vehicles li ul.nav-vehicles-cars {
+		width: 690px;
+	}
+     li.nav-vehicles-fillers {
+        display: block;
+        height: 190px;
+    }
+
+
+    // .gallery-nav li a {
+    //     margin-right: 40px;
+    // }
+}
+
+@media screen and (max-width: 768px) {
+
+    .social-stories .story {
+        border-top: 1px solid #ccc;
+        margin: 0;
+        height: 100%;
+    }
+
+    .social-stories li:last-child .story {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .social-stories {
+        height: 100%;
+    }
+
+    .social-stories .story .story-media {
+        width: 35%;
+        float: left;
+        display: inline-block;
+    }
+
+    .social-stories .story .story-media img {
+        vertical-align: top;
+    }
+
+    .social-stories .story .media-content {
+        width: 55%;
+        display: inline-block;
+        margin: 0;
+        padding-left: 10px;
+        vertical-align: center;
+    }
+
+    .social-stories .story .media-content .media-foot {
+        display: none;
+    }
+
+    .background-secondary.new-featured {
+        margin-top: 0;
+    }
+
+    .gallery-nav {
+        margin-top: 40px 0 30px 20px;
+    }
+
+    .gallery-nav li a {
+        // text-align: center;
+        margin-right: 30px;
+        font-size: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .h4.h4-strong {
+        font-size: 95%;
+    }
+
+    .date-block {
+        height: auto;
+        padding-bottom: 3px;
+        width: 30%;
+        // height: auto;
+        font-size: 70%;
+        // padding: 2px;
+    }
+
+    .date-block-month,
+    .date-block-day {
+        // display: inline-block;
+        // float: left;
+        // padding: 3px;
+        font-size: 90%;
+        padding-bottom: 2px;
+    }
+
+    .date-block-day {
+        font-size: 21px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .h4.h4-strong {
+        font-size: 95%;
+    }
+
+    .date-block {
+        width: 55%;
+        height: auto;
+        font-size: 80%;
+        padding: 2px;
+    }
+
+    .date-block-month,
+    .date-block-day {
+        display: inline-block;
+        float: left;
+        padding: 3px;
+    }
+
+    .date-block-day {
+        font-size: 14px;
+    }
+
+}
+
+// .gallery-nav {
+//     margin: 50px 0 40px 0;
+// }
+
+// .gallery-nav a {
+//     font-size: 18px;
+//     float: left;
+//     display: inline-block;
+//     margin-right: 65px;
+//     position: relative;
+// }
+
+// .gallery-nav .active-item a {
+//     color: #19344a;
+// }
+
+// .gallery-nav .active-item a:after {
+//     content: "";
+//     background: url("../images/down-blue-arrow.png") no-repeat;
+//     background-size: 50%;
+//     width: 30px;
+//     height: 14px;
+//     position: absolute;
+//     top: 4px;
+//     right: -35px;
+// }

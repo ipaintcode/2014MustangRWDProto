@@ -1,0 +1,21 @@
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* IE < 8 */
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

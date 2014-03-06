@@ -1,0 +1,337 @@
+#top {
+
+    display: none;
+
+    // .nav-btn {
+    //     @include visuallyhidden;
+    // }
+}
+
+#outer-wrap {
+
+}
+
+#inner-wrap {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1400px;
+}
+
+#nav {
+
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+    left: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+    // width: 166px;
+
+    .close-btn {
+        @include visuallyhidden;
+    }
+
+    .block-title {
+        // @include visuallyhidden;
+    }
+
+    ul {
+        // text-align: center;
+        // white-space: nowrap;
+        background: white;
+    }
+
+    .nav > li.not-active:after {
+        content: "";
+        position: absolute;
+        top: 21px;
+        right: 14px;
+        width: 9px;
+        height: 13px;
+        background: url("../images/large_blue_arrow.png") no-repeat;
+        background-size: 9px 13px;
+    }
+
+    .nav > li.not-active:hover:after {
+        content: "";
+        position: absolute;
+        top: 21px;
+        right: 14px;
+        width: 9px;
+        height: 13px;
+        background: url("../images/large_white_arrow.png") no-repeat;
+        background-size: 9px 13px;
+    }
+
+    .nav > li.nav-search:after {
+        content: "";
+        position: absolute;
+        top: 19px;
+        right: 12px;
+        width: 16px;
+        height: 17px;
+        background: url("../images/navigation-search-tblt.png") no-repeat;
+        background-size: 16px 17px;
+    }
+
+        .nav > li.nav-search:hover:after {
+        content: "";
+        position: absolute;
+        top: 19px;
+        right: 12px;
+        width: 16px;
+        height: 17px;
+        background: url("../images/navigation-search-tblt-white.png") no-repeat;
+        background-size: 16px 17px;
+    }
+
+    li {
+        display: block;
+        // border-right: 1px solid rgba(255,255,255, 0.1);
+
+        &:last-child {
+            border-right: none;
+        }
+
+        a {
+            font-size: 13px;
+            padding: 20px 10px 20px 18px;
+        }
+
+        &:hover {
+            .nav-vehicles {
+                display: block;
+            }
+        }
+
+        &:focus > a,
+        &:hover > a {
+            color: white;
+            // background: #2D96CD;
+        }
+
+        & .nav-vehicles {
+            top: -118px;
+            display: none;
+            left: 166px;
+            position: absolute;
+            z-index: -100;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+            & li:hover > a {
+                color: #1e384e;
+                background-color: white;
+            }
+
+            a {
+                padding: 21px 20px 21px 90px;
+                border-left: 1px solid #cfcfcf;
+                border-right: 1px solid #cfcfcf;
+                text-transform: uppercase;
+                font-size: 13px;
+
+                &.cars {
+                    background: #f2f2f2 url("../images/subnav/cars.jpg") no-repeat;
+                    background-position: 7px center;
+                    border-right: none;
+
+                }
+                &.xovers {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background: #f2f2f2 url("../images/subnav/xover.jpg") no-repeat;
+                    background-position: 7px center;
+                }
+                &.trucks {
+                    background: #f2f2f2 url("../images/subnav/truck.jpg") no-repeat;
+                    background-position: 7px center;
+                }
+                &.hybrids {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background: #f2f2f2 url("../images/subnav/hybrid.jpg") no-repeat;
+                    background-position: 7px center;
+                }
+                &.commercial {
+                    background: #f2f2f2 url("../images/subnav/commercial.jpg") no-repeat;
+                    background-position: 7px center;
+                }
+                &.all {
+                    background: #f2f2f2 url("../images/subnav/all.jpg") no-repeat;
+                    background-position: 7px center;
+                }
+                &.future {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background: #f2f2f2 url("../images/subnav/future.jpg") no-repeat;
+                    background-position: 7px center;
+                }
+                &:hover {
+                    background-color: white;
+                }
+            }
+
+            & .nav-vehicles-cars a {
+                padding-left: 0 !important;
+                border: none !important;
+                @include transition(all .3s ease);
+            }
+
+            & .nav-vehicles-cars {
+                z-index: -100;
+                position: absolute;
+                top: 0;
+                width: 690px;
+                left: 213px !important;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+                border-top: 1px solid #dfdfdf;
+                background:white;
+                padding: 3px;
+            }
+
+            & .nav-vehicles-cars > li {
+                display: inline-block;
+                float: left;
+                color: #a8a8a8;
+                padding: 0;
+                margin: 0;
+                width: 200px;
+                padding: 10px 15px 10px 20px;
+
+                & > h3 {
+                    color: #0f7bc6;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                }
+
+                & ul {
+                    border-top: 1px solid #e3e3e3;
+                    font-size: 12px;
+                    padding-top: 5px;
+
+                    & li {
+                        margin-top: 6px;
+                    }
+
+                    & span {
+                        float: right;
+                    }
+                }
+            }
+
+
+            li:hover {
+                & ul.nav-vehicles-cars  {
+                    display: block;
+
+                    // display: block;
+                }
+            }
+            li ul.nav-vehicles-cars {
+                width: 943px;
+                display: none;
+                padding: 3px;
+            }
+        }
+
+        .nav-vehicles:hover {
+             ul {
+                display: block;
+            }
+        }
+    }
+    #mustang-navigation {
+
+        &:after {
+            background: none;
+        }
+
+        a {
+            color: white;
+            background: #18384d;
+            font-weight: normal;
+            font-size: 13px;
+            background-image: none;
+            border-bottom: 1px solid #062436;
+        }
+
+        & > a {
+            padding-bottom: 14px;
+            text-transform: uppercase;
+        }
+
+
+        ul {
+            display: block;
+
+            .sub-active a {
+                color: white;
+            }
+
+            a {
+                color: #82959f;
+                border: none;
+                padding: 10px 10px 10px 23px;
+                font-weight: normal;
+            }
+
+            a:hover {
+                color: white;
+            }
+
+            li:first-child {
+                border-top: 1px solid #115172;
+            }
+
+            li:first-child a {
+                padding-top: 20px;
+            }
+
+            li.micro-tab a {
+
+                span {
+                    background: #304b5d;
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    color: white;
+                }
+            }
+
+            li:last-child a {
+                padding-bottom: 20px;
+            }
+
+            li:nth-last-child(2) a {
+                padding-bottom: 20px;
+            }
+
+            li:last-child a {
+                color: white;
+                background: #2d9bd4;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 48px;
+                position: relative;
+                color: #f7f7f9;
+                font-size: 12px;
+            }
+
+            li:last-child a:before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                background: url("../images/gear.png") no-repeat;
+                background-size: 100%;
+                width: 21px;
+                height: 21px;
+                top: 11px;
+                left: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,519 @@
+/* ---------------------------------------------------------------------
+Original Author:  Mark Spooner
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: Min-Width 480px, Max-Width 768px; */
+
+body {
+ /*   -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-perspective-origin: 100% 50%;
+    -moz-perspective-origin: 100% 50%;
+    -ms-perspective-origin: 100% 50%;
+    -o-perspective-origin: 100% 50%;
+    perspective-origin: 100% 50%;*/
+}
+
+.content-block-head {
+    margin-left: 30px;
+}
+
+
+.social-review-footer {
+    text-align: center;
+    clear: both;
+    padding-left: 0;
+    margin-bottom: 50px;
+}
+
+.social-review-footer .btn-primary {
+    padding: 15px 20px;
+}
+
+.heading-model,
+.heading-model-sub {
+    padding-left: 30px;
+}
+
+.heading-model {
+    padding: 0 !important;
+}
+
+.h3 {   
+    padding-left: 30px;
+}
+
+/* ---------------------------------------------------------------------
+ Navigation
+------------------------------------------------------------------------ */
+.navigation-list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+/*    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -ms-transition: -ms-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    -webkit-transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);
+    -moz-transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);
+    -ms-transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);
+    -o-transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);
+    transform: rotate3d(0,1,0,-90deg) translate3d(0, 0, -1px);*/
+/*    -webkit-transform-origin: right 50%;
+    -moz-transform-origin: right 50%;
+    -ms-transform-origin: right 50%;
+    -o-transform-origin: right 50%;
+    transform-origin: right 50%;*/
+}
+
+.navigation-list a {
+    display: block;
+    text-decoration: none;
+    font-family: 'FordBold', Arial, Helvetica, sans-serif;
+/*    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;*/
+
+}
+
+.navigation-list a:hover {
+    /*padding-left: 36px;*/
+    /*opacity: ;*/
+}
+
+.navigation-list > li > a {
+    padding: 31px 0 28px 24px;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff url("../images/navigation-arrow-tblt.png") no-repeat 91% 51%;
+    color: #2d96cd;
+    font-size: 18px;
+}
+
+.navigation-list > li > a.nav-search {
+    background: #ffffff url("../images/navigation-search-tblt.png") no-repeat 93% 51%;
+}
+.nav-sub > li > a {
+    padding: 21px 0 19px 24px;
+    background: #18384d;
+    color: #8c9ca6;
+    font-size: 16px;
+}
+
+.nav-sub > li:first-child > a {
+    border-bottom: 1px solid #072436;
+    color: #ffffff;
+}
+
+.nav-sub > li:nth-child(2) > a {
+    padding-top: 37px;
+    border-top: 1px solid #115272;
+}
+
+.site-wrapper {
+    width: 100%;
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+    transform-origin: left 50%;
+}
+
+/* Move content over to make room */
+.nav-shift {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: -30px 0 30px 20px #000000;
+    -webkit-transform: translate3d(-250px, 0, 0);
+    -moz-transform: translate3d(-250px, 0, 0);
+    -ms-transform: translate3d(-250px, 0, 0);
+    -o-transform: translate3d(-250px, 0, 0);
+    transform: translate3d(-250px, 0, 0);
+}
+
+.nav-show {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    z-index: 0;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.vehicle-info {
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    // bottom: 0;
+    margin-top: -64px;
+    font-family: FordRegular, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------
+ Article Browser
+------------------------------------------------------------------------ */
+
+
+.intro {
+    padding: 35px 40px;
+}
+
+.intro-head {
+    margin-bottom: 20px;
+}
+
+.intro-head > h2 {
+    font-size: 25px;
+}
+
+.intro-head > h2 > .intro-subhead {
+    font-size: 15px;
+}
+
+.social-stories .story {
+    width: 100%;;
+}
+
+.date-block {
+    width: 60px;
+    height: 57px;
+}
+
+.date-block-month {
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.date-block-day {
+    font-size: 27px;
+}
+
+.story-media {
+    margin-right: 0;
+    overflow: hidden;
+}
+
+
+.story-media > img {
+    margin-left: -20%;
+    width: 120%;
+}
+
+.story > .media-content {
+    clear: left;
+}
+
+.story .media-sharing {
+    display: none;
+
+}
+
+/* ---------------------------------------------------------------------
+ Hero Slide Display
+------------------------------------------------------------------------ */
+
+.slides-wrapper img {
+    max-width: 100%;
+}
+
+.h1 {
+    font-size: 25px;
+}
+
+.h2 {
+    font-size: 23px;
+}
+
+.h3 {
+    font-size: 28px;
+}
+
+/* ---------------------------------------------------------------------
+Carousel Styles
+------------------------------------------------------------------------ */
+
+.conversation-carousel > li > div{
+    margin-left: 5px;
+}
+
+/* ---------------------------------------------------------------------
+ Carousel
+------------------------------------------------------------------------ */
+
+.slide-lrg > img {
+    width: 150%;
+}
+
+/* ---------------------------------------------------------------------
+Map Styles
+------------------------------------------------------------------------ */
+.map-find {
+    display: none;
+}
+
+.map-addresses {
+    display: none;
+}
+
+.location-view {
+    display: none;
+}
+
+.map-content {
+    position: relative;
+    width: 100%;
+}
+
+.location-change {
+    display: block;
+    width: 90%;
+    padding: 0 5%;
+    position: absolute;
+    top: 5%;
+
+}
+
+.map-count {
+    font-size: 77px;
+    font-family: FordBold, sans-serif;
+    float: left;
+    color: #1a3549;
+    line-height: .9;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.map-header {
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------------------------
+Feature Styles
+------------------------------------------------------------------------ */
+
+.feature-customize {
+    // background-size: 300%;
+    height: 550px;
+    background-position: -280px -120px;
+    position: relative;
+}
+
+#js-customize-control,
+.customize-body {
+    display: none;
+}
+
+.review-rating-text {
+    display: none;
+}
+
+
+/* ---------------------------------------------------------------------
+Footer Styles
+------------------------------------------------------------------------ */
+
+.footer-nav > li > a {
+    font-family: FordBold, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    padding: 20px 5% 20px 5%;
+
+}
+
+.footer-nav > li > ul {
+    padding: 0 0 0 7%;
+    border-top: 1px solid #3e3e3e;
+}
+
+.footer-nav > li > ul > li > a {
+    font-family: FordRegular, sans-serif;
+    font-size: 14px;
+    padding: 30px 0 0 0;
+    color: #b4b4b4;
+    display: block;
+}
+
+.tagline {
+    position: absolute;
+    bottom: 202px;
+    right: 0;
+}
+
+.tagline > a {
+    -o-background-size: 80%;
+    -webkit-background-size: 80%;
+    background-size: 80%;
+}
+
+.footer-info-wrapper {
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+}
+
+.footer-info > li {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.story .media-content {
+    margin: 0 18px 50px 15px;
+    font-size: 93%;
+}
+
+.h2-alt {
+    padding: 0 20px;
+}
+
+.story .h4 {
+    margin: 0;
+    margin-top: 12px;
+}
+
+.js-carousel > li {
+    float: none;
+}
+
+.read-more-copy {
+    display: none;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.slider {
+    margin-top: 0 !important;
+}
+
+.content-block {
+    margin-top: 23px;
+}
+
+.block-stacked:last-child {
+    margin-bottom: 0;
+}
+
+.heading-model {
+    // margin-top: 0;
+    padding-left: 30px;
+}
+
+.social-header-heading.h3 {
+    font-size: 23px;
+}
+
+.social-header {
+    margin-top: 0;
+}
+
+.overall-ratings {
+    font-family: FordBold, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    float: left;
+    display: inline-block;
+}
+
+.rating-stars-feature {
+    background-image: url("../images/stars-large.png");
+    width: 125px;
+    height: 20px;
+    background-size: 100%;
+    margin-top: -5px;
+}
+
+.rating-stars-feature.rating-4 {
+    background-position: 0 -20px;
+}
+
+.social-divider {
+    margin: 46px 0 15px;
+}
+
+.review {
+    margin-bottom: 30px;
+}
+
+.social-review-footer {
+    margin-bottom: 0;
+}
+
+.map-count {
+    display: none;
+}
+
+.view-by {
+    display: none !important;
+}
+
+.models-actions-container {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.h3 {
+    padding-left: 0;
+}
+
+.models-other-block:nth-child(2) {
+    margin-bottom: 0
+}
+
+// .models-other-block {
+//     position: relative;
+// }
+// .models-other-body {
+//     font-size: 18px;
+//     color: #666666;
+//     position: absolute;
+//     top: 0;
+//     color: white;
+//     font-size: 140%;
+// }
+
+// .models-other-model {
+//     color: white;
+//     font-size: 140%;
+// }
+
+// .models-other-body {
+//     padding: 20px;
+// }
+
+.btn-primary-customize {
+    position: relative;
+    bottom: -350px;
+    // width: 85%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+
+.rating-feature-container > .rating-stars {
+    margin-top: -7px !important;
+}

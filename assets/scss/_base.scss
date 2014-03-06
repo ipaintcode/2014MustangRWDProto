@@ -1,0 +1,115 @@
+@import "compass";
+
+//------- BTN PADDING ------ //
+$btn_padding: 10px;
+
+//----- Nav Font Size -----//
+$navFontSize: 14px;
+
+//----- Primary Colors -----//
+$fordblue: #003478;
+$slate: #425968;
+$slatescreen: #91A4B1;
+$black_forty: #7F7C7C;
+$white: #FFFFFF;
+
+//----- Secondary & Tertiary Colors -----//
+$lightgrey: #B3B3B3;
+$darkgrey: #333333;
+$lightgrey: #CCCCCC;
+$cta_blue: #2D96CD;
+
+//----- Gradient Palette -----//
+$cta_from: #2885b6;
+$cta_to: $cta_blue;
+@mixin cta_gradient($type: 'linear', $from:$cta_from, $to:$cta_to) {
+	@if $type == 'linear' {
+		@include background(linear-gradient($to, $from));
+	} @else {
+		@include background(radial-gradient($to, $from));
+	}
+}
+
+$warm_from: #dedfdc;
+$warm_to: #fefefe;
+@mixin cool_gradient($type: 'linear', $from:$warm_from, $to:$warm_to) {
+	@if $type == 'linear' {
+		@include background(linear-gradient($to, $from));
+	} @else {
+		@include background(radial-gradient($to, $from));
+	}
+}
+
+$cool_from: #d4e3e6;
+$cool_to: #fefefe;
+@mixin warm_gradient($type: 'linear', $from:$cool_from, $to:$cool_to) {
+	@if $type == 'linear' {
+		@include background(linear-gradient($to, $from));
+	} @else {
+		@include background(radial-gradient($to, $from));
+	}
+}
+
+$fordblue_from: #132b57;
+$fordblue_to: #0473a9;
+@mixin fordblue_gradient($type: 'linear', $from:$fordblue_from, $to:$fordblue_to) {
+	@if $type == 'linear' {
+		@include background(linear-gradient($to, $from));
+	} @else {
+		@include background(radial-gradient($to, $from));
+	}
+}
+
+$slate_from: #273442;
+$slate_to: #6d818f;
+@mixin slate_gradient($type: 'linear', $from:$slate_from, $to:$slate_to) {
+	@if $type == 'linear' {
+		@include background(linear-gradient($to, $from));
+	} @else {
+		@include background(radial-gradient($to, $from));
+	}
+}
+
+$greyscale_from: #dddddd;
+$greyscale_to: #ffffff;
+@mixin greyscale_gradient($type: 'linear', $from:$greyscale_from, $to:$greyscale_to) {
+	@if $type == 'linear' {
+		@include background(linear-gradient($to, $from));
+	} @else {
+		@include background(radial-gradient($to, $from));
+	}
+}
+
+$greyscale_slate_from: #dddddd;
+$greyscale_slate_to: #ffffff;
+@mixin greyscale_slate_gradient($type: 'linear', $from:$greyscale_slate_from, $to:$greyscale_slate_to) {
+	@if $type == 'linear' {
+		@include background(linear-gradient($to, $from));
+	} @else {
+		@include background(radial-gradient($to, $from));
+	}
+}
+
+@mixin greyscale_slate_gradient($type: 'linear', $from:$greyscale_slate_from, $to:$greyscale_slate_to) {
+	@if $type == 'linear' {
+		@include background(linear-gradient($to, $from));
+	} @else {
+		@include background(radial-gradient($to, $from));
+	}
+}
+
+@mixin cta_button() {
+	color: $white;
+	@include cta_gradient();
+	@include border-radius(5px);
+	padding: 10px;
+	margin: 10px;
+}
+
+@mixin hot_button() {
+	color: $white;
+	@include slate_gradient();
+	@include border-radius(10px);
+	padding: $btn_padding;
+	margin: $btn_padding;
+}
