@@ -1,4 +1,4 @@
-This was a responsive prototype I built out, only a few links works is, cars > mustang, mustang > gallery or just use links below:
+This was a responsive prototype I built out, only a few links work: cars > mustang, mustang > gallery or just use links below:
 
 ####[2014MustangRWDProto](http://ipaintcode.github.io/2014MustangRWDProto/)
 
